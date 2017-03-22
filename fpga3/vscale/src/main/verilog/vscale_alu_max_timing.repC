@@ -1,0 +1,1025 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 3
+        -greater_path 0.00
+        -max_paths 20
+Design : vscale_alu
+Version: J-2014.09-SP3
+Date   : Mon Mar 13 20:49:58 2017
+****************************************
+
+Operating Conditions: nom_pvt   Library: vtvt_tsmc180
+Wire Load Model Mode: top
+
+  Startpoint: op[2] (input port)
+  Endpoint: out[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  op[2] (in)                              62.53      62.53 f
+  U852/op (inv_1)                         84.61     147.14 r
+  U853/op (nand3_1)                      141.81     288.95 f
+  U927/op (nor2_1)                       962.10    1251.05 r
+  U942/op (buf_1)                        583.76    1834.81 r
+  U959/op (xor2_1)                       226.42    2061.22 f
+  U1988/co (fulladder)                   422.89    2484.12 f
+  U1792/co (fulladder)                   501.02    2985.13 f
+  U1730/co (fulladder)                   467.96    3453.10 f
+  U2003/co (fulladder)                   449.27    3902.36 f
+  U1726/co (fulladder)                   438.69    4341.05 f
+  U2023/co (fulladder)                   433.16    4774.21 f
+  U1701/co (fulladder)                   647.49    5421.70 f
+  U1666/co (fulladder)                   591.49    6013.19 f
+  U1644/co (fulladder)                   638.90    6652.09 f
+  U1630/co (fulladder)                   545.97    7198.06 f
+  U1586/co (fulladder)                   923.49    8121.55 f
+  U1566/co (fulladder)                   932.60    9054.15 f
+  U1542/co (fulladder)                   712.14    9766.29 f
+  U1514/co (fulladder)                   587.41   10353.70 f
+  U2041/co (fulladder)                  1199.51   11553.20 f
+  U1482/co (fulladder)                  1202.50   12755.70 f
+  U1442/co (fulladder)                   923.49   13679.19 f
+  U1417/co (fulladder)                   706.99   14386.17 f
+  U2055/co (fulladder)                   916.12   15302.29 f
+  U1391/co (fulladder)                   926.47   16228.77 f
+  U1307/co (fulladder)                   708.67   16937.44 f
+  U1290/co (fulladder)                   932.60   17870.04 f
+  U1257/co (fulladder)                   932.60   18802.64 f
+  U1225/co (fulladder)                   932.60   19735.23 f
+  U2059/co (fulladder)                   712.14   20447.37 f
+  U1153/co (fulladder)                   653.61   21100.98 f
+  U1023/co (fulladder)                   638.90   21739.88 f
+  U2079/co (fulladder)                   932.60   22672.47 f
+  U2122/co (fulladder)                   926.47   23598.95 f
+  U2143/co (fulladder)                   708.68   24307.62 f
+  U2148/co (fulladder)                   486.74   24794.37 f
+  U2149/op (xor2_1)                      143.59   24937.96 f
+  U2167/op (ab_or_c_or_d)                366.33   25304.29 f
+  out[31] (out)                            0.00   25304.29 f
+  data arrival time                               25304.29
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[2] (input port)
+  Endpoint: out[30] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  op[2] (in)                              62.53      62.53 f
+  U852/op (inv_1)                         84.61     147.14 r
+  U853/op (nand3_1)                      141.81     288.95 f
+  U927/op (nor2_1)                       962.10    1251.05 r
+  U942/op (buf_1)                        583.76    1834.81 r
+  U959/op (xor2_1)                       226.42    2061.22 f
+  U1988/co (fulladder)                   422.89    2484.12 f
+  U1792/co (fulladder)                   501.02    2985.13 f
+  U1730/co (fulladder)                   467.96    3453.10 f
+  U2003/co (fulladder)                   449.27    3902.36 f
+  U1726/co (fulladder)                   438.69    4341.05 f
+  U2023/co (fulladder)                   433.16    4774.21 f
+  U1701/co (fulladder)                   647.49    5421.70 f
+  U1666/co (fulladder)                   591.49    6013.19 f
+  U1644/co (fulladder)                   638.90    6652.09 f
+  U1630/co (fulladder)                   545.97    7198.06 f
+  U1586/co (fulladder)                   923.49    8121.55 f
+  U1566/co (fulladder)                   932.60    9054.15 f
+  U1542/co (fulladder)                   712.14    9766.28 f
+  U1514/co (fulladder)                   587.41   10353.69 f
+  U2041/co (fulladder)                  1199.51   11553.20 f
+  U1482/co (fulladder)                  1202.50   12755.70 f
+  U1442/co (fulladder)                   923.49   13679.19 f
+  U1417/co (fulladder)                   706.99   14386.17 f
+  U2055/co (fulladder)                   916.12   15302.29 f
+  U1391/co (fulladder)                   926.47   16228.77 f
+  U1307/co (fulladder)                   708.67   16937.44 f
+  U1290/co (fulladder)                   932.60   17870.04 f
+  U1257/co (fulladder)                   932.60   18802.63 f
+  U1225/co (fulladder)                   932.60   19735.23 f
+  U2059/co (fulladder)                   712.14   20447.37 f
+  U1153/co (fulladder)                   653.61   21100.98 f
+  U1023/co (fulladder)                   638.90   21739.88 f
+  U2079/co (fulladder)                   932.60   22672.47 f
+  U2122/co (fulladder)                   926.47   23598.95 f
+  U2143/co (fulladder)                   708.67   24307.62 f
+  U2148/s (fulladder)                    391.76   24699.38 f
+  U962/op (nand2_1)                      105.21   24804.59 r
+  U1013/op (nand4_1)                     488.12   25292.71 f
+  out[30] (out)                            0.00   25292.71 f
+  data arrival time                               25292.71
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[2] (input port)
+  Endpoint: out[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  op[2] (in)                              62.53      62.53 f
+  U852/op (inv_1)                         84.61     147.14 r
+  U853/op (nand3_1)                      141.81     288.95 f
+  U927/op (nor2_1)                       962.10    1251.05 r
+  U942/op (buf_1)                        583.76    1834.81 r
+  U959/op (xor2_1)                       226.42    2061.22 f
+  U1988/co (fulladder)                   422.89    2484.12 f
+  U1792/co (fulladder)                   501.02    2985.13 f
+  U1730/co (fulladder)                   467.96    3453.10 f
+  U2003/co (fulladder)                   449.27    3902.36 f
+  U1726/co (fulladder)                   438.69    4341.05 f
+  U2023/co (fulladder)                   433.16    4774.21 f
+  U1701/co (fulladder)                   647.49    5421.70 f
+  U1666/co (fulladder)                   591.49    6013.19 f
+  U1644/co (fulladder)                   638.90    6652.09 f
+  U1630/co (fulladder)                   545.97    7198.06 f
+  U1586/co (fulladder)                   923.49    8121.55 f
+  U1566/co (fulladder)                   932.60    9054.15 f
+  U1542/co (fulladder)                   712.14    9766.29 f
+  U1514/co (fulladder)                   587.41   10353.70 f
+  U2041/co (fulladder)                  1199.51   11553.20 f
+  U1482/co (fulladder)                  1202.50   12755.70 f
+  U1442/co (fulladder)                   923.49   13679.19 f
+  U1417/co (fulladder)                   706.99   14386.17 f
+  U2055/co (fulladder)                   916.12   15302.29 f
+  U1391/co (fulladder)                   926.47   16228.77 f
+  U1307/co (fulladder)                   708.67   16937.44 f
+  U1290/co (fulladder)                   932.60   17870.04 f
+  U1257/co (fulladder)                   932.60   18802.64 f
+  U1225/co (fulladder)                   932.60   19735.23 f
+  U2059/co (fulladder)                   712.14   20447.37 f
+  U1153/co (fulladder)                   653.61   21100.98 f
+  U1023/co (fulladder)                   638.90   21739.88 f
+  U2079/co (fulladder)                   932.60   22672.47 f
+  U2122/co (fulladder)                   926.47   23598.95 f
+  U2143/co (fulladder)                   708.67   24307.62 f
+  U2148/co (fulladder)                   486.74   24794.37 f
+  U2149/op (xor2_1)                      148.47   24942.84 r
+  U2167/op (ab_or_c_or_d)                303.65   25246.48 r
+  out[31] (out)                            0.00   25246.48 r
+  data arrival time                               25246.48
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[1] (input port)
+  Endpoint: out[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  op[1] (in)                              59.55      59.55 r
+  U853/op (nand3_1)                      141.79     201.34 f
+  U927/op (nor2_1)                       962.10    1163.44 r
+  U942/op (buf_1)                        583.76    1747.20 r
+  U959/op (xor2_1)                       226.42    1973.62 f
+  U1988/co (fulladder)                   422.89    2396.51 f
+  U1792/co (fulladder)                   501.02    2897.52 f
+  U1730/co (fulladder)                   467.96    3365.49 f
+  U2003/co (fulladder)                   449.27    3814.76 f
+  U1726/co (fulladder)                   438.69    4253.44 f
+  U2023/co (fulladder)                   433.16    4686.60 f
+  U1701/co (fulladder)                   647.49    5334.09 f
+  U1666/co (fulladder)                   591.49    5925.58 f
+  U1644/co (fulladder)                   638.90    6564.48 f
+  U1630/co (fulladder)                   545.97    7110.46 f
+  U1586/co (fulladder)                   923.49    8033.94 f
+  U1566/co (fulladder)                   932.60    8966.54 f
+  U1542/co (fulladder)                   712.14    9678.68 f
+  U1514/co (fulladder)                   587.41   10266.09 f
+  U2041/co (fulladder)                  1199.51   11465.60 f
+  U1482/co (fulladder)                  1202.50   12668.09 f
+  U1442/co (fulladder)                   923.49   13591.58 f
+  U1417/co (fulladder)                   706.99   14298.57 f
+  U2055/co (fulladder)                   916.12   15214.69 f
+  U1391/co (fulladder)                   926.47   16141.16 f
+  U1307/co (fulladder)                   708.67   16849.84 f
+  U1290/co (fulladder)                   932.60   17782.43 f
+  U1257/co (fulladder)                   932.60   18715.03 f
+  U1225/co (fulladder)                   932.60   19647.62 f
+  U2059/co (fulladder)                   712.14   20359.76 f
+  U1153/co (fulladder)                   653.61   21013.37 f
+  U1023/co (fulladder)                   638.90   21652.27 f
+  U2079/co (fulladder)                   932.60   22584.87 f
+  U2122/co (fulladder)                   926.47   23511.34 f
+  U2143/co (fulladder)                   708.68   24220.02 f
+  U2148/co (fulladder)                   486.74   24706.76 f
+  U2149/op (xor2_1)                      143.59   24850.35 f
+  U2167/op (ab_or_c_or_d)                366.33   25216.68 f
+  out[31] (out)                            0.00   25216.68 f
+  data arrival time                               25216.68
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[1] (input port)
+  Endpoint: out[30] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  op[1] (in)                              59.55      59.55 r
+  U853/op (nand3_1)                      141.79     201.34 f
+  U927/op (nor2_1)                       962.10    1163.44 r
+  U942/op (buf_1)                        583.76    1747.20 r
+  U959/op (xor2_1)                       226.42    1973.62 f
+  U1988/co (fulladder)                   422.89    2396.51 f
+  U1792/co (fulladder)                   501.02    2897.52 f
+  U1730/co (fulladder)                   467.96    3365.49 f
+  U2003/co (fulladder)                   449.27    3814.76 f
+  U1726/co (fulladder)                   438.69    4253.44 f
+  U2023/co (fulladder)                   433.16    4686.60 f
+  U1701/co (fulladder)                   647.49    5334.09 f
+  U1666/co (fulladder)                   591.49    5925.58 f
+  U1644/co (fulladder)                   638.90    6564.48 f
+  U1630/co (fulladder)                   545.97    7110.46 f
+  U1586/co (fulladder)                   923.49    8033.94 f
+  U1566/co (fulladder)                   932.60    8966.54 f
+  U1542/co (fulladder)                   712.14    9678.68 f
+  U1514/co (fulladder)                   587.41   10266.09 f
+  U2041/co (fulladder)                  1199.51   11465.59 f
+  U1482/co (fulladder)                  1202.50   12668.09 f
+  U1442/co (fulladder)                   923.49   13591.58 f
+  U1417/co (fulladder)                   706.99   14298.56 f
+  U2055/co (fulladder)                   916.12   15214.69 f
+  U1391/co (fulladder)                   926.47   16141.16 f
+  U1307/co (fulladder)                   708.67   16849.83 f
+  U1290/co (fulladder)                   932.60   17782.43 f
+  U1257/co (fulladder)                   932.60   18715.03 f
+  U1225/co (fulladder)                   932.60   19647.62 f
+  U2059/co (fulladder)                   712.14   20359.76 f
+  U1153/co (fulladder)                   653.61   21013.37 f
+  U1023/co (fulladder)                   638.90   21652.27 f
+  U2079/co (fulladder)                   932.60   22584.87 f
+  U2122/co (fulladder)                   926.47   23511.34 f
+  U2143/co (fulladder)                   708.67   24220.01 f
+  U2148/s (fulladder)                    391.76   24611.78 f
+  U962/op (nand2_1)                      105.21   24716.98 r
+  U1013/op (nand4_1)                     488.12   25205.11 f
+  out[30] (out)                            0.00   25205.11 f
+  data arrival time                               25205.11
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[3] (input port)
+  Endpoint: out[30] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  op[3] (in)                              58.81      58.81 r
+  U853/op (nand3_1)                      141.57     200.38 f
+  U927/op (nor2_1)                       962.10    1162.48 r
+  U942/op (buf_1)                        583.76    1746.24 r
+  U959/op (xor2_1)                       226.42    1972.66 f
+  U1988/co (fulladder)                   422.89    2395.55 f
+  U1792/co (fulladder)                   501.02    2896.56 f
+  U1730/co (fulladder)                   467.96    3364.53 f
+  U2003/co (fulladder)                   449.27    3813.79 f
+  U1726/co (fulladder)                   438.69    4252.48 f
+  U2023/co (fulladder)                   433.16    4685.64 f
+  U1701/co (fulladder)                   647.49    5333.13 f
+  U1666/co (fulladder)                   591.49    5924.62 f
+  U1644/co (fulladder)                   638.90    6563.52 f
+  U1630/co (fulladder)                   545.97    7109.49 f
+  U1586/co (fulladder)                   923.49    8032.98 f
+  U1566/co (fulladder)                   932.60    8965.58 f
+  U1542/co (fulladder)                   712.14    9677.72 f
+  U1514/co (fulladder)                   587.41   10265.13 f
+  U2041/co (fulladder)                  1199.51   11464.63 f
+  U1482/co (fulladder)                  1202.50   12667.13 f
+  U1442/co (fulladder)                   923.49   13590.62 f
+  U1417/co (fulladder)                   706.99   14297.60 f
+  U2055/co (fulladder)                   916.12   15213.72 f
+  U1391/co (fulladder)                   926.47   16140.20 f
+  U1307/co (fulladder)                   708.67   16848.87 f
+  U1290/co (fulladder)                   932.60   17781.47 f
+  U1257/co (fulladder)                   932.60   18714.07 f
+  U1225/co (fulladder)                   932.60   19646.66 f
+  U2059/co (fulladder)                   712.14   20358.80 f
+  U1153/co (fulladder)                   653.61   21012.41 f
+  U1023/co (fulladder)                   638.90   21651.31 f
+  U2079/co (fulladder)                   932.60   22583.90 f
+  U2122/co (fulladder)                   926.47   23510.38 f
+  U2143/co (fulladder)                   708.67   24219.05 f
+  U2148/s (fulladder)                    391.76   24610.82 f
+  U962/op (nand2_1)                      105.21   24716.02 r
+  U1013/op (nand4_1)                     488.12   25204.15 f
+  out[30] (out)                            0.00   25204.15 f
+  data arrival time                               25204.15
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[2] (input port)
+  Endpoint: out[29] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  op[2] (in)                              62.53      62.53 f
+  U852/op (inv_1)                         84.61     147.14 r
+  U853/op (nand3_1)                      141.81     288.95 f
+  U927/op (nor2_1)                       962.10    1251.05 r
+  U942/op (buf_1)                        583.76    1834.81 r
+  U959/op (xor2_1)                       226.42    2061.22 f
+  U1988/co (fulladder)                   422.89    2484.12 f
+  U1792/co (fulladder)                   501.02    2985.13 f
+  U1730/co (fulladder)                   467.96    3453.10 f
+  U2003/co (fulladder)                   449.27    3902.36 f
+  U1726/co (fulladder)                   438.69    4341.05 f
+  U2023/co (fulladder)                   433.16    4774.21 f
+  U1701/co (fulladder)                   647.49    5421.70 f
+  U1666/co (fulladder)                   591.49    6013.19 f
+  U1644/co (fulladder)                   638.90    6652.09 f
+  U1630/co (fulladder)                   545.97    7198.06 f
+  U1586/co (fulladder)                   923.49    8121.55 f
+  U1566/co (fulladder)                   932.60    9054.15 f
+  U1542/co (fulladder)                   712.14    9766.28 f
+  U1514/co (fulladder)                   587.41   10353.69 f
+  U2041/co (fulladder)                  1199.51   11553.20 f
+  U1482/co (fulladder)                  1202.50   12755.70 f
+  U1442/co (fulladder)                   923.49   13679.18 f
+  U1417/co (fulladder)                   706.99   14386.17 f
+  U2055/co (fulladder)                   916.12   15302.29 f
+  U1391/co (fulladder)                   926.47   16228.77 f
+  U1307/co (fulladder)                   708.67   16937.44 f
+  U1290/co (fulladder)                   932.60   17870.04 f
+  U1257/co (fulladder)                   932.60   18802.63 f
+  U1225/co (fulladder)                   932.60   19735.23 f
+  U2059/co (fulladder)                   712.14   20447.37 f
+  U1153/co (fulladder)                   653.61   21100.98 f
+  U1023/co (fulladder)                   638.90   21739.88 f
+  U2079/co (fulladder)                   932.60   22672.47 f
+  U2122/co (fulladder)                   926.47   23598.95 f
+  U2143/s (fulladder)                    447.46   24046.41 f
+  U2144/op (nand2_1)                     106.57   24152.98 r
+  U2145/op (nand3_1)                     391.10   24544.08 f
+  out[29] (out)                            0.00   24544.08 f
+  data arrival time                               24544.08
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[1] (input port)
+  Endpoint: out[29] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  op[1] (in)                              59.55      59.55 r
+  U853/op (nand3_1)                      141.79     201.34 f
+  U927/op (nor2_1)                       962.10    1163.44 r
+  U942/op (buf_1)                        583.76    1747.20 r
+  U959/op (xor2_1)                       226.42    1973.62 f
+  U1988/co (fulladder)                   422.89    2396.51 f
+  U1792/co (fulladder)                   501.02    2897.52 f
+  U1730/co (fulladder)                   467.96    3365.49 f
+  U2003/co (fulladder)                   449.27    3814.76 f
+  U1726/co (fulladder)                   438.69    4253.44 f
+  U2023/co (fulladder)                   433.16    4686.60 f
+  U1701/co (fulladder)                   647.49    5334.09 f
+  U1666/co (fulladder)                   591.49    5925.58 f
+  U1644/co (fulladder)                   638.90    6564.48 f
+  U1630/co (fulladder)                   545.97    7110.45 f
+  U1586/co (fulladder)                   923.49    8033.94 f
+  U1566/co (fulladder)                   932.60    8966.54 f
+  U1542/co (fulladder)                   712.14    9678.68 f
+  U1514/co (fulladder)                   587.41   10266.09 f
+  U2041/co (fulladder)                  1199.51   11465.59 f
+  U1482/co (fulladder)                  1202.50   12668.09 f
+  U1442/co (fulladder)                   923.49   13591.58 f
+  U1417/co (fulladder)                   706.99   14298.56 f
+  U2055/co (fulladder)                   916.12   15214.68 f
+  U1391/co (fulladder)                   926.47   16141.16 f
+  U1307/co (fulladder)                   708.67   16849.83 f
+  U1290/co (fulladder)                   932.60   17782.43 f
+  U1257/co (fulladder)                   932.60   18715.03 f
+  U1225/co (fulladder)                   932.60   19647.62 f
+  U2059/co (fulladder)                   712.14   20359.76 f
+  U1153/co (fulladder)                   653.61   21013.37 f
+  U1023/co (fulladder)                   638.90   21652.27 f
+  U2079/co (fulladder)                   932.60   22584.86 f
+  U2122/co (fulladder)                   926.47   23511.34 f
+  U2143/s (fulladder)                    447.46   23958.80 f
+  U2144/op (nand2_1)                     106.57   24065.37 r
+  U2145/op (nand3_1)                     391.10   24456.47 f
+  out[29] (out)                            0.00   24456.47 f
+  data arrival time                               24456.47
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[3] (input port)
+  Endpoint: out[29] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  op[3] (in)                              58.81      58.81 r
+  U853/op (nand3_1)                      141.57     200.38 f
+  U927/op (nor2_1)                       962.10    1162.48 r
+  U942/op (buf_1)                        583.76    1746.24 r
+  U959/op (xor2_1)                       226.42    1972.66 f
+  U1988/co (fulladder)                   422.89    2395.55 f
+  U1792/co (fulladder)                   501.02    2896.56 f
+  U1730/co (fulladder)                   467.96    3364.53 f
+  U2003/co (fulladder)                   449.27    3813.79 f
+  U1726/co (fulladder)                   438.69    4252.48 f
+  U2023/co (fulladder)                   433.16    4685.64 f
+  U1701/co (fulladder)                   647.49    5333.13 f
+  U1666/co (fulladder)                   591.49    5924.62 f
+  U1644/co (fulladder)                   638.90    6563.52 f
+  U1630/co (fulladder)                   545.97    7109.49 f
+  U1586/co (fulladder)                   923.49    8032.98 f
+  U1566/co (fulladder)                   932.60    8965.58 f
+  U1542/co (fulladder)                   712.14    9677.71 f
+  U1514/co (fulladder)                   587.41   10265.12 f
+  U2041/co (fulladder)                  1199.51   11464.63 f
+  U1482/co (fulladder)                  1202.50   12667.13 f
+  U1442/co (fulladder)                   923.49   13590.62 f
+  U1417/co (fulladder)                   706.99   14297.60 f
+  U2055/co (fulladder)                   916.12   15213.72 f
+  U1391/co (fulladder)                   926.47   16140.20 f
+  U1307/co (fulladder)                   708.67   16848.87 f
+  U1290/co (fulladder)                   932.60   17781.47 f
+  U1257/co (fulladder)                   932.60   18714.07 f
+  U1225/co (fulladder)                   932.60   19646.66 f
+  U2059/co (fulladder)                   712.14   20358.80 f
+  U1153/co (fulladder)                   653.61   21012.41 f
+  U1023/co (fulladder)                   638.90   21651.31 f
+  U2079/co (fulladder)                   932.60   22583.90 f
+  U2122/co (fulladder)                   926.47   23510.38 f
+  U2143/s (fulladder)                    447.46   23957.84 f
+  U2144/op (nand2_1)                     106.57   24064.41 r
+  U2145/op (nand3_1)                     391.10   24455.51 f
+  out[29] (out)                            0.00   24455.51 f
+  data arrival time                               24455.51
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[2] (input port)
+  Endpoint: out[28] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  op[2] (in)                              62.53      62.53 f
+  U852/op (inv_1)                         84.61     147.14 r
+  U853/op (nand3_1)                      141.81     288.95 f
+  U927/op (nor2_1)                       962.10    1251.05 r
+  U942/op (buf_1)                        583.76    1834.81 r
+  U959/op (xor2_1)                       226.42    2061.22 f
+  U1988/co (fulladder)                   422.89    2484.12 f
+  U1792/co (fulladder)                   501.02    2985.13 f
+  U1730/co (fulladder)                   467.96    3453.10 f
+  U2003/co (fulladder)                   449.27    3902.36 f
+  U1726/co (fulladder)                   438.69    4341.05 f
+  U2023/co (fulladder)                   433.16    4774.21 f
+  U1701/co (fulladder)                   647.49    5421.70 f
+  U1666/co (fulladder)                   591.49    6013.19 f
+  U1644/co (fulladder)                   638.90    6652.09 f
+  U1630/co (fulladder)                   545.97    7198.06 f
+  U1586/co (fulladder)                   923.49    8121.55 f
+  U1566/co (fulladder)                   932.60    9054.15 f
+  U1542/co (fulladder)                   712.14    9766.29 f
+  U1514/co (fulladder)                   587.41   10353.70 f
+  U2041/co (fulladder)                  1199.51   11553.20 f
+  U1482/co (fulladder)                  1202.50   12755.70 f
+  U1442/co (fulladder)                   923.49   13679.19 f
+  U1417/co (fulladder)                   706.99   14386.17 f
+  U2055/co (fulladder)                   916.12   15302.29 f
+  U1391/co (fulladder)                   926.47   16228.77 f
+  U1307/co (fulladder)                   708.68   16937.45 f
+  U1290/co (fulladder)                   932.60   17870.04 f
+  U1257/co (fulladder)                   932.60   18802.64 f
+  U1225/co (fulladder)                   932.60   19735.23 f
+  U2059/co (fulladder)                   712.14   20447.37 f
+  U1153/co (fulladder)                   653.61   21100.98 f
+  U1023/co (fulladder)                   638.90   21739.88 f
+  U2079/co (fulladder)                   932.60   22672.47 f
+  U2122/s (fulladder)                    604.72   23277.20 f
+  U2123/op (nand2_1)                     111.94   23389.14 r
+  U2125/op (nand3_1)                     392.78   23781.92 f
+  out[28] (out)                            0.00   23781.92 f
+  data arrival time                               23781.92
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[1] (input port)
+  Endpoint: out[28] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  op[1] (in)                              59.55      59.55 r
+  U853/op (nand3_1)                      141.79     201.34 f
+  U927/op (nor2_1)                       962.10    1163.44 r
+  U942/op (buf_1)                        583.76    1747.20 r
+  U959/op (xor2_1)                       226.42    1973.62 f
+  U1988/co (fulladder)                   422.89    2396.51 f
+  U1792/co (fulladder)                   501.02    2897.52 f
+  U1730/co (fulladder)                   467.96    3365.49 f
+  U2003/co (fulladder)                   449.27    3814.76 f
+  U1726/co (fulladder)                   438.69    4253.44 f
+  U2023/co (fulladder)                   433.16    4686.60 f
+  U1701/co (fulladder)                   647.49    5334.09 f
+  U1666/co (fulladder)                   591.49    5925.58 f
+  U1644/co (fulladder)                   638.90    6564.48 f
+  U1630/co (fulladder)                   545.97    7110.46 f
+  U1586/co (fulladder)                   923.49    8033.94 f
+  U1566/co (fulladder)                   932.60    8966.54 f
+  U1542/co (fulladder)                   712.14    9678.68 f
+  U1514/co (fulladder)                   587.41   10266.09 f
+  U2041/co (fulladder)                  1199.51   11465.60 f
+  U1482/co (fulladder)                  1202.50   12668.09 f
+  U1442/co (fulladder)                   923.49   13591.58 f
+  U1417/co (fulladder)                   706.99   14298.57 f
+  U2055/co (fulladder)                   916.12   15214.69 f
+  U1391/co (fulladder)                   926.47   16141.16 f
+  U1307/co (fulladder)                   708.67   16849.84 f
+  U1290/co (fulladder)                   932.60   17782.43 f
+  U1257/co (fulladder)                   932.60   18715.03 f
+  U1225/co (fulladder)                   932.60   19647.63 f
+  U2059/co (fulladder)                   712.14   20359.77 f
+  U1153/co (fulladder)                   653.61   21013.38 f
+  U1023/co (fulladder)                   638.90   21652.27 f
+  U2079/co (fulladder)                   932.60   22584.87 f
+  U2122/s (fulladder)                    604.72   23189.59 f
+  U2123/op (nand2_1)                     111.94   23301.53 r
+  U2125/op (nand3_1)                     392.78   23694.31 f
+  out[28] (out)                            0.00   23694.31 f
+  data arrival time                               23694.31
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[3] (input port)
+  Endpoint: out[28] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  op[3] (in)                              58.81      58.81 r
+  U853/op (nand3_1)                      141.57     200.38 f
+  U927/op (nor2_1)                       962.10    1162.48 r
+  U942/op (buf_1)                        583.76    1746.24 r
+  U959/op (xor2_1)                       226.42    1972.66 f
+  U1988/co (fulladder)                   422.89    2395.55 f
+  U1792/co (fulladder)                   501.02    2896.56 f
+  U1730/co (fulladder)                   467.96    3364.53 f
+  U2003/co (fulladder)                   449.27    3813.79 f
+  U1726/co (fulladder)                   438.69    4252.48 f
+  U2023/co (fulladder)                   433.16    4685.64 f
+  U1701/co (fulladder)                   647.49    5333.13 f
+  U1666/co (fulladder)                   591.49    5924.62 f
+  U1644/co (fulladder)                   638.90    6563.52 f
+  U1630/co (fulladder)                   545.97    7109.49 f
+  U1586/co (fulladder)                   923.49    8032.98 f
+  U1566/co (fulladder)                   932.60    8965.58 f
+  U1542/co (fulladder)                   712.14    9677.72 f
+  U1514/co (fulladder)                   587.41   10265.13 f
+  U2041/co (fulladder)                  1199.51   11464.64 f
+  U1482/co (fulladder)                  1202.50   12667.13 f
+  U1442/co (fulladder)                   923.49   13590.62 f
+  U1417/co (fulladder)                   706.99   14297.60 f
+  U2055/co (fulladder)                   916.12   15213.73 f
+  U1391/co (fulladder)                   926.47   16140.20 f
+  U1307/co (fulladder)                   708.67   16848.88 f
+  U1290/co (fulladder)                   932.60   17781.47 f
+  U1257/co (fulladder)                   932.60   18714.07 f
+  U1225/co (fulladder)                   932.60   19646.67 f
+  U2059/co (fulladder)                   712.14   20358.80 f
+  U1153/co (fulladder)                   653.61   21012.41 f
+  U1023/co (fulladder)                   638.90   21651.31 f
+  U2079/co (fulladder)                   932.60   22583.91 f
+  U2122/s (fulladder)                    604.72   23188.63 f
+  U2123/op (nand2_1)                     111.94   23300.57 r
+  U2125/op (nand3_1)                     392.78   23693.35 f
+  out[28] (out)                            0.00   23693.35 f
+  data arrival time                               23693.35
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[2] (input port)
+  Endpoint: out[27] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  op[2] (in)                              62.53      62.53 f
+  U852/op (inv_1)                         84.61     147.14 r
+  U853/op (nand3_1)                      141.81     288.95 f
+  U927/op (nor2_1)                       962.10    1251.05 r
+  U942/op (buf_1)                        583.76    1834.81 r
+  U959/op (xor2_1)                       226.42    2061.22 f
+  U1988/co (fulladder)                   422.89    2484.12 f
+  U1792/co (fulladder)                   501.02    2985.13 f
+  U1730/co (fulladder)                   467.96    3453.10 f
+  U2003/co (fulladder)                   449.27    3902.36 f
+  U1726/co (fulladder)                   438.69    4341.05 f
+  U2023/co (fulladder)                   433.16    4774.21 f
+  U1701/co (fulladder)                   647.49    5421.70 f
+  U1666/co (fulladder)                   591.49    6013.19 f
+  U1644/co (fulladder)                   638.90    6652.09 f
+  U1630/co (fulladder)                   545.97    7198.06 f
+  U1586/co (fulladder)                   923.49    8121.55 f
+  U1566/co (fulladder)                   932.60    9054.15 f
+  U1542/co (fulladder)                   712.14    9766.28 f
+  U1514/co (fulladder)                   587.41   10353.69 f
+  U2041/co (fulladder)                  1199.51   11553.20 f
+  U1482/co (fulladder)                  1202.50   12755.70 f
+  U1442/co (fulladder)                   923.49   13679.18 f
+  U1417/co (fulladder)                   706.99   14386.17 f
+  U2055/co (fulladder)                   916.12   15302.29 f
+  U1391/co (fulladder)                   926.47   16228.77 f
+  U1307/co (fulladder)                   708.67   16937.44 f
+  U1290/co (fulladder)                   932.60   17870.04 f
+  U1257/co (fulladder)                   932.60   18802.63 f
+  U1225/co (fulladder)                   932.60   19735.23 f
+  U2059/co (fulladder)                   712.14   20447.37 f
+  U1153/co (fulladder)                   653.61   21100.98 f
+  U1023/co (fulladder)                   638.90   21739.88 f
+  U2079/s (fulladder)                    599.11   22338.99 f
+  U2098/op (not_ab_or_c_or_d)            277.75   22616.73 r
+  U2101/op (nand3_1)                     419.64   23036.37 f
+  out[27] (out)                            0.00   23036.37 f
+  data arrival time                               23036.37
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[1] (input port)
+  Endpoint: out[27] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  op[1] (in)                              59.55      59.55 r
+  U853/op (nand3_1)                      141.79     201.34 f
+  U927/op (nor2_1)                       962.10    1163.44 r
+  U942/op (buf_1)                        583.76    1747.20 r
+  U959/op (xor2_1)                       226.42    1973.62 f
+  U1988/co (fulladder)                   422.89    2396.51 f
+  U1792/co (fulladder)                   501.02    2897.52 f
+  U1730/co (fulladder)                   467.96    3365.49 f
+  U2003/co (fulladder)                   449.27    3814.76 f
+  U1726/co (fulladder)                   438.69    4253.44 f
+  U2023/co (fulladder)                   433.16    4686.60 f
+  U1701/co (fulladder)                   647.49    5334.09 f
+  U1666/co (fulladder)                   591.49    5925.58 f
+  U1644/co (fulladder)                   638.90    6564.48 f
+  U1630/co (fulladder)                   545.97    7110.45 f
+  U1586/co (fulladder)                   923.49    8033.94 f
+  U1566/co (fulladder)                   932.60    8966.54 f
+  U1542/co (fulladder)                   712.14    9678.68 f
+  U1514/co (fulladder)                   587.41   10266.09 f
+  U2041/co (fulladder)                  1199.51   11465.59 f
+  U1482/co (fulladder)                  1202.50   12668.09 f
+  U1442/co (fulladder)                   923.49   13591.58 f
+  U1417/co (fulladder)                   706.99   14298.56 f
+  U2055/co (fulladder)                   916.12   15214.68 f
+  U1391/co (fulladder)                   926.47   16141.16 f
+  U1307/co (fulladder)                   708.67   16849.83 f
+  U1290/co (fulladder)                   932.60   17782.43 f
+  U1257/co (fulladder)                   932.60   18715.03 f
+  U1225/co (fulladder)                   932.60   19647.62 f
+  U2059/co (fulladder)                   712.14   20359.76 f
+  U1153/co (fulladder)                   653.61   21013.37 f
+  U1023/co (fulladder)                   638.90   21652.27 f
+  U2079/s (fulladder)                    599.11   22251.38 f
+  U2098/op (not_ab_or_c_or_d)            277.75   22529.12 r
+  U2101/op (nand3_1)                     419.64   22948.76 f
+  out[27] (out)                            0.00   22948.76 f
+  data arrival time                               22948.76
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[3] (input port)
+  Endpoint: out[27] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  op[3] (in)                              58.81      58.81 r
+  U853/op (nand3_1)                      141.57     200.38 f
+  U927/op (nor2_1)                       962.10    1162.48 r
+  U942/op (buf_1)                        583.76    1746.24 r
+  U959/op (xor2_1)                       226.42    1972.66 f
+  U1988/co (fulladder)                   422.89    2395.55 f
+  U1792/co (fulladder)                   501.02    2896.56 f
+  U1730/co (fulladder)                   467.96    3364.53 f
+  U2003/co (fulladder)                   449.27    3813.79 f
+  U1726/co (fulladder)                   438.69    4252.48 f
+  U2023/co (fulladder)                   433.16    4685.64 f
+  U1701/co (fulladder)                   647.49    5333.13 f
+  U1666/co (fulladder)                   591.49    5924.62 f
+  U1644/co (fulladder)                   638.90    6563.52 f
+  U1630/co (fulladder)                   545.97    7109.49 f
+  U1586/co (fulladder)                   923.49    8032.98 f
+  U1566/co (fulladder)                   932.60    8965.58 f
+  U1542/co (fulladder)                   712.14    9677.71 f
+  U1514/co (fulladder)                   587.41   10265.12 f
+  U2041/co (fulladder)                  1199.51   11464.63 f
+  U1482/co (fulladder)                  1202.50   12667.13 f
+  U1442/co (fulladder)                   923.49   13590.62 f
+  U1417/co (fulladder)                   706.99   14297.60 f
+  U2055/co (fulladder)                   916.12   15213.72 f
+  U1391/co (fulladder)                   926.47   16140.20 f
+  U1307/co (fulladder)                   708.67   16848.87 f
+  U1290/co (fulladder)                   932.60   17781.47 f
+  U1257/co (fulladder)                   932.60   18714.07 f
+  U1225/co (fulladder)                   932.60   19646.66 f
+  U2059/co (fulladder)                   712.14   20358.80 f
+  U1153/co (fulladder)                   653.61   21012.41 f
+  U1023/co (fulladder)                   638.90   21651.31 f
+  U2079/s (fulladder)                    599.11   22250.42 f
+  U2098/op (not_ab_or_c_or_d)            277.75   22528.16 r
+  U2101/op (nand3_1)                     419.64   22947.80 f
+  out[27] (out)                            0.00   22947.80 f
+  data arrival time                               22947.80
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[2] (input port)
+  Endpoint: out[26] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  op[2] (in)                              62.53      62.53 f
+  U852/op (inv_1)                         84.61     147.14 r
+  U853/op (nand3_1)                      141.81     288.95 f
+  U927/op (nor2_1)                       962.10    1251.05 r
+  U942/op (buf_1)                        583.76    1834.81 r
+  U959/op (xor2_1)                       226.42    2061.22 f
+  U1988/co (fulladder)                   422.89    2484.12 f
+  U1792/co (fulladder)                   501.02    2985.13 f
+  U1730/co (fulladder)                   467.96    3453.10 f
+  U2003/co (fulladder)                   449.27    3902.36 f
+  U1726/co (fulladder)                   438.69    4341.05 f
+  U2023/co (fulladder)                   433.16    4774.21 f
+  U1701/co (fulladder)                   647.49    5421.70 f
+  U1666/co (fulladder)                   591.49    6013.19 f
+  U1644/co (fulladder)                   638.90    6652.09 f
+  U1630/co (fulladder)                   545.97    7198.06 f
+  U1586/co (fulladder)                   923.49    8121.55 f
+  U1566/co (fulladder)                   932.60    9054.15 f
+  U1542/co (fulladder)                   712.14    9766.29 f
+  U1514/co (fulladder)                   587.41   10353.70 f
+  U2041/co (fulladder)                  1199.51   11553.20 f
+  U1482/co (fulladder)                  1202.50   12755.70 f
+  U1442/co (fulladder)                   923.49   13679.19 f
+  U1417/co (fulladder)                   706.98   14386.17 f
+  U2055/co (fulladder)                   916.12   15302.29 f
+  U1391/co (fulladder)                   926.47   16228.77 f
+  U1307/co (fulladder)                   708.67   16937.44 f
+  U1290/co (fulladder)                   932.60   17870.04 f
+  U1257/co (fulladder)                   932.60   18802.64 f
+  U1225/co (fulladder)                   932.60   19735.23 f
+  U2059/co (fulladder)                   712.14   20447.37 f
+  U1153/co (fulladder)                   653.61   21100.98 f
+  U1023/s (fulladder)                    392.01   21492.99 f
+  U1051/op (not_ab_or_c_or_d)            281.21   21774.20 r
+  U1057/op (nand4_1)                     519.33   22293.54 f
+  out[26] (out)                            0.00   22293.54 f
+  data arrival time                               22293.54
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[1] (input port)
+  Endpoint: out[26] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  op[1] (in)                              59.55      59.55 r
+  U853/op (nand3_1)                      141.79     201.34 f
+  U927/op (nor2_1)                       962.10    1163.44 r
+  U942/op (buf_1)                        583.76    1747.20 r
+  U959/op (xor2_1)                       226.42    1973.62 f
+  U1988/co (fulladder)                   422.89    2396.51 f
+  U1792/co (fulladder)                   501.02    2897.52 f
+  U1730/co (fulladder)                   467.96    3365.49 f
+  U2003/co (fulladder)                   449.27    3814.76 f
+  U1726/co (fulladder)                   438.69    4253.44 f
+  U2023/co (fulladder)                   433.16    4686.60 f
+  U1701/co (fulladder)                   647.49    5334.09 f
+  U1666/co (fulladder)                   591.49    5925.58 f
+  U1644/co (fulladder)                   638.90    6564.48 f
+  U1630/co (fulladder)                   545.97    7110.46 f
+  U1586/co (fulladder)                   923.49    8033.94 f
+  U1566/co (fulladder)                   932.60    8966.54 f
+  U1542/co (fulladder)                   712.14    9678.68 f
+  U1514/co (fulladder)                   587.41   10266.09 f
+  U2041/co (fulladder)                  1199.51   11465.60 f
+  U1482/co (fulladder)                  1202.50   12668.09 f
+  U1442/co (fulladder)                   923.49   13591.58 f
+  U1417/co (fulladder)                   706.98   14298.56 f
+  U2055/co (fulladder)                   916.12   15214.69 f
+  U1391/co (fulladder)                   926.47   16141.16 f
+  U1307/co (fulladder)                   708.67   16849.84 f
+  U1290/co (fulladder)                   932.60   17782.43 f
+  U1257/co (fulladder)                   932.60   18715.03 f
+  U1225/co (fulladder)                   932.60   19647.63 f
+  U2059/co (fulladder)                   712.14   20359.76 f
+  U1153/co (fulladder)                   653.61   21013.37 f
+  U1023/s (fulladder)                    392.01   21405.38 f
+  U1051/op (not_ab_or_c_or_d)            281.21   21686.59 r
+  U1057/op (nand4_1)                     519.33   22205.93 f
+  out[26] (out)                            0.00   22205.93 f
+  data arrival time                               22205.93
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[3] (input port)
+  Endpoint: out[26] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  op[3] (in)                              58.81      58.81 r
+  U853/op (nand3_1)                      141.57     200.38 f
+  U927/op (nor2_1)                       962.10    1162.48 r
+  U942/op (buf_1)                        583.76    1746.24 r
+  U959/op (xor2_1)                       226.42    1972.66 f
+  U1988/co (fulladder)                   422.89    2395.55 f
+  U1792/co (fulladder)                   501.02    2896.56 f
+  U1730/co (fulladder)                   467.96    3364.53 f
+  U2003/co (fulladder)                   449.27    3813.79 f
+  U1726/co (fulladder)                   438.69    4252.48 f
+  U2023/co (fulladder)                   433.16    4685.64 f
+  U1701/co (fulladder)                   647.49    5333.13 f
+  U1666/co (fulladder)                   591.49    5924.62 f
+  U1644/co (fulladder)                   638.90    6563.52 f
+  U1630/co (fulladder)                   545.97    7109.49 f
+  U1586/co (fulladder)                   923.49    8032.98 f
+  U1566/co (fulladder)                   932.60    8965.58 f
+  U1542/co (fulladder)                   712.14    9677.72 f
+  U1514/co (fulladder)                   587.41   10265.13 f
+  U2041/co (fulladder)                  1199.51   11464.64 f
+  U1482/co (fulladder)                  1202.50   12667.13 f
+  U1442/co (fulladder)                   923.49   13590.62 f
+  U1417/co (fulladder)                   706.98   14297.60 f
+  U2055/co (fulladder)                   916.12   15213.73 f
+  U1391/co (fulladder)                   926.47   16140.20 f
+  U1307/co (fulladder)                   708.67   16848.88 f
+  U1290/co (fulladder)                   932.60   17781.47 f
+  U1257/co (fulladder)                   932.60   18714.07 f
+  U1225/co (fulladder)                   932.60   19646.67 f
+  U2059/co (fulladder)                   712.14   20358.80 f
+  U1153/co (fulladder)                   653.61   21012.41 f
+  U1023/s (fulladder)                    392.01   21404.42 f
+  U1051/op (not_ab_or_c_or_d)            281.21   21685.63 r
+  U1057/op (nand4_1)                     519.33   22204.97 f
+  out[26] (out)                            0.00   22204.97 f
+  data arrival time                               22204.97
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[2] (input port)
+  Endpoint: out[25] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  op[2] (in)                              62.53      62.53 f
+  U852/op (inv_1)                         84.61     147.14 r
+  U853/op (nand3_1)                      141.81     288.95 f
+  U927/op (nor2_1)                       962.10    1251.05 r
+  U942/op (buf_1)                        583.76    1834.81 r
+  U959/op (xor2_1)                       226.42    2061.22 f
+  U1988/co (fulladder)                   422.89    2484.12 f
+  U1792/co (fulladder)                   501.02    2985.13 f
+  U1730/co (fulladder)                   467.96    3453.10 f
+  U2003/co (fulladder)                   449.27    3902.36 f
+  U1726/co (fulladder)                   438.69    4341.05 f
+  U2023/co (fulladder)                   433.16    4774.21 f
+  U1701/co (fulladder)                   647.49    5421.70 f
+  U1666/co (fulladder)                   591.49    6013.19 f
+  U1644/co (fulladder)                   638.90    6652.09 f
+  U1630/co (fulladder)                   545.97    7198.06 f
+  U1586/co (fulladder)                   923.49    8121.55 f
+  U1566/co (fulladder)                   932.60    9054.15 f
+  U1542/co (fulladder)                   712.14    9766.28 f
+  U1514/co (fulladder)                   587.41   10353.69 f
+  U2041/co (fulladder)                  1199.51   11553.20 f
+  U1482/co (fulladder)                  1202.50   12755.70 f
+  U1442/co (fulladder)                   923.49   13679.19 f
+  U1417/co (fulladder)                   706.98   14386.17 f
+  U2055/co (fulladder)                   916.12   15302.29 f
+  U1391/co (fulladder)                   926.47   16228.77 f
+  U1307/co (fulladder)                   708.67   16937.44 f
+  U1290/co (fulladder)                   932.60   17870.04 f
+  U1257/co (fulladder)                   932.60   18802.63 f
+  U1225/co (fulladder)                   932.60   19735.23 f
+  U2059/co (fulladder)                   712.14   20447.37 f
+  U1153/s (fulladder)                    407.71   20855.07 f
+  U1154/op (nand2_1)                     104.98   20960.05 r
+  U1155/op (nand4_1)                     488.47   21448.53 f
+  out[25] (out)                            0.00   21448.53 f
+  data arrival time                               21448.53
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[1] (input port)
+  Endpoint: out[25] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  op[1] (in)                              59.55      59.55 r
+  U853/op (nand3_1)                      141.79     201.34 f
+  U927/op (nor2_1)                       962.10    1163.44 r
+  U942/op (buf_1)                        583.76    1747.20 r
+  U959/op (xor2_1)                       226.42    1973.62 f
+  U1988/co (fulladder)                   422.89    2396.51 f
+  U1792/co (fulladder)                   501.02    2897.52 f
+  U1730/co (fulladder)                   467.96    3365.49 f
+  U2003/co (fulladder)                   449.27    3814.76 f
+  U1726/co (fulladder)                   438.69    4253.44 f
+  U2023/co (fulladder)                   433.16    4686.60 f
+  U1701/co (fulladder)                   647.49    5334.09 f
+  U1666/co (fulladder)                   591.49    5925.58 f
+  U1644/co (fulladder)                   638.90    6564.48 f
+  U1630/co (fulladder)                   545.97    7110.45 f
+  U1586/co (fulladder)                   923.49    8033.94 f
+  U1566/co (fulladder)                   932.60    8966.54 f
+  U1542/co (fulladder)                   712.14    9678.68 f
+  U1514/co (fulladder)                   587.41   10266.09 f
+  U2041/co (fulladder)                  1199.51   11465.59 f
+  U1482/co (fulladder)                  1202.50   12668.09 f
+  U1442/co (fulladder)                   923.49   13591.58 f
+  U1417/co (fulladder)                   706.98   14298.56 f
+  U2055/co (fulladder)                   916.12   15214.69 f
+  U1391/co (fulladder)                   926.47   16141.16 f
+  U1307/co (fulladder)                   708.67   16849.83 f
+  U1290/co (fulladder)                   932.60   17782.43 f
+  U1257/co (fulladder)                   932.60   18715.03 f
+  U1225/co (fulladder)                   932.60   19647.62 f
+  U2059/co (fulladder)                   712.14   20359.76 f
+  U1153/s (fulladder)                    407.71   20767.47 f
+  U1154/op (nand2_1)                     104.98   20872.45 r
+  U1155/op (nand4_1)                     488.47   21360.92 f
+  out[25] (out)                            0.00   21360.92 f
+  data arrival time                               21360.92
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

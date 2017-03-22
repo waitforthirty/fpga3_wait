@@ -1,0 +1,1823 @@
+Warning: Worst timing paths might not be returned. (TIM-104)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 3
+        -greater_path 0.00
+        -max_paths 1000000
+Design : vscale_alu
+Version: J-2014.09-SP3
+Date   : Mon Mar 13 20:49:58 2017
+****************************************
+
+Operating Conditions: nom_pvt   Library: vtvt_tsmc180
+Wire Load Model Mode: top
+
+  Startpoint: op[3] (input port)
+  Endpoint: out[0] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  op[3] (in)                              58.81      58.81 r
+  U1975/op (not_ab_or_c_or_d)            159.54     218.35 f
+  U1990/op (nand3_1)                     203.22     421.56 r
+  out[0] (out)                             0.00     421.56 r
+  data arrival time                                 421.56
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[31] (input port)
+  Endpoint: out[31] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[31] (in)                            83.22      83.22 r
+  U2154/op (nand2_1)                      79.24     162.46 f
+  U2166/op (nand4_1)                      66.85     229.31 r
+  U2167/op (ab_or_c_or_d)                226.34     455.65 r
+  out[31] (out)                            0.00     455.65 r
+  data arrival time                                 455.65
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[22] (input port)
+  Endpoint: out[22] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[22] (in)                            67.47      67.47 r
+  U1228/op (or2_1)                        81.54     149.02 r
+  U1246/op (not_ab_or_c_or_d)            135.31     284.32 f
+  U1259/op (nand4_1)                     211.17     495.49 r
+  out[22] (out)                            0.00     495.49 r
+  data arrival time                                 495.49
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[26] (input port)
+  Endpoint: out[26] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[26] (in)                            67.47      67.47 r
+  U1014/op (or2_1)                        81.54     149.02 r
+  U1022/op (not_ab_or_c_or_d)            135.31     284.32 f
+  U1057/op (nand4_1)                     215.74     500.07 r
+  out[26] (out)                            0.00     500.07 r
+  data arrival time                                 500.07
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[21] (input port)
+  Endpoint: out[21] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[21] (in)                            67.47      67.47 r
+  U1260/op (or2_1)                        81.54     149.02 r
+  U1267/op (not_ab_or_c_or_d)            135.31     284.32 f
+  U1298/op (nand4_1)                     215.92     500.25 r
+  out[21] (out)                            0.00     500.25 r
+  data arrival time                                 500.25
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[20] (input port)
+  Endpoint: out[20] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[20] (in)                            67.47      67.47 r
+  U1299/op (or2_1)                        81.54     149.02 r
+  U1306/op (not_ab_or_c_or_d)            135.31     284.32 f
+  U1371/op (nand4_1)                     215.92     500.25 r
+  out[20] (out)                            0.00     500.25 r
+  data arrival time                                 500.25
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[10] (input port)
+  Endpoint: out[10] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[10] (in)                            67.47      67.47 r
+  U1578/op (or2_1)                        81.54     149.02 r
+  U1585/op (not_ab_or_c_or_d)            135.31     284.32 f
+  U1608/op (nand4_1)                     215.92     500.25 r
+  out[10] (out)                            0.00     500.25 r
+  data arrival time                                 500.25
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[6] (input port)
+  Endpoint: out[6] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[6] (in)                             84.74      84.74 r
+  U1683/op (or2_1)                        84.71     169.45 r
+  U1693/op (not_ab_or_c_or_d)            135.41     304.86 f
+  U1705/op (nand4_1)                     212.39     517.25 r
+  out[6] (out)                             0.00     517.25 r
+  data arrival time                                 517.25
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[16] (input port)
+  Endpoint: out[16] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[16] (in)                            96.08      96.08 r
+  U1433/op (or2_1)                        85.86     181.94 r
+  U1441/op (not_ab_or_c_or_d)            135.48     317.42 f
+  U1463/op (nand4_1)                     215.71     533.13 r
+  out[16] (out)                            0.00     533.13 r
+  data arrival time                                 533.13
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[31] (input port)
+  Endpoint: out[31] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[31] (in)                            83.22      83.22 r
+  U2150/op (not_ab_or_c_or_d)            143.68     226.90 f
+  U2151/op (nor2_1)                       87.54     314.44 r
+  U2167/op (ab_or_c_or_d)                239.94     554.38 r
+  out[31] (out)                            0.00     554.38 r
+  data arrival time                                 554.38
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[29] (input port)
+  Endpoint: out[29] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[29] (in)                            82.71      82.71 r
+  U2126/op (nor2_1)                       81.19     163.90 f
+  U2127/op (nor2_1)                       82.02     245.92 r
+  U2140/op (not_ab_or_c_or_d)            105.88     351.80 f
+  U2145/op (nand3_1)                     203.65     555.45 r
+  out[29] (out)                            0.00     555.45 r
+  data arrival time                                 555.45
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[2] (input port)
+  Endpoint: out[0] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  op[2] (in)                              77.22      77.22 r
+  U1972/op (nand3_1)                     119.25     196.48 f
+  U1974/op (nand3_1)                      66.48     262.95 r
+  U1975/op (not_ab_or_c_or_d)             89.44     352.39 f
+  U1990/op (nand3_1)                     203.22     555.61 r
+  out[0] (out)                             0.00     555.61 r
+  data arrival time                                 555.61
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[23] (input port)
+  Endpoint: out[23] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[23] (in)                            82.34      82.34 r
+  U1180/op (nand3_1)                     122.24     204.58 f
+  U1181/op (nand2_1)                      53.12     257.70 r
+  U1182/op (not_ab_or_c_or_d)             89.04     346.75 f
+  U1227/op (nand4_1)                     211.79     558.53 r
+  out[23] (out)                            0.00     558.53 r
+  data arrival time                                 558.53
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[7] (input port)
+  Endpoint: out[7] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[7] (in)                             82.34      82.34 r
+  U1663/op (nand3_1)                     122.24     204.58 f
+  U1664/op (nand2_1)                      53.12     257.70 r
+  U1665/op (not_ab_or_c_or_d)             89.22     346.92 f
+  U1682/op (nand4_1)                     211.86     558.78 r
+  out[7] (out)                             0.00     558.78 r
+  data arrival time                                 558.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[10] (input port)
+  Endpoint: out[10] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[10] (in)                           111.84     111.84 r
+  U1578/op (or2_1)                        97.93     209.78 r
+  U1585/op (not_ab_or_c_or_d)            135.31     345.08 f
+  U1608/op (nand4_1)                     215.92     561.00 r
+  out[10] (out)                            0.00     561.00 r
+  data arrival time                                 561.00
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[16] (input port)
+  Endpoint: out[16] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[16] (in)                           113.32     113.32 r
+  U1433/op (or2_1)                        98.15     211.48 r
+  U1441/op (not_ab_or_c_or_d)            135.48     346.96 f
+  U1463/op (nand4_1)                     215.71     562.67 r
+  out[16] (out)                            0.00     562.67 r
+  data arrival time                                 562.67
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[29] (input port)
+  Endpoint: out[29] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[29] (in)                            82.71      82.71 r
+  U2138/op (nand3_1)                     126.05     208.76 f
+  U2139/op (nand3_1)                      63.55     272.31 r
+  U2140/op (not_ab_or_c_or_d)             90.48     362.79 f
+  U2145/op (nand3_1)                     203.65     566.45 r
+  out[29] (out)                            0.00     566.45 r
+  data arrival time                                 566.45
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[23] (input port)
+  Endpoint: out[23] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[23] (in)                            82.34      82.34 r
+  U1173/op (nor2_1)                       83.92     166.26 f
+  U1174/op (nor2_1)                       85.12     251.38 r
+  U1182/op (not_ab_or_c_or_d)            106.06     357.43 f
+  U1227/op (nand4_1)                     211.79     569.22 r
+  out[23] (out)                            0.00     569.22 r
+  data arrival time                                 569.22
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[7] (input port)
+  Endpoint: out[7] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[7] (in)                             82.34      82.34 r
+  U1656/op (nor2_1)                       83.92     166.26 f
+  U1657/op (nor2_1)                       85.51     251.76 r
+  U1665/op (not_ab_or_c_or_d)            106.09     357.85 f
+  U1682/op (nand4_1)                     211.86     569.71 r
+  out[7] (out)                             0.00     569.71 r
+  data arrival time                                 569.71
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[28] (input port)
+  Endpoint: out[28] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[28] (in)                            84.43      84.43 r
+  U2115/op (nand3_1)                     122.17     206.60 f
+  U2120/op (nand4_1)                      77.94     284.54 r
+  U2121/op (not_ab_or_c_or_d)             89.64     374.17 f
+  U2125/op (nand3_1)                     203.30     577.47 r
+  out[28] (out)                            0.00     577.47 r
+  data arrival time                                 577.47
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[12] (input port)
+  Endpoint: out[12] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[12] (in)                            96.38      96.38 r
+  U1537/op (inv_1)                        84.90     181.28 f
+  U1538/op (nor2_1)                       93.69     274.96 r
+  U1539/op (not_ab_or_c_or_d)             93.61     368.57 f
+  U1544/op (nand4_1)                     209.82     578.40 r
+  out[12] (out)                            0.00     578.40 r
+  data arrival time                                 578.40
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[6] (input port)
+  Endpoint: out[6] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[6] (in)                             84.74      84.74 r
+  U1691/op (nand3_1)                     126.76     211.50 f
+  U1692/op (nand3_1)                      64.08     275.58 r
+  U1693/op (not_ab_or_c_or_d)             90.49     366.07 f
+  U1705/op (nand4_1)                     212.39     578.45 r
+  out[6] (out)                             0.00     578.45 r
+  data arrival time                                 578.45
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[21] (input port)
+  Endpoint: out[21] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[21] (in)                           127.29     127.29 r
+  U1260/op (or2_1)                       100.19     227.48 r
+  U1267/op (not_ab_or_c_or_d)            135.31     362.79 f
+  U1298/op (nand4_1)                     215.92     578.71 r
+  out[21] (out)                            0.00     578.71 r
+  data arrival time                                 578.71
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[31] (input port)
+  Endpoint: out[31] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in2[31] (in)                            67.48      67.48 f
+  U2154/op (nand2_1)                      54.54     122.02 r
+  U2166/op (nand4_1)                     137.94     259.95 f
+  U2167/op (ab_or_c_or_d)                319.59     579.54 f
+  out[31] (out)                            0.00     579.54 f
+  data arrival time                                 579.54
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: op[3] (input port)
+  Endpoint: out[0] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  op[3] (in)                              47.35      47.35 f
+  U1975/op (not_ab_or_c_or_d)            158.41     205.76 r
+  U1990/op (nand3_1)                     374.45     580.21 f
+  out[0] (out)                             0.00     580.21 f
+  data arrival time                                 580.21
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[26] (input port)
+  Endpoint: out[26] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[26] (in)                            67.47      67.47 r
+  U1015/op (inv_1)                        56.39     123.86 f
+  U1021/op (nor3_1)                      142.90     266.76 r
+  U1022/op (not_ab_or_c_or_d)             98.65     365.41 f
+  U1057/op (nand4_1)                     215.74     581.16 r
+  out[26] (out)                            0.00     581.16 r
+  data arrival time                                 581.16
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[24] (input port)
+  Endpoint: out[24] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[24] (in)                            81.59      81.59 r
+  U2070/op (or2_1)                        84.96     166.56 r
+  U2074/op (ab_or_c_or_d)                124.80     291.36 r
+  U2075/op (not_ab_or_c_or_d)             87.62     378.97 f
+  U2078/op (nand3_1)                     202.46     581.43 r
+  out[24] (out)                            0.00     581.43 r
+  data arrival time                                 581.43
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[21] (input port)
+  Endpoint: out[21] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[21] (in)                            67.47      67.47 r
+  U1261/op (inv_1)                        56.37     123.85 f
+  U1266/op (nor3_1)                      142.87     266.71 r
+  U1267/op (not_ab_or_c_or_d)             99.17     365.88 f
+  U1298/op (nand4_1)                     215.92     581.80 r
+  out[21] (out)                            0.00     581.80 r
+  data arrival time                                 581.80
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[20] (input port)
+  Endpoint: out[20] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[20] (in)                            67.47      67.47 r
+  U1300/op (inv_1)                        56.37     123.85 f
+  U1305/op (nor3_1)                      142.87     266.71 r
+  U1306/op (not_ab_or_c_or_d)             99.17     365.88 f
+  U1371/op (nand4_1)                     215.92     581.80 r
+  out[20] (out)                            0.00     581.80 r
+  data arrival time                                 581.80
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[10] (input port)
+  Endpoint: out[10] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[10] (in)                            67.47      67.47 r
+  U1579/op (inv_1)                        56.37     123.85 f
+  U1584/op (nor3_1)                      142.87     266.71 r
+  U1585/op (not_ab_or_c_or_d)             99.17     365.88 f
+  U1608/op (nand4_1)                     215.92     581.80 r
+  out[10] (out)                            0.00     581.80 r
+  data arrival time                                 581.80
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[13] (input port)
+  Endpoint: out[13] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[13] (in)                            53.82      53.82 r
+  U1501/op (inv_1)                        54.56     108.38 f
+  U1506/op (nor2_1)                       83.20     191.57 r
+  U1509/op (or4_1)                        95.29     286.86 r
+  U1510/op (not_ab_or_c_or_d)             87.25     374.11 f
+  U1516/op (nand4_1)                     211.04     585.15 r
+  out[13] (out)                            0.00     585.15 r
+  data arrival time                                 585.15
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[17] (input port)
+  Endpoint: out[17] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[17] (in)                            68.31      68.31 r
+  U1414/op (nor2_1)                       78.14     146.45 f
+  U1415/op (nor2_1)                       85.06     231.51 r
+  U1416/op (nor4_1)                      142.21     373.72 f
+  U1432/op (nand4_1)                     213.83     587.55 r
+  out[17] (out)                            0.00     587.55 r
+  data arrival time                                 587.55
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[22] (input port)
+  Endpoint: out[22] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[22] (in)                           139.52     139.52 r
+  U1228/op (or2_1)                       101.98     241.50 r
+  U1246/op (not_ab_or_c_or_d)            135.31     376.80 f
+  U1259/op (nand4_1)                     211.17     587.97 r
+  out[22] (out)                            0.00     587.97 r
+  data arrival time                                 587.97
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[14] (input port)
+  Endpoint: out[14] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[14] (in)                            53.66      53.66 r
+  U1825/op (inv_1)                        52.88     106.53 f
+  U2033/op (nor2_1)                       82.83     189.36 r
+  U2035/op (not_ab_or_c_or_d)            106.03     295.39 f
+  U2043/op (nand4_1)                      67.94     363.33 r
+  U2044/op (ab_or_c_or_d)                227.14     590.47 r
+  out[14] (out)                            0.00     590.47 r
+  data arrival time                                 590.47
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[6] (input port)
+  Endpoint: out[6] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[6] (in)                            140.63     140.63 r
+  U1683/op (or2_1)                       102.14     242.77 r
+  U1693/op (not_ab_or_c_or_d)            135.41     378.19 f
+  U1705/op (nand4_1)                     212.39     590.58 r
+  out[6] (out)                             0.00     590.58 r
+  data arrival time                                 590.58
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[28] (input port)
+  Endpoint: out[28] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[28] (in)                            84.43      84.43 r
+  U2118/op (or2_1)                        95.55     179.99 r
+  U2119/op (nand2_1)                      63.47     243.46 f
+  U2120/op (nand4_1)                      55.00     298.45 r
+  U2121/op (not_ab_or_c_or_d)             89.64     388.09 f
+  U2125/op (nand3_1)                     203.30     591.39 r
+  out[28] (out)                            0.00     591.39 r
+  data arrival time                                 591.39
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[20] (input port)
+  Endpoint: out[20] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[20] (in)                           140.47     140.47 r
+  U1299/op (or2_1)                       102.12     242.59 r
+  U1306/op (not_ab_or_c_or_d)            135.31     377.89 f
+  U1371/op (nand4_1)                     215.92     593.82 r
+  out[20] (out)                            0.00     593.82 r
+  data arrival time                                 593.82
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[16] (input port)
+  Endpoint: out[16] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[16] (in)                            96.08      96.08 r
+  U1439/op (inv_1)                        42.64     138.72 f
+  U1440/op (nor3_1)                      140.90     279.62 r
+  U1441/op (not_ab_or_c_or_d)             98.55     378.17 f
+  U1463/op (nand4_1)                     215.71     593.88 r
+  out[16] (out)                            0.00     593.88 r
+  data arrival time                                 593.88
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[18] (input port)
+  Endpoint: out[18] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[18] (in)                            67.78      67.78 r
+  U2048/op (nor2_1)                       81.78     149.57 f
+  U2049/op (nor2_1)                       84.14     233.70 r
+  U2053/op (or4_1)                        82.72     316.42 r
+  U2054/op (not_ab_or_c_or_d)             86.27     402.70 f
+  U2058/op (nand2_1)                     191.44     594.13 r
+  out[18] (out)                            0.00     594.13 r
+  data arrival time                                 594.13
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[26] (input port)
+  Endpoint: out[26] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[26] (in)                           154.48     154.48 r
+  U1014/op (or2_1)                       104.17     258.64 r
+  U1022/op (not_ab_or_c_or_d)            135.31     393.95 f
+  U1057/op (nand4_1)                     215.74     609.69 r
+  out[26] (out)                            0.00     609.69 r
+  data arrival time                                 609.69
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[25] (input port)
+  Endpoint: out[25] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[25] (in)                            82.34      82.34 r
+  U1086/op (nand3_1)                     122.24     204.58 f
+  U1087/op (nand2_1)                      54.52     259.10 r
+  U1088/op (nor4_1)                      139.60     398.70 f
+  U1155/op (nand4_1)                     212.53     611.23 r
+  out[25] (out)                            0.00     611.23 r
+  data arrival time                                 611.23
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[27] (input port)
+  Endpoint: out[27] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[27] (in)                            67.78      67.78 r
+  U2093/op (nor2_1)                       81.78     149.57 f
+  U2094/op (nor2_1)                       82.76     232.32 r
+  U2097/op (or4_1)                        90.91     323.24 r
+  U2098/op (not_ab_or_c_or_d)             87.21     410.45 f
+  U2101/op (nand3_1)                     202.29     612.74 r
+  out[27] (out)                            0.00     612.74 r
+  data arrival time                                 612.74
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[29] (input port)
+  Endpoint: out[29] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[29] (in)                           132.62     132.62 r
+  U2126/op (nor2_1)                       89.57     222.18 f
+  U2127/op (nor2_1)                       82.02     304.20 r
+  U2140/op (not_ab_or_c_or_d)            105.88     410.08 f
+  U2145/op (nand3_1)                     203.65     613.73 r
+  out[29] (out)                            0.00     613.73 r
+  data arrival time                                 613.73
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[9] (input port)
+  Endpoint: out[9] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[9] (in)                             67.94      67.94 r
+  U1611/op (nor2_1)                       81.81     149.74 f
+  U1612/op (nor2_1)                       84.15     233.89 r
+  U1620/op (or4_1)                        82.72     316.61 r
+  U1621/op (not_ab_or_c_or_d)             87.14     403.76 f
+  U1632/op (nand4_1)                     211.00     614.76 r
+  out[9] (out)                             0.00     614.76 r
+  data arrival time                                 614.76
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[4] (input port)
+  Endpoint: out[4] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[4] (in)                            126.63     126.63 r
+  U1707/op (nor2_1)                       90.40     217.03 f
+  U1708/op (nor2_1)                       84.88     301.91 r
+  U1714/op (not_ab_or_c_or_d)            106.04     407.95 f
+  U1729/op (nand4_1)                     212.97     620.92 r
+  out[4] (out)                             0.00     620.92 r
+  data arrival time                                 620.92
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[23] (input port)
+  Endpoint: out[23] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[23] (in)                           130.24     130.24 r
+  U1180/op (nand3_1)                     138.77     269.01 f
+  U1181/op (nand2_1)                      53.12     322.14 r
+  U1182/op (not_ab_or_c_or_d)             89.04     411.18 f
+  U1227/op (nand4_1)                     211.79     622.97 r
+  out[23] (out)                            0.00     622.97 r
+  data arrival time                                 622.97
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[15] (input port)
+  Endpoint: out[15] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[15] (in)                           127.91     127.91 r
+  U1475/op (nand2_1)                      88.30     216.20 f
+  U1480/op (nand2_1)                      58.84     275.05 r
+  U1481/op (nor4_1)                      139.22     414.27 f
+  U1491/op (nand4_1)                     212.34     626.61 r
+  out[15] (out)                            0.00     626.61 r
+  data arrival time                                 626.61
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[11] (input port)
+  Endpoint: out[11] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[11] (in)                            81.90      81.90 r
+  U1563/op (inv_1)                        41.58     123.49 f
+  U1564/op (nor3_1)                      143.58     267.07 r
+  U1565/op (nor4_1)                      150.38     417.44 f
+  U1577/op (nand4_1)                     213.22     630.66 r
+  out[11] (out)                            0.00     630.66 r
+  data arrival time                                 630.66
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[19] (input port)
+  Endpoint: out[19] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[19] (in)                            82.28      82.28 r
+  U1388/op (inv_1)                        41.61     123.89 f
+  U1389/op (nor3_1)                      143.61     267.49 r
+  U1390/op (nor4_1)                      147.97     415.46 f
+  U1403/op (nand4_1)                     216.44     631.90 r
+  out[19] (out)                            0.00     631.90 r
+  data arrival time                                 631.90
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[12] (input port)
+  Endpoint: out[12] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[12] (in)                            96.38      96.38 r
+  U1533/op (not_ab_or_c_or_d)            145.10     241.48 f
+  U1534/op (nor2_1)                       80.81     322.29 r
+  U1539/op (not_ab_or_c_or_d)            107.23     429.52 f
+  U1544/op (nand4_1)                     209.82     639.34 r
+  out[12] (out)                            0.00     639.34 r
+  data arrival time                                 639.34
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[11] (input port)
+  Endpoint: out[11] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in1[11] (in)                            91.88      91.88 f
+  U1566/s (fulladder)                    248.37     340.25 r
+  U1567/op (nand2_1)                      86.35     426.60 f
+  U1577/op (nand4_1)                     213.51     640.11 r
+  out[11] (out)                            0.00     640.11 r
+  data arrival time                                 640.11
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[25] (input port)
+  Endpoint: out[25] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[25] (in)                            82.34      82.34 r
+  U1078/op (nor2_1)                       83.92     166.26 f
+  U1079/op (nor2_1)                       86.90     253.15 r
+  U1088/op (nor4_1)                      174.44     427.59 f
+  U1155/op (nand4_1)                     212.53     640.12 r
+  out[25] (out)                            0.00     640.12 r
+  data arrival time                                 640.12
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[7] (input port)
+  Endpoint: out[7] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[7] (in)                            143.99     143.99 r
+  U1656/op (nor2_1)                       94.05     238.04 f
+  U1657/op (nor2_1)                       85.51     323.55 r
+  U1665/op (not_ab_or_c_or_d)            106.09     429.64 f
+  U1682/op (nand4_1)                     211.86     641.50 r
+  out[7] (out)                             0.00     641.50 r
+  data arrival time                                 641.50
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[24] (input port)
+  Endpoint: out[24] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[24] (in)                            81.59      81.59 r
+  U2072/op (inv_1)                        41.56     123.15 f
+  U2073/op (nor3_1)                      139.58     262.74 r
+  U2074/op (ab_or_c_or_d)                 93.08     355.82 r
+  U2075/op (not_ab_or_c_or_d)             87.62     443.44 f
+  U2078/op (nand3_1)                     202.46     645.90 r
+  out[24] (out)                            0.00     645.90 r
+  data arrival time                                 645.90
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[18] (input port)
+  Endpoint: out[18] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[18] (in)                            67.78      67.78 r
+  U1811/op (inv_1)                        56.45     124.23 f
+  U2052/op (nor3_1)                      140.94     265.17 r
+  U2053/op (or4_1)                       107.21     372.38 r
+  U2054/op (not_ab_or_c_or_d)             86.27     458.66 f
+  U2058/op (nand2_1)                     191.44     650.09 r
+  out[18] (out)                            0.00     650.09 r
+  data arrival time                                 650.09
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[12] (input port)
+  Endpoint: out[12] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in1[12] (in)                           105.06     105.06 f
+  U1542/s (fulladder)                    254.00     359.06 r
+  U1543/op (nand2_1)                      87.15     446.21 f
+  U1544/op (nand4_1)                     207.92     654.13 r
+  out[12] (out)                            0.00     654.13 r
+  data arrival time                                 654.13
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[9] (input port)
+  Endpoint: out[9] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in1[9] (in)                            104.76     104.76 f
+  U1630/s (fulladder)                    253.87     358.63 r
+  U1631/op (nand2_1)                      87.48     446.10 f
+  U1632/op (nand4_1)                     208.04     654.14 r
+  out[9] (out)                             0.00     654.14 r
+  data arrival time                                 654.14
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[19] (input port)
+  Endpoint: out[19] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[19] (in)                            82.28      82.28 r
+  U1372/op (nor2_1)                       81.09     163.37 f
+  U1373/op (nor2_1)                       83.64     247.01 r
+  U1390/op (nor4_1)                      190.84     437.85 f
+  U1403/op (nand4_1)                     216.44     654.29 r
+  out[19] (out)                            0.00     654.29 r
+  data arrival time                                 654.29
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[2] (input port)
+  Endpoint: out[2] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[2] (in)                            154.45     154.45 r
+  U1731/op (nor2_1)                       96.25     250.71 f
+  U1732/op (nor2_1)                       86.70     337.40 r
+  U1744/op (not_ab_or_c_or_d)            106.19     443.59 f
+  U1761/op (nand4_1)                     211.17     654.76 r
+  out[2] (out)                             0.00     654.76 r
+  data arrival time                                 654.76
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[11] (input port)
+  Endpoint: out[11] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[11] (in)                            81.90      81.90 r
+  U1556/op (nor2_1)                       83.87     165.77 f
+  U1557/op (nor2_1)                       85.08     250.85 r
+  U1565/op (nor4_1)                      191.57     442.43 f
+  U1577/op (nand4_1)                     213.22     655.64 r
+  out[11] (out)                            0.00     655.64 r
+  data arrival time                                 655.64
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[24] (input port)
+  Endpoint: out[24] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[24] (in)                           138.57     138.57 r
+  U2070/op (or2_1)                       102.41     240.98 r
+  U2074/op (ab_or_c_or_d)                124.80     365.78 r
+  U2075/op (not_ab_or_c_or_d)             87.62     453.40 f
+  U2078/op (nand3_1)                     202.46     655.86 r
+  out[24] (out)                            0.00     655.86 r
+  data arrival time                                 655.86
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[4] (input port)
+  Endpoint: out[4] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in1[4] (in)                            103.27     103.27 f
+  U1726/s (fulladder)                    253.23     356.50 r
+  U1727/op (nand2_1)                      86.64     443.14 f
+  U1729/op (nand4_1)                     213.61     656.76 r
+  out[4] (out)                             0.00     656.76 r
+  data arrival time                                 656.76
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[8] (input port)
+  Endpoint: out[8] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in1[8] (in)                            103.54     103.54 f
+  U1644/s (fulladder)                    253.35     356.88 r
+  U1645/op (nand2_1)                      86.37     443.25 f
+  U1655/op (nand4_1)                     213.51     656.76 r
+  out[8] (out)                             0.00     656.76 r
+  data arrival time                                 656.76
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[5] (input port)
+  Endpoint: out[5] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[5] (in)                             81.90      81.90 r
+  U2018/op (nor2_1)                       83.87     165.77 f
+  U2019/op (nor2_1)                       83.06     248.84 r
+  U2022/op (not_ab_or_c_or_d)            105.96     354.80 f
+  U2026/op (nand3_1)                      61.42     416.22 r
+  U2027/op (or4_1)                       241.09     657.31 r
+  out[5] (out)                             0.00     657.31 r
+  data arrival time                                 657.31
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[22] (input port)
+  Endpoint: out[22] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[22] (in)                            67.47      67.47 r
+  U1239/op (inv_1)                        55.93     123.41 f
+  U1244/op (nor3_1)                      142.58     265.98 r
+  U1245/op (ab_or_c_or_d)                 93.42     359.40 r
+  U1246/op (not_ab_or_c_or_d)             87.55     446.96 f
+  U1259/op (nand4_1)                     211.17     658.13 r
+  out[22] (out)                            0.00     658.13 r
+  data arrival time                                 658.13
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[17] (input port)
+  Endpoint: out[17] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[17] (in)                           128.06     128.06 r
+  U1414/op (nor2_1)                       89.05     217.11 f
+  U1415/op (nor2_1)                       85.06     302.17 r
+  U1416/op (nor4_1)                      142.21     444.38 f
+  U1432/op (nand4_1)                     213.83     658.21 r
+  out[17] (out)                            0.00     658.21 r
+  data arrival time                                 658.21
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[15] (input port)
+  Endpoint: out[15] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in1[15] (in)                           104.33     104.33 f
+  U1482/s (fulladder)                    253.68     358.01 r
+  U1483/op (nand2_1)                      86.66     444.67 f
+  U1491/op (nand4_1)                     213.62     658.29 r
+  out[15] (out)                            0.00     658.29 r
+  data arrival time                                 658.29
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[27] (input port)
+  Endpoint: out[27] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[27] (in)                            67.78      67.78 r
+  U1803/op (inv_1)                        56.46     124.25 f
+  U2096/op (nor3_1)                      140.97     265.22 r
+  U2097/op (or4_1)                       106.78     372.00 r
+  U2098/op (not_ab_or_c_or_d)             87.21     459.21 f
+  U2101/op (nand3_1)                     202.29     661.50 r
+  out[27] (out)                            0.00     661.50 r
+  data arrival time                                 661.50
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[14] (input port)
+  Endpoint: out[14] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in2[14] (in)                            43.16      43.16 f
+  U1829/op (nor2_1)                      175.90     219.06 r
+  U2035/op (not_ab_or_c_or_d)            149.99     369.05 f
+  U2043/op (nand4_1)                      67.94     436.99 r
+  U2044/op (ab_or_c_or_d)                227.14     664.13 r
+  out[14] (out)                            0.00     664.13 r
+  data arrival time                                 664.13
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[5] (input port)
+  Endpoint: out[5] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[5] (in)                             81.90      81.90 r
+  U2020/op (inv_1)                        41.58     123.49 f
+  U2021/op (nor3_1)                      139.79     263.28 r
+  U2022/op (not_ab_or_c_or_d)             98.57     361.84 f
+  U2026/op (nand3_1)                      61.42     423.26 r
+  U2027/op (or4_1)                       241.09     664.35 r
+  out[5] (out)                             0.00     664.35 r
+  data arrival time                                 664.35
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[1] (input port)
+  Endpoint: out[1] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in1[1] (in)                            113.53     113.53 f
+  U1792/s (fulladder)                    257.62     371.15 r
+  U1793/op (nand2_1)                      87.53     458.68 f
+  U1794/op (nand4_1)                     208.06     666.74 r
+  out[1] (out)                             0.00     666.74 r
+  data arrival time                                 666.74
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[8] (input port)
+  Endpoint: out[8] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[8] (in)                             93.92      93.92 r
+  U1641/op (inv_1)                        62.16     156.07 f
+  U1642/op (nor3_1)                      149.27     305.34 r
+  U1643/op (nor4_1)                      148.97     454.32 f
+  U1655/op (nand4_1)                     216.75     671.07 r
+  out[8] (out)                             0.00     671.07 r
+  data arrival time                                 671.07
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[8] (input port)
+  Endpoint: out[8] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[8] (in)                             93.92      93.92 r
+  U1637/op (nor2_1)                       85.22     179.14 f
+  U1638/op (nor2_1)                       86.00     265.14 r
+  U1643/op (nor4_1)                      189.21     454.35 f
+  U1655/op (nand4_1)                     216.75     671.10 r
+  out[8] (out)                             0.00     671.10 r
+  data arrival time                                 671.10
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[9] (input port)
+  Endpoint: out[9] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[9] (in)                             67.94      67.94 r
+  U1614/op (inv_1)                        57.79     125.72 f
+  U1619/op (nor3_1)                      141.28     267.01 r
+  U1620/op (or4_1)                       107.24     374.24 r
+  U1621/op (not_ab_or_c_or_d)             87.14     461.39 f
+  U1632/op (nand4_1)                     211.00     672.39 r
+  out[9] (out)                             0.00     672.39 r
+  data arrival time                                 672.39
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[25] (input port)
+  Endpoint: out[25] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in1[25] (in)                           117.88     117.88 f
+  U1153/s (fulladder)                    259.48     377.36 r
+  U1154/op (nand2_1)                      87.16     464.51 f
+  U1155/op (nand4_1)                     207.93     672.44 r
+  out[25] (out)                            0.00     672.44 r
+  data arrival time                                 672.44
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[5] (input port)
+  Endpoint: out[5] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[5] (in)                             98.70      98.70 r
+  U2018/op (nor2_1)                       84.54     183.24 f
+  U2019/op (nor2_1)                       83.06     266.30 r
+  U2022/op (not_ab_or_c_or_d)            105.96     372.26 f
+  U2026/op (nand3_1)                      61.42     433.68 r
+  U2027/op (or4_1)                       241.09     674.77 r
+  out[5] (out)                             0.00     674.77 r
+  data arrival time                                 674.77
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[17] (input port)
+  Endpoint: out[17] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[17] (in)                            68.31      68.31 r
+  U1405/op (inv_1)                        57.88     126.19 f
+  U1409/op (nor3_1)                      142.69     268.87 r
+  U1416/op (nor4_1)                      193.34     462.22 f
+  U1432/op (nand4_1)                     213.83     676.05 r
+  out[17] (out)                            0.00     676.05 r
+  data arrival time                                 676.05
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[18] (input port)
+  Endpoint: out[18] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[18] (in)                           140.13     140.13 r
+  U2048/op (nor2_1)                       93.24     233.37 f
+  U2049/op (nor2_1)                       84.14     317.51 r
+  U2053/op (or4_1)                        82.72     400.23 r
+  U2054/op (not_ab_or_c_or_d)             86.27     486.50 f
+  U2058/op (nand2_1)                     191.44     677.94 r
+  out[18] (out)                            0.00     677.94 r
+  data arrival time                                 677.94
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[1] (input port)
+  Endpoint: out[1] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[1] (in)                            139.07     139.07 r
+  U1145/op (inv_1)                       120.91     259.98 f
+  U1762/op (nand2_1)                      68.13     328.10 r
+  U1768/op (not_ab_or_c_or_d)            139.88     467.98 f
+  U1794/op (nand4_1)                     216.63     684.61 r
+  out[1] (out)                             0.00     684.61 r
+  data arrival time                                 684.61
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[4] (input port)
+  Endpoint: out[4] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[4] (in)                            126.63     126.63 r
+  U1726/s (fulladder)                    263.23     389.85 r
+  U1727/op (nand2_1)                      86.64     476.50 f
+  U1729/op (nand4_1)                     213.61     690.11 r
+  out[4] (out)                             0.00     690.11 r
+  data arrival time                                 690.11
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[19] (input port)
+  Endpoint: out[19] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[19] (in)                           112.61     112.61 r
+  U1372/op (nor2_1)                       87.32     199.93 f
+  U1373/op (nor2_1)                       83.64     283.56 r
+  U1390/op (nor4_1)                      190.84     474.40 f
+  U1403/op (nand4_1)                     216.44     690.84 r
+  out[19] (out)                            0.00     690.84 r
+  data arrival time                                 690.84
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[30] (input port)
+  Endpoint: out[30] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in1[30] (in)                           127.94     127.94 f
+  U2148/s (fulladder)                    263.78     391.72 r
+  U962/op (nand2_1)                       86.35     478.07 f
+  U1013/op (nand4_1)                     213.51     691.57 r
+  out[30] (out)                            0.00     691.57 r
+  data arrival time                                 691.57
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[15] (input port)
+  Endpoint: out[15] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[15] (in)                           127.91     127.91 r
+  U1482/s (fulladder)                    263.78     391.69 r
+  U1483/op (nand2_1)                      86.66     478.34 f
+  U1491/op (nand4_1)                     213.62     691.96 r
+  out[15] (out)                            0.00     691.96 r
+  data arrival time                                 691.96
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[31] (input port)
+  Endpoint: out[13] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[31] (in)                           141.41     141.41 r
+  U1283/op (mux2_1)                      179.90     321.31 r
+  U1510/op (not_ab_or_c_or_d)            159.63     480.95 f
+  U1516/op (nand4_1)                     211.04     691.99 r
+  out[13] (out)                            0.00     691.99 r
+  data arrival time                                 691.99
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[27] (input port)
+  Endpoint: out[27] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[27] (in)                           141.04     141.04 r
+  U2093/op (nor2_1)                       93.43     234.48 f
+  U2094/op (nor2_1)                       82.76     317.23 r
+  U2097/op (or4_1)                        90.91     408.15 r
+  U2098/op (not_ab_or_c_or_d)             87.21     495.36 f
+  U2101/op (nand3_1)                     202.29     697.65 r
+  out[27] (out)                            0.00     697.65 r
+  data arrival time                                 697.65
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[13] (input port)
+  Endpoint: out[13] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in1[13] (in)                           137.52     137.52 f
+  U1514/s (fulladder)                    267.88     405.40 r
+  U1515/op (nand2_1)                      87.79     493.19 f
+  U1516/op (nand4_1)                     208.15     701.34 r
+  out[13] (out)                            0.00     701.34 r
+  data arrival time                                 701.34
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[31] (input port)
+  Endpoint: out[28] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[31] (in)                           141.41     141.41 r
+  U2112/op (not_ab_or_c_or_d)            169.61     311.02 f
+  U2113/op (nor2_1)                       82.38     393.40 r
+  U2121/op (not_ab_or_c_or_d)            105.91     499.31 f
+  U2125/op (nand3_1)                     203.30     702.61 r
+  out[28] (out)                            0.00     702.61 r
+  data arrival time                                 702.61
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[1] (input port)
+  Endpoint: out[1] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[1] (in)                            139.07     139.07 r
+  U1792/s (fulladder)                    268.56     407.63 r
+  U1793/op (nand2_1)                      87.53     495.16 f
+  U1794/op (nand4_1)                     208.06     703.22 r
+  out[1] (out)                             0.00     703.22 r
+  data arrival time                                 703.22
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[3] (input port)
+  Endpoint: out[3] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[3] (in)                            154.21     154.21 r
+  U1772/op (inv_1)                       141.81     296.02 f
+  U2006/op (nand2_1)                      66.24     362.26 r
+  U2007/op (nand2_1)                      70.01     432.27 f
+  U2008/op (nand4_1)                      56.43     488.69 r
+  U2009/op (ab_or_c_or_d)                226.47     715.17 r
+  out[3] (out)                             0.00     715.17 r
+  data arrival time                                 715.17
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[30] (input port)
+  Endpoint: out[30] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[30] (in)                           156.45     156.45 r
+  U2148/s (fulladder)                    276.03     432.48 r
+  U962/op (nand2_1)                       86.35     518.82 f
+  U1013/op (nand4_1)                     213.51     732.33 r
+  out[30] (out)                            0.00     732.33 r
+  data arrival time                                 732.33
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[7] (input port)
+  Endpoint: out[3] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[7] (in)                            143.99     143.99 r
+  U1673/op (not_ab_or_c_or_d)            191.97     335.97 f
+  U1999/op (not_ab_or_c_or_d)            156.57     492.54 r
+  U2009/op (ab_or_c_or_d)                245.66     738.20 r
+  out[3] (out)                             0.00     738.20 r
+  data arrival time                                 738.20
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[30] (input port)
+  Endpoint: out[30] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in2[30] (in)                            81.90      81.90 r
+  U843/op (nor2_1)                        83.87     165.77 f
+  U848/op (nor2_1)                        85.47     251.24 r
+  U851/op (not_ab_or_c_or_d)             113.83     365.08 f
+  U912/op (and4_1)                       166.90     531.98 f
+  U1013/op (nand4_1)                     212.12     744.10 r
+  out[30] (out)                            0.00     744.10 r
+  data arrival time                                 744.10
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in2[14] (input port)
+  Endpoint: out[14] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in2[14] (in)                            43.16      43.16 f
+  U1825/op (inv_1)                        58.83     101.99 r
+  U2033/op (nor2_1)                       70.88     172.87 f
+  U2035/op (not_ab_or_c_or_d)            114.57     287.44 r
+  U2043/op (nand4_1)                     147.33     434.77 f
+  U2044/op (ab_or_c_or_d)                319.26     754.03 f
+  out[14] (out)                            0.00     754.03 f
+  data arrival time                                 754.03
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[2] (input port)
+  Endpoint: out[2] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in1[2] (in)                            126.28     126.28 f
+  U1730/s (fulladder)                    261.92     388.20 r
+  U1744/op (not_ab_or_c_or_d)            167.52     555.72 f
+  U1761/op (nand4_1)                     211.17     766.89 r
+  out[2] (out)                             0.00     766.89 r
+  data arrival time                                 766.89
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[1] (input port)
+  Endpoint: out[2] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in1[1] (in)                            139.07     139.07 r
+  U888/op (not_ab_or_c_or_d)             306.20     445.27 f
+  U1750/op (inv_1)                        49.95     495.22 r
+  U1751/op (nand2_1)                      64.70     559.91 f
+  U1761/op (nand4_1)                     207.39     767.31 r
+  out[2] (out)                             0.00     767.31 r
+  data arrival time                                 767.31
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: in1[3] (input port)
+  Endpoint: out[3] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in1[3] (in)                            126.08     126.08 f
+  U2003/s (fulladder)                    262.99     389.07 r
+  U2004/op (nand2_1)                      86.49     475.56 f
+  U2008/op (nand4_1)                      73.01     548.57 r
+  U2009/op (ab_or_c_or_d)                226.47     775.04 r
+  out[3] (out)                             0.00     775.04 r
+  data arrival time                                 775.04
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,31 @@
+Version 4.1
+Micron 1000
+LAYERS 24
+nodrc
+metal1
+metal2
+metal3
+metal4
+metal5
+metal6
+cc
+via
+via2
+via3
+via4
+via5
+nwell
+nactive
+pactive
+poly
+glass
+pad
+sblock
+text
+res_id
+cap_id
+metalcap
+VIAS 0
+SPECIALNETS
+0 0 1 gnd!
+0 0 1 vdd!

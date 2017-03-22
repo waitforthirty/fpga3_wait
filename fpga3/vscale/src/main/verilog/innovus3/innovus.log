@@ -1,0 +1,2546 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v15.20-p005_1, built Wed Nov 11 11:16:39 PST 2015
+Options:	
+Date:		Wed Mar 22 16:51:20 2017
+Host:		Orgrimmar (x86_64 w/Linux 2.6.32-504.3.3.el6.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E7-8893 v2 @ 3.40GHz 38400KB)
+OS:		CentOS release 6.6 (Final)
+
+License:
+		invs	Innovus Implementation System	15.2	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> set init_gnd_net gnd!
+<CMD> set init_lef_file ../Synopsys_Libraries/vtvt_tsmc180_lef/vtvt_tsmc180.lef
+<CMD> set init_verilog ../vscale_core.syn.v
+<CMD> set init_mmmc_file Default.view
+<CMD> set init_pwr_net vdd!
+<CMD> init_design
+
+Loading LEF file ../Synopsys_Libraries/vtvt_tsmc180_lef/vtvt_tsmc180.lef ...
+**WARN: (IMPLF-108):	There is no overlap layer defined in any LEF file
+so you are unable to create rectilinear partition in a hierarchical flow.
+Set DBUPerIGU to M2 pitch 810.
+
+viaInitial starts at Wed Mar 22 16:55:42 2017
+viaInitial ends at Wed Mar 22 16:55:42 2017
+Loading view definition file from Default.view
+Reading vtvt_tsmc180 timing library '/home/lgy/Desktop/lab1/lab1-waitforthirty/vscale/src/main/verilog/libs/vtvt_tsmc180.lib' ...
+Read 83 cells in library 'vtvt_tsmc180' 
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=1.33min, fe_real=4.37min, fe_mem=506.2M) ***
+*** Begin netlist parsing (mem=506.2M) ***
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'xor2_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'xor2_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'xor2_1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'xor2_1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'xnor2_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'xnor2_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'xnor2_1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'xnor2_1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or4_4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or4_4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or4_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or4_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or4_1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or4_1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or3_4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or3_4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or3_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or3_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or3_1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or3_1' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 83 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../vscale_core.syn.v'
+
+*** Memory Usage v#1 (Current mem = 513.293M, initial mem = 167.594M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=513.3M) ***
+Top level cell is vscale_core.
+Hooked 83 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell vscale_core ...
+*** Netlist is unique.
+** info: there are 85 modules.
+** info: there are 16647 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 542.797M, initial mem = 167.594M) ***
+Generated pitch 1.215 in metal6 is different from 1.62 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.07 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.03 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: constraint_rule
+    RC-Corner Name        : default_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/lgy/Desktop/lab1/lab1-waitforthirty/vscale/src/main/verilog/vscale_core.sdc' ...
+Current (total cpu=0:01:20, real=0:04:23, peak res=248.3M, current mem=649.8M)
+**WARN: (TCLCMD-1142):	Virtual clock 'clk' is being created with no source objects. (File /home/lgy/Desktop/lab1/lab1-waitforthirty/vscale/src/main/verilog/vscale_core.sdc, Line 416).
+
+INFO (CTE): Reading of timing constraints file /home/lgy/Desktop/lab1/lab1-waitforthirty/vscale/src/main/verilog/vscale_core.sdc completed, with 1 WARNING
+WARNING (CTE-25): Line: 11 of File /home/lgy/Desktop/lab1/lab1-waitforthirty/vscale/src/main/verilog/vscale_core.sdc : Skipped unsupported command: set_max_area
+
+
+WARNING (CTE-25): Line: 9 of File /home/lgy/Desktop/lab1/lab1-waitforthirty/vscale/src/main/verilog/vscale_core.sdc : Skipped unsupported command: set_units
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.3, real=0:00:00.0, peak res=264.1M, current mem=667.0M)
+Current (total cpu=0:01:21, real=0:04:23, peak res=264.1M, current mem=667.0M)
+Total number of combinational cells: 59
+Total number of sequential cells: 20
+Total number of tristate cells: 4
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: buf_2 buf_1 buf_4 cd_8
+Total number of usable buffers: 4
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: inv_2 inv_1 inv_4
+Total number of usable inverters: 3
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: cd_12 cd_16
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+WARNING   IMPEXT-2766          6  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          6  The via resistance between layers %s and...
+WARNING   IMPVL-159          166  Pin '%s' of cell '%s' is defined in LEF ...
+*** Message Summary: 179 warning(s), 0 error(s)
+
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 1 0.699981 10.0 10.0 10.0 10.0
+Snap core to left to manufacture grid: 9.9900.
+Snap core to bottom to manufacture grid: 9.9900.
+Snap core to right to manufacture grid: 9.9900.
+Snap core to top to manufacture grid: 9.9900.
+Generated pitch 1.215 in metal6 is different from 1.62 defined in technology file in preferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 1 0.699745 10.53 10.53 10.53 10.53
+Generated pitch 1.215 in metal6 is different from 1.62 defined in technology file in preferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 0.981793661497 0.699745 10.53 10.53 10.53 10.53
+Generated pitch 1.215 in metal6 is different from 1.62 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> clearGlobalNets
+<CMD> globalNetConnect vdd! -type pgpin -pin vdd! -inst * -module {}
+<CMD> globalNetConnect gnd! -type pgpin -pin gnd! -inst * -module {}
+Warning: net imem_hsize[2] is not connected to global special net.
+Warning: net imem_hsize[1] is not connected to global special net.
+Warning: net imem_hsize[0] is not connected to global special net.
+Warning: net imem_hburst[2] is not connected to global special net.
+Warning: net imem_hburst[1] is not connected to global special net.
+Warning: net imem_hburst[0] is not connected to global special net.
+Warning: net imem_hprot[3] is not connected to global special net.
+Warning: net imem_hprot[2] is not connected to global special net.
+Warning: net imem_hprot[1] is not connected to global special net.
+Warning: net imem_hprot[0] is not connected to global special net.
+Warning: net imem_htrans[1] is not connected to global special net.
+Warning: net imem_htrans[0] is not connected to global special net.
+Warning: net imem_hwdata[31] is not connected to global special net.
+Warning: net imem_hwdata[30] is not connected to global special net.
+Warning: net imem_hwdata[29] is not connected to global special net.
+Warning: net imem_hwdata[28] is not connected to global special net.
+Warning: net imem_hwdata[27] is not connected to global special net.
+Warning: net imem_hwdata[26] is not connected to global special net.
+Warning: net imem_hwdata[25] is not connected to global special net.
+Warning: net imem_hwdata[24] is not connected to global special net.
+Warning: net imem_hwdata[23] is not connected to global special net.
+Warning: net imem_hwdata[22] is not connected to global special net.
+Warning: net imem_hwdata[21] is not connected to global special net.
+Warning: net imem_hwdata[20] is not connected to global special net.
+Warning: net imem_hwdata[19] is not connected to global special net.
+Warning: net imem_hwdata[18] is not connected to global special net.
+Warning: net imem_hwdata[17] is not connected to global special net.
+Warning: net imem_hwdata[16] is not connected to global special net.
+Warning: net imem_hwdata[15] is not connected to global special net.
+Warning: net imem_hwdata[14] is not connected to global special net.
+Warning: net imem_hwdata[13] is not connected to global special net.
+Warning: net imem_hwdata[12] is not connected to global special net.
+Warning: net imem_hwdata[11] is not connected to global special net.
+Warning: net imem_hwdata[10] is not connected to global special net.
+Warning: net imem_hwdata[9] is not connected to global special net.
+Warning: net imem_hwdata[8] is not connected to global special net.
+Warning: net imem_hwdata[7] is not connected to global special net.
+Warning: net imem_hwdata[6] is not connected to global special net.
+Warning: net imem_hwdata[5] is not connected to global special net.
+Warning: net imem_hwdata[4] is not connected to global special net.
+Warning: net imem_hwdata[3] is not connected to global special net.
+Warning: net imem_hwdata[2] is not connected to global special net.
+Warning: net imem_hwdata[1] is not connected to global special net.
+Warning: net imem_hwdata[0] is not connected to global special net.
+Warning: net dmem_hsize[2] is not connected to global special net.
+Warning: net dmem_hburst[2] is not connected to global special net.
+Warning: net dmem_hburst[1] is not connected to global special net.
+Warning: net dmem_hburst[0] is not connected to global special net.
+Warning: net dmem_hprot[3] is not connected to global special net.
+Warning: net dmem_hprot[2] is not connected to global special net.
+Warning: net dmem_hprot[1] is not connected to global special net.
+Warning: net dmem_hprot[0] is not connected to global special net.
+Warning: net dmem_htrans[0] is not connected to global special net.
+Warning: net htif_pcr_resp_data[63] is not connected to global special net.
+Warning: net htif_pcr_resp_data[62] is not connected to global special net.
+Warning: net htif_pcr_resp_data[61] is not connected to global special net.
+Warning: net htif_pcr_resp_data[60] is not connected to global special net.
+Warning: net htif_pcr_resp_data[59] is not connected to global special net.
+Warning: net htif_pcr_resp_data[58] is not connected to global special net.
+Warning: net htif_pcr_resp_data[57] is not connected to global special net.
+Warning: net htif_pcr_resp_data[56] is not connected to global special net.
+Warning: net htif_pcr_resp_data[55] is not connected to global special net.
+Warning: net htif_pcr_resp_data[54] is not connected to global special net.
+Warning: net htif_pcr_resp_data[53] is not connected to global special net.
+Warning: net htif_pcr_resp_data[52] is not connected to global special net.
+Warning: net htif_pcr_resp_data[51] is not connected to global special net.
+Warning: net htif_pcr_resp_data[50] is not connected to global special net.
+Warning: net htif_pcr_resp_data[49] is not connected to global special net.
+Warning: net htif_pcr_resp_data[48] is not connected to global special net.
+Warning: net htif_pcr_resp_data[47] is not connected to global special net.
+Warning: net htif_pcr_resp_data[46] is not connected to global special net.
+Warning: net htif_pcr_resp_data[45] is not connected to global special net.
+Warning: net htif_pcr_resp_data[44] is not connected to global special net.
+Warning: net htif_pcr_resp_data[43] is not connected to global special net.
+Warning: net htif_pcr_resp_data[42] is not connected to global special net.
+Warning: net htif_pcr_resp_data[41] is not connected to global special net.
+Warning: net htif_pcr_resp_data[40] is not connected to global special net.
+Warning: net htif_pcr_resp_data[39] is not connected to global special net.
+Warning: net htif_pcr_resp_data[38] is not connected to global special net.
+Warning: net htif_pcr_resp_data[37] is not connected to global special net.
+Warning: net htif_pcr_resp_data[36] is not connected to global special net.
+Warning: net htif_pcr_resp_data[35] is not connected to global special net.
+Warning: net htif_pcr_resp_data[34] is not connected to global special net.
+Warning: net htif_pcr_resp_data[33] is not connected to global special net.
+Warning: net htif_pcr_resp_data[32] is not connected to global special net.
+Warning: net imem_hwrite is not connected to global special net.
+Warning: net imem_hmastlock is not connected to global special net.
+Warning: net dmem_hmastlock is not connected to global special net.
+Warning: net htif_ipi_req_valid is not connected to global special net.
+Warning: net htif_ipi_req_data is not connected to global special net.
+Warning: net htif_ipi_resp_ready is not connected to global special net.
+Warning: net htif_debug_stats_pcr is not connected to global special net.
+<CMD> set sprCreateIeRingNets {}
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingWidth 1.0
+<CMD> set sprCreateIeRingSpacing 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer metal6 -type core_rings -jog_distance 0.81 -threshold 0.81 -nets {gnd! vdd!} -follow core -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 0.45 -spacing {bottom 0.27 top 0.27 right 0.36 left 0.36} -offset 0.81
+
+The power planner created 8 wires.
+<CMD_INTERNAL> editPushUndo
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 921.7M) ***
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+**ERROR: (IMPSYT-16250):	Choose the pin list first.
+**ERROR: (IMPSYT-16269):	Need to specify 'space'.
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal6 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1 metal6 } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1 metal6 }
+*** Begin SPECIAL ROUTE on Wed Mar 22 17:03:45 2017 ***
+SPECIAL ROUTE ran on directory: /home/lgy/Desktop/lab1/lab1-waitforthirty/vscale/src/main/verilog/innovus3
+SPECIAL ROUTE ran on machine: Orgrimmar (Linux 2.6.32-504.3.3.el6.x86_64 Xeon 1.20Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "gnd! vdd!"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 6
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 6
+srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1520.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 12 layers, 6 routing layers, 0 overlap layer
+Read in 84 macros, 35 used
+Read in 35 components
+  35 core components: 35 unplaced, 0 placed, 0 fixed
+Read in 403 logical pins
+Read in 403 nets
+Read in 2 special nets, 2 routed
+Read in 70 terminals
+2 nets selected.
+
+Begin power routing ...
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect before power routing.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect after power routing.
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 208
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 104
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1526.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 12 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Wed Mar 22 17:03:45 2017
+The viaGen is rebuilding shadow vias for net gnd!.
+sroute post-processing ends at Wed Mar 22 17:03:45 2017
+
+sroute post-processing starts at Wed Mar 22 17:03:45 2017
+The viaGen is rebuilding shadow vias for net vdd!.
+sroute post-processing ends at Wed Mar 22 17:03:45 2017
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 6.30 megs
+sroute: Total Peak Memory used = 931.00 megs
+<CMD> setMultiCpuUsage -localCpu 16 -cpuPerRemoteHost 1 -remoteHost 0 -keepLicense true
+Setting releaseMultiCpuLicenseMode to false.
+<CMD> setDistributeHost -local
+The timeout for a remote job to respond is 30 seconds.
+Submit command for task runs will be: local
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign
+*** Starting placeDesign default flow ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Total CPU(s) requested: 16
+Total CPU(s) enabled with current License(s): 8
+Current free CPU(s): 8
+Additional license(s) checked out: 1 Innovus_CPU_Opt license(s) for 8 CPU(s)
+Total CPU(s) now enabled: 16
+Multithreaded Timing Analysis is initialized with 16 threads
+
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+Effort level <high> specified for reg2reg_tmp.58257 path_group
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: vscale_core
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+siFlow : Timing analysis mode is single, using late cdB files
+End delay calculation. (MEM=2292.5 CPU=0:00:02.4 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:02.8  real=0:00:00.0  mem= 2292.5M) ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+Updating netlist
+
+*summary: 105 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.4) ***
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Deleted 0 physical inst  (cell - / prefix -).
+*** Starting "NanoPlace(TM) placement v#2 (mem=2284.5M)" ...
+**WARN: (IMPTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation. You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound true'.
+Type 'man IMPTS-403' for more detail.
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:00.0 mem=2284.4M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:00.0 mem=2284.4M) ***
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+**WARN: (IMPSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored.
+Define the scan chains before using this option.
+Type 'man IMPSP-9042' for more detail.
+#std cell=16548 (0 fixed + 16548 movable) #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=16712 #term=53582 #term/net=3.21, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=275
+stdCell: 16548 single + 0 double + 0 multi
+Total standard cell length = 87.0888 (mm), area = 0.9876 (mm^2)
+Estimated cell power/ground rail width = 2.303 um
+Average module density = 0.697.
+Density for the design = 0.697.
+       = stdcell_area 107517 sites (987587 um^2) / alloc_area 154294 sites (1417252 um^2).
+Pin Density = 0.3473.
+            = total # of pins 53582 / total area 154294.
+Enabling multi-CPU acceleration with 16 CPU(s) for placement
+=== lastAutoLevel = 8 
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 6.747e-08 (1.16e-08 5.59e-08)
+              Est.  stn bbox = 7.013e-08 (1.22e-08 5.80e-08)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2395.3M
+Iteration  2: Total net bbox = 6.747e-08 (1.16e-08 5.59e-08)
+              Est.  stn bbox = 7.013e-08 (1.22e-08 5.80e-08)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2395.3M
+Iteration  3: Total net bbox = 1.212e+03 (7.19e+02 4.93e+02)
+              Est.  stn bbox = 1.526e+03 (9.03e+02 6.23e+02)
+              cpu = 0:00:01.6 real = 0:00:00.0 mem = 2395.3M
+Iteration  4: Total net bbox = 6.790e+05 (2.87e+05 3.92e+05)
+              Est.  stn bbox = 8.351e+05 (3.47e+05 4.88e+05)
+              cpu = 0:00:08.5 real = 0:00:01.0 mem = 2395.3M
+Iteration  5: Total net bbox = 8.983e+05 (5.20e+05 3.78e+05)
+              Est.  stn bbox = 1.097e+06 (6.09e+05 4.88e+05)
+              cpu = 0:00:08.7 real = 0:00:01.0 mem = 2395.3M
+Iteration  6: Total net bbox = 8.912e+05 (4.53e+05 4.38e+05)
+              Est.  stn bbox = 1.142e+06 (5.70e+05 5.72e+05)
+              cpu = 0:00:11.9 real = 0:00:01.0 mem = 2425.3M
+Iteration  7: Total net bbox = 9.967e+05 (5.09e+05 4.88e+05)
+              Est.  stn bbox = 1.248e+06 (6.26e+05 6.23e+05)
+              cpu = 0:00:03.8 real = 0:00:01.0 mem = 2425.3M
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+Iteration  8: Total net bbox = 9.967e+05 (5.09e+05 4.88e+05)
+              Est.  stn bbox = 1.248e+06 (6.26e+05 6.23e+05)
+              cpu = 0:00:04.4 real = 0:00:02.0 mem = 2425.3M
+Iteration  9: Total net bbox = 9.931e+05 (5.07e+05 4.86e+05)
+              Est.  stn bbox = 1.250e+06 (6.26e+05 6.23e+05)
+              cpu = 0:00:12.4 real = 0:00:02.0 mem = 2425.5M
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+Iteration 10: Total net bbox = 9.931e+05 (5.07e+05 4.86e+05)
+              Est.  stn bbox = 1.250e+06 (6.26e+05 6.23e+05)
+              cpu = 0:00:04.5 real = 0:00:03.0 mem = 2425.5M
+Iteration 11: Total net bbox = 1.027e+06 (5.15e+05 5.12e+05)
+              Est.  stn bbox = 1.281e+06 (6.35e+05 6.46e+05)
+              cpu = 0:00:27.7 real = 0:00:04.0 mem = 2425.5M
+Iteration 12: Total net bbox = 1.027e+06 (5.15e+05 5.12e+05)
+              Est.  stn bbox = 1.281e+06 (6.35e+05 6.46e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2425.5M
+Iteration 13: Total net bbox = 1.027e+06 (5.15e+05 5.12e+05)
+              Est.  stn bbox = 1.281e+06 (6.35e+05 6.46e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2425.5M
+*** cost = 1.027e+06 (5.15e+05 5.12e+05) (cpu for global=0:01:25) real=0:00:18.0***
+Placement multithread real runtime: 0:00:18.0 with 16 threads.
+Info: 0 clock gating cells identified, 0 (on average) moved
+Core Placement runtime cpu: 0:01:14 real: 0:00:12.0
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:03:21 mem=1464.9M) ***
+Total net length = 1.028e+06 (5.155e+05 5.125e+05) (ext = 8.082e+04)
+Density distribution unevenness ratio = 3.241%
+Move report: Detail placement moves 16548 insts, mean move: 5.85 um, max move: 49.96 um
+	Max move on inst (U20849): (510.55, 513.84) --> (476.28, 498.15)
+	Runtime: CPU: 0:00:04.6 REAL: 0:00:02.0 MEM: 1547.5MB
+Summary Report:
+Instances move: 16548 (out of 16548 movable)
+Mean displacement: 5.85 um
+Max displacement: 49.96 um (Instance: U20849) (510.55, 513.843) -> (476.28, 498.15)
+	Length: 4 sites, height: 1 rows, site name: CoreSite, cell type: nand2_1
+Total net length = 1.016e+06 (4.998e+05 5.157e+05) (ext = 8.063e+04)
+Runtime: CPU: 0:00:04.6 REAL: 0:00:02.0 MEM: 1547.5MB
+*** Finished refinePlace (0:03:25 mem=1547.5M) ***
+Total net length = 1.015e+06 (4.984e+05 5.168e+05) (ext = 8.077e+04)
+*** End of Placement (cpu=0:01:32, real=0:00:21.0, mem=1547.5M) ***
+default core: bins with density >  0.75 = 8.26 % ( 10 / 121 )
+Density distribution unevenness ratio = 3.168%
+*** Free Virtual Timing Model ...(mem=1547.5M)
+Starting IO pin assignment...
+The design is not routed. Using flight-line based method for pin assignment.
+Completed IO pin assignment.
+congRepair running 16 threads
+Starting congestion repair ...
+[NR-eagl] buildTerm2TermWires    : 1
+[NR-eagl] doTrackAssignment      : 1
+[NR-eagl] numThreads             : 1
+[NR-eagl] honorMsvRouteConstraint: false
+[NR-eagl] honorClockSpecNDR      : 0
+[NR-eagl] minRouteLayer          : 2
+[NR-eagl] maxRouteLayer          : 2147483647
+[NR-eagl] numTracksPerClockWire  : 0
+[NR-eagl] Layer1 has no routable track
+[NR-eagl] Layer2 has single uniform track structure
+[NR-eagl] Layer3 has single uniform track structure
+[NR-eagl] Layer4 has single uniform track structure
+[NR-eagl] Layer5 has single uniform track structure
+[NR-eagl] Layer6 has single uniform track structure
+[NR-eagl] numViaLayers=5
+[NR-eagl] numRoutingBlks=0 numInstBlks=6146 numPGBlocks=220 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eagl] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eagl] Read numTotalNets=16712  numIgnoredNets=0
+[NR-eagl] EstWL : 108689
+
+[NR-eagl] Usage: 108689 = (52439 H, 56250 V) = (16.55% H, 17.75% V) = (5.947e+05um H, 6.379e+05um V)
+[NR-eagl] 
+[NR-eagl] Usage: 108689 = (52439 H, 56250 V) = (16.55% H, 17.75% V) = (5.947e+05um H, 6.379e+05um V)
+[NR-eagl] 
+[NR-eagl] earlyGlobalRoute overflow: 0.00% H + 0.00% V
+
+[NR-eagl] Usage: 108689 = (52439 H, 56250 V) = (16.55% H, 17.75% V) = (5.947e+05um H, 6.379e+05um V)
+[NR-eagl] 
+[NR-eagl] Usage: 108689 = (52439 H, 56250 V) = (16.55% H, 17.75% V) = (5.947e+05um H, 6.379e+05um V)
+[NR-eagl] 
+[NR-eagl] Usage: 108689 = (52439 H, 56250 V) = (16.55% H, 17.75% V) = (5.947e+05um H, 6.379e+05um V)
+[NR-eagl] 
+[NR-eagl] earlyGlobalRoute overflow: 0.00% H + 0.00% V
+
+[NR-eagl] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eagl] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+describeCongestion: hCong = 0.00 vCong = 0.00
+Skipped repairing congestion.
+[NR-eagl] Layer1(metal1)(F) length: 0.000000e+00um, number of vias: 53307
+[NR-eagl] Layer2(metal2)(V) length: 3.055352e+05um, number of vias: 73602
+[NR-eagl] Layer3(metal3)(H) length: 5.738866e+05um, number of vias: 11343
+[NR-eagl] Layer4(metal4)(V) length: 3.698727e+05um, number of vias: 626
+[NR-eagl] Layer5(metal5)(H) length: 5.493136e+04um, number of vias: 65
+[NR-eagl] Layer6(metal6)(V) length: 3.679020e+03um, number of vias: 0
+[NR-eagl] Total length: 1.307905e+06um, number of vias: 138943
+End of congRepair (cpu=0:00:00.3, real=0:00:00.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 1:36, real = 0: 0:23, mem = 1546.0M **
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPTS-403            1  Delay calculation was forced to extrapol...
+WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+WARNING   IMPSP-9042           1  Scan chains were not defined, -ignoreSca...
+*** Message Summary: 4 warning(s), 0 error(s)
+
+<CMD> createClockTreeSpec -bufferList {buf_1 buf_2 buf_4 cd_12 cd_16 cd_8 inv_1 inv_2 inv_4} -file Clock.ctstch
+**WARN: (IMPCK-1100):	Command createClockTreeSpec is no longer supported when CTS engine is not ck. You can use command setCTSMode with option -engine to set CTS engine.
+Checking spec file integrity...
+
+******* createClockTreeSpec begin *******
+Options:  -bufferList buf_1 buf_2 buf_4 cd_12 cd_16 cd_8 inv_1 inv_2 inv_4 -file Clock.ctstch 
+New Clock Spec Generation is ON.
+New CTE tracing is ON.
+Handle Multi Mode on mixed active views: constraint_rule.
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+*Info: set_clock_latency is not saved in CTS spec file file because IPO is in usefulSkew mode
+INFO: Include DontTouch Net from EDI DB.
+Total 0 clock roots are extracted.
+createClockTreeSpec invoking cleanupSpecifyClockTree
+**WARN: (IMPCK-8086):	The command specifyClockTree is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to a CCOpt-based flow.
+
+Reading clock tree spec file 'Clock.ctstch' ...
+
+Switching off Advanced RC Correlation modes in AAE mode.
+Active Analysis Views for CTS are,
+#1 constraint_rule
+Default Analysis Views is constraint_rule
+
+
+***** !! NOTE !! *****
+
+CTS treats D-pins and I/O pins as non-synchronous pins by default.
+If you want to change the behavior, you need to use the SetDPinAsSync
+or SetIoPinAsSync statement in the clock tree specification file,
+or use the setCTSMode -traceDPinAsLeaf {true|false} command,
+or use the setCTSMode -traceIoPinAsLeaf {true|false} command
+before specifyClockTree command.
+
+*** End specifyClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=1689.2M) ***
+*** End createClockTreeSpec (cpu=0:00:00.4, real=0:00:00.0, mem=1689.2M) ***
+<CMD> specifyClockTree -clkfile Clock.ctstch
+**WARN: (IMPTCM-77):	Option "-clkfile" for command specifyClockTree is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+**WARN: (IMPCK-8086):	The command specifyClockTree is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to a CCOpt-based flow.
+Checking spec file integrity...
+**WARN: (IMPCK-3217):	'specifyClockTree -clkfile' is obsolete. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use 'specifyClockTree -file'.
+
+Reading clock tree spec file 'Clock.ctstch' ...
+
+Switching off Advanced RC Correlation modes in AAE mode.
+Active Analysis Views for CTS are,
+#1 constraint_rule
+Default Analysis Views is constraint_rule
+
+
+***** !! NOTE !! *****
+
+CTS treats D-pins and I/O pins as non-synchronous pins by default.
+If you want to change the behavior, you need to use the SetDPinAsSync
+or SetIoPinAsSync statement in the clock tree specification file,
+or use the setCTSMode -traceDPinAsLeaf {true|false} command,
+or use the setCTSMode -traceIoPinAsLeaf {true|false} command
+before specifyClockTree command.
+
+*** End specifyClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=1689.2M) ***
+<CMD> setCTSMode -routeGuide true -routeClkNet true
+<CMD> clockDesign -outDir Clock_reports
+-engine auto                            # enums={ck ccopt auto ccopt_from_edi_spec}, default=auto
+**WARN: (IMPCK-9000):	Option -outDir is partially supported when setCTSMode -engine is not ck.
+(clockDesign): CCOpt Integration mode: native. CTS Engine: auto. Used Spec: pre-existing EDI-CTS spec.
+<clockDesign CMD> saveClockTreeSpec -file Clock_reports/vscale_core.ctstch
+Checking spec file integrity...
+Saving clock tree spec file 'Clock_reports/vscale_core.ctstch' ...
+<clockDesign CMD> ccopt_design -cts -ckSpec
+(ccopt_design): CTS Engine: auto. Used Spec: pre-existing EDI-CTS spec.
+setCTSMode -moveGateLimit 25 -routeClkNet true -routeGuide true
+**ERROR: (IMPCCOPT-2106):	-ckSpec is used in absence of specifyClockTree command.
+Preferred extra space for top nets is 0
+Preferred extra space for trunk nets is 1
+Preferred extra space for leaf nets is 1
+Creating clock tree spec for modes (timing configs): constraint_rule
+extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+Analyzing clock structure... 
+Analyzing clock structure done.
+Wrote: .58257.tornado.spec
+constraint_rule
+**ERROR: (IMPCCOPT-2102):	Cannot run ccopt_design because no clock trees have been defined. Use the create_ccopt_clock_tree command to define them.
+**ccopt_design ... cpu = 0:00:00, real = 0:00:00, mem = 1661.1M, totSessionCpu=0:03:32 **
+**ERROR: (IMPCK-9000):	
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+ERROR     IMPCK-9000           2  %s                                       
+ERROR     IMPCCOPT-2102        1  Cannot run ccopt_design because no clock...
+ERROR     IMPCCOPT-2106        1  -ckSpec is used in absence of specifyClo...
+*** Message Summary: 1 warning(s), 3 error(s)
+
+<CMD> setOptMode -simplifyNetlist false
+<CMD> clearClockDomains
+**WARN: (IMPSYC-6123):	The clearClockDomains command is obsolete - support for this command will 
+ be discontinued in a future release of the software. You should update your scripts to be 
+ compatible with the path group based flow - refer to the reset_path_group command. 
+ In this release, the clearClockDomains command will be translated to the equivalent commands 
+ for the path group flow.
+<CMD> optDesign -postCTS -outDir Clock_reports/PostCTS
+**INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+GigaOpt running with 16 threads.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 1667.1M, totSessionCpu=0:03:32 **
+Added -handlePreroute to trialRouteMode
+*** optDesign -postCTS ***
+DRC Margin: user margin 0.0; extra margin 0.2
+Hold Target Slack: user slack 0
+Setup Target Slack: user slack 0; extra slack 0.1
+setUsefulSkewMode -noEcoRoute
+No user sequential activity specified, applying default sequential activity of "0.2" for Dynamic Power reporting.
+'set_default_switching_activity' finished successfully.
+Multi-VT timing optimization disabled based on library information.
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1669.1M)
+Extraction called for design 'vscale_core' of instances=16548 and nets=16919 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design vscale_core.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 1669.137M)
+*info: There are 4 candidate Buffer cells
+*info: There are 3 candidate Inverter cells
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M2_M1' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M3_M2' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M4_M3' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M5_M4' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M6_M5' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+Compute RC Scale Done ...
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: vscale_core
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+Calculate delays in Single mode...
+End delay calculation. (MEM=2776.08 CPU=0:00:03.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:03.8  real=0:00:00.0  mem= 2776.1M) ***
+*** Done Building Timing Graph (cpu=0:00:04.3 real=0:00:00.0 totSessionCpu=0:03:38 mem=2776.1M)
+
+------------------------------------------------------------
+             Initial Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ constraint_rule 
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):| -5.927  |
+|           TNS (ns):|-289.899 |
+|    Violating Paths:|   64    |
+|          All Paths:|   64    |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |    223 (223)     |   -1.332   |    224 (224)     |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |     42 (42)      |    -167    |     42 (42)      |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 69.683%
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:06, real = 0:00:02, mem = 1895.4M, totSessionCpu=0:03:38 **
+** INFO : this run is activating low effort ccoptDesign flow
+*** Starting optimizing excluded clock nets MEM= 1915.4M) ***
+*info: There are no clock nets marked defIn, clock nets will not be optimized.
+*info: No excluded clock nets to be optimized.
+*** Finished optimizing excluded clock nets (CPU Time= 0:00:00.0  MEM= 1915.4M) ***
+*** Starting optimizing excluded clock nets MEM= 1915.4M) ***
+*info: There are no clock nets marked defIn, clock nets will not be optimized.
+*info: No excluded clock nets to be optimized.
+*** Finished optimizing excluded clock nets (CPU Time= 0:00:00.0  MEM= 1915.4M) ***
+Begin: GigaOpt DRV Optimization
+Info: 1 ideal net excluded from IPO operation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      max-tran     |      max-cap      |     max-fanout    |     max-length    |       |           |           |           |         |            |           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  WNS  |  #Buffer  | #Inverter |  #Resize  | Density |    Real    |    Mem    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|     0   |     0   |   258   |    258  |    42   |    42   |     0   |     0   | -5.93 |          0|          0|          0|  69.68  |            |           |
+|     0   |     0   |     3   |      3  |     0   |     0   |     0   |     0   | -5.66 |        509|          0|        242|  71.33  |   0:00:01.0|    3377.7M|
+|     0   |     0   |     1   |      1  |     0   |     0   |     0   |     0   | -5.66 |          2|          0|          1|  71.34  |   0:00:00.0|    3377.7M|
+|     0   |     0   |     1   |      1  |     0   |     0   |     0   |     0   | -5.66 |          0|          0|          0|  71.34  |   0:00:00.0|    3377.7M|
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+*** Finish DRV Fixing (cpu=0:00:10.1 real=0:00:02.0 mem=3377.7M) ***
+
+*** Starting refinePlace (0:03:50 mem=3375.7M) ***
+Total net length = 1.166e+06 (5.650e+05 6.014e+05) (ext = 7.872e+04)
+Density distribution unevenness ratio = 3.348%
+Density distribution unevenness ratio = 3.348%
+Move report: Detail placement moves 1806 insts, mean move: 1.88 um, max move: 17.01 um
+	Max move on inst (U12674): (601.02, 997.11) --> (595.35, 985.77)
+	Runtime: CPU: 0:00:00.7 REAL: 0:00:00.0 MEM: 3417.9MB
+Summary Report:
+Instances move: 1806 (out of 17059 movable)
+Mean displacement: 1.88 um
+Max displacement: 17.01 um (Instance: U12674) (601.02, 997.11) -> (595.35, 985.77)
+	Length: 4 sites, height: 1 rows, site name: CoreSite, cell type: nand2_1
+Total net length = 1.166e+06 (5.650e+05 6.014e+05) (ext = 7.872e+04)
+Runtime: CPU: 0:00:00.7 REAL: 0:00:00.0 MEM: 3417.9MB
+*** Finished refinePlace (0:03:50 mem=3417.9M) ***
+*** maximum move = 17.01 um ***
+*** Finished re-routing un-routed nets (3417.9M) ***
+
+*** Finish Physical Update (cpu=0:00:00.9 real=0:00:01.0 mem=3417.9M) ***
+End: GigaOpt DRV Optimization
+
+------------------------------------------------------------
+     Summary (cpu=0.20min real=0.05min mem=2032.6M)                             
+------------------------------------------------------------
+
+Setup views included:
+ constraint_rule 
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):| -5.656  |
+|           TNS (ns):|-273.742 |
+|    Violating Paths:|   64    |
+|          All Paths:|   64    |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      1 (1)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 71.340%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:19, real = 0:00:06, mem = 2032.6M, totSessionCpu=0:03:51 **
+
+Active setup views:
+ constraint_rule
+  Dominating endpoints: 0
+  Dominating TNS: -0.000
+
+*** Timing NOT met, worst failing slack is -5.656
+*** Check timing (0:00:00.0)
+Begin: GigaOpt Optimization in TNS mode
+Info: 1 ideal net excluded from IPO operation.
+*info: 2 special nets excluded.
+*info: 1 ideal net excluded from IPO operation.
+*info: 171 no-driver nets excluded.
+** GigaOpt Optimizer WNS Slack -5.656 TNS Slack -273.742 Density 71.34
+
+*** Finished Optimize Step Cumulative (cpu=0:00:00.0 real=0:00:00.0 mem=3413.9M) ***
+
+*** Finish post-CTS Setup Fixing (cpu=0:00:01.1 real=0:00:00.0 mem=3413.9M) ***
+
+End: GigaOpt Optimization in TNS mode
+
+------------------------------------------------------------
+     Summary (cpu=0.03min real=0.02min mem=2032.5M)                             
+------------------------------------------------------------
+
+Setup views included:
+ constraint_rule 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -5.656  |   N/A   | -5.656  |
+|           TNS (ns):|-273.742 |   N/A   |-273.742 |
+|    Violating Paths:|   64    |   N/A   |   64    |
+|          All Paths:|   64    |   N/A   |   64    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      1 (1)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 71.340%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:21, real = 0:00:07, mem = 2030.5M, totSessionCpu=0:03:53 **
+Begin: GigaOpt Optimization in WNS mode
+Info: 1 ideal net excluded from IPO operation.
+*info: 2 special nets excluded.
+*info: 1 ideal net excluded from IPO operation.
+*info: 171 no-driver nets excluded.
+** GigaOpt Optimizer WNS Slack -5.656 TNS Slack -273.742 Density 71.34
+Active Path Group: default 
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |  Worst View   |Pathgroup|                End Point                |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  -5.656|   -5.656|-273.742| -273.742|    71.34%|   0:00:00.0| 3411.9M|constraint_rule|  default| imem_haddr[23]                          |
+|  -5.345|   -5.345|-253.369| -253.369|    71.34%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -4.962|   -4.962|-228.844| -228.844|    71.34%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -4.646|   -4.646|-211.534| -211.534|    71.34%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -4.417|   -4.417|-201.703| -201.703|    71.35%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -4.348|   -4.348|-199.372| -199.372|    71.35%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -4.316|   -4.316|-191.191| -191.191|    71.36%|   0:00:01.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -4.243|   -4.243|-187.030| -187.030|    71.36%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -4.171|   -4.171|-182.216| -182.216|    71.36%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -4.084|   -4.084|-177.635| -177.635|    71.37%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -4.053|   -4.053|-174.764| -174.764|    71.39%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -4.004|   -4.004|-173.061| -173.061|    71.39%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -3.970|   -3.970|-172.020| -172.020|    71.39%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -3.927|   -3.927|-168.687| -168.687|    71.39%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -3.858|   -3.858|-167.441| -167.441|    71.39%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -3.818|   -3.818|-166.252| -166.252|    71.39%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[31]                          |
+|  -3.794|   -3.794|-166.014| -166.014|    71.40%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -3.721|   -3.721|-162.516| -162.516|    71.40%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[28]                          |
+|  -3.692|   -3.692|-161.966| -161.966|    71.40%|   0:00:01.0| 3432.7M|constraint_rule|  default| imem_haddr[29]                          |
+|  -3.655|   -3.655|-160.760| -160.760|    71.40%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[29]                          |
+|  -3.619|   -3.619|-159.651| -159.651|    71.40%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[29]                          |
+|  -3.493|   -3.493|-157.737| -157.737|    71.41%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[13]                          |
+|  -3.416|   -3.416|-155.342| -155.342|    71.41%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[13]                          |
+|  -3.353|   -3.353|-153.535| -153.535|    71.41%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[13]                          |
+|  -3.312|   -3.312|-152.870| -152.870|    71.41%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[17]                          |
+|  -3.257|   -3.257|-151.651| -151.651|    71.41%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[20]                          |
+|  -3.169|   -3.169|-148.337| -148.337|    71.41%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[17]                          |
+|  -3.106|   -3.106|-133.220| -133.220|    71.41%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -3.062|   -3.062|-131.367| -131.367|    71.41%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[17]                          |
+|  -3.040|   -3.040|-130.706| -130.706|    71.41%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[17]                          |
+|  -2.962|   -2.962|-128.145| -128.145|    71.41%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[17]                          |
+|  -2.918|   -2.918|-126.164| -126.164|    71.41%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.879|   -2.879|-125.055| -125.055|    71.41%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[17]                          |
+|  -2.825|   -2.825|-123.361| -123.361|    71.41%|   0:00:01.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.813|   -2.813|-122.889| -122.889|    71.41%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.793|   -2.793|-122.287| -122.287|    71.41%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.757|   -2.757|-121.146| -121.146|    71.41%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.732|   -2.732|-119.658| -119.658|    71.42%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.732|   -2.732|-115.536| -115.536|    71.42%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.712|   -2.712|-115.259| -115.259|    71.42%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.681|   -2.681|-114.331| -114.331|    71.42%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.652|   -2.652|-113.577| -113.577|    71.42%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.627|   -2.627|-112.707| -112.707|    71.42%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.608|   -2.608|-111.992| -111.992|    71.42%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.586|   -2.586|-108.451| -108.451|    71.43%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.562|   -2.562|-107.886| -107.886|    71.43%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.544|   -2.544|-106.840| -106.840|    71.43%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.519|   -2.519|-106.338| -106.338|    71.43%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.501|   -2.501|-105.637| -105.637|    71.43%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.482|   -2.482|-105.269| -105.269|    71.44%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[17]                          |
+|  -2.458|   -2.458|-102.379| -102.379|    71.44%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.429|   -2.429|-101.501| -101.501|    71.45%|   0:00:01.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.410|   -2.410| -99.544|  -99.544|    71.45%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.333|   -2.333| -97.075|  -97.075|    71.46%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[27]                          |
+|  -2.303|   -2.303| -96.031|  -96.031|    71.49%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[27]                          |
+|  -2.280|   -2.280| -95.327|  -95.327|    71.50%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.251|   -2.251| -94.201|  -94.201|    71.50%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.239|   -2.239| -93.819|  -93.819|    71.51%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.219|   -2.219| -93.436|  -93.436|    71.51%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[17]                          |
+|  -2.188|   -2.188| -92.111|  -92.111|    71.51%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[27]                          |
+|  -2.169|   -2.169| -90.656|  -90.656|    71.52%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.151|   -2.151| -90.167|  -90.167|    71.52%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.130|   -2.130| -89.264|  -89.264|    71.53%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.111|   -2.111| -88.599|  -88.599|    71.54%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.096|   -2.096| -88.146|  -88.146|    71.54%|   0:00:01.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.083|   -2.083| -87.343|  -87.343|    71.55%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.044|   -2.044| -85.666|  -85.666|    71.56%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.033|   -2.033| -85.019|  -85.019|    71.57%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.028|   -2.028| -85.785|  -85.785|    71.58%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -2.008|   -2.008| -85.489|  -85.489|    71.60%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.991|   -1.991| -84.779|  -84.779|    71.60%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.963|   -1.963| -83.425|  -83.425|    71.61%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.952|   -1.952| -82.852|  -82.852|    71.61%|   0:00:00.0| 3432.7M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.933|   -1.933| -82.229|  -82.229|    71.62%|   0:00:00.0| 3451.8M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.902|   -1.902| -82.682|  -82.682|    71.65%|   0:00:00.0| 3451.8M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.888|   -1.888| -81.826|  -81.826|    71.66%|   0:00:01.0| 3451.8M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.855|   -1.855| -78.750|  -78.750|    71.67%|   0:00:00.0| 3451.8M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.839|   -1.839| -78.729|  -78.729|    71.71%|   0:00:00.0| 3451.8M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.831|   -1.831| -77.684|  -77.684|    71.73%|   0:00:00.0| 3451.8M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.810|   -1.810| -77.167|  -77.167|    71.74%|   0:00:00.0| 3451.8M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.790|   -1.790| -76.729|  -76.729|    71.77%|   0:00:00.0| 3451.8M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.780|   -1.780| -75.064|  -75.064|    71.81%|   0:00:00.0| 3451.8M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.762|   -1.762| -74.396|  -74.396|    71.82%|   0:00:00.0| 3451.8M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.734|   -1.734| -71.936|  -71.936|    71.85%|   0:00:00.0| 3451.8M|constraint_rule|  default| imem_haddr[17]                          |
+|  -1.725|   -1.725| -71.799|  -71.799|    71.89%|   0:00:00.0| 3451.8M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.709|   -1.709| -67.900|  -67.900|    71.90%|   0:00:01.0| 3471.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.695|   -1.695| -67.464|  -67.464|    71.91%|   0:00:00.0| 3471.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.683|   -1.683| -69.094|  -69.094|    71.94%|   0:00:00.0| 3471.0M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.675|   -1.675| -68.495|  -68.495|    71.94%|   0:00:00.0| 3471.0M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.660|   -1.660| -67.660|  -67.660|    71.97%|   0:00:01.0| 3490.1M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.649|   -1.649| -67.308|  -67.308|    71.98%|   0:00:00.0| 3490.1M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.640|   -1.640| -66.809|  -66.809|    72.01%|   0:00:00.0| 3490.1M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.621|   -1.621| -65.972|  -65.972|    72.01%|   0:00:00.0| 3490.1M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.610|   -1.610| -65.549|  -65.549|    72.01%|   0:00:00.0| 3490.1M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.586|   -1.586| -64.979|  -64.979|    72.04%|   0:00:00.0| 3490.1M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.566|   -1.566| -64.514|  -64.514|    72.05%|   0:00:00.0| 3490.1M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.558|   -1.558| -64.561|  -64.561|    72.06%|   0:00:00.0| 3490.1M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.549|   -1.549| -64.219|  -64.219|    72.07%|   0:00:00.0| 3490.1M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.528|   -1.528| -63.760|  -63.760|    72.07%|   0:00:01.0| 3490.1M|constraint_rule|  default| imem_haddr[23]                          |
+|  -1.513|   -1.513| -63.056|  -63.056|    72.10%|   0:00:00.0| 3490.1M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.506|   -1.506| -63.126|  -63.126|    72.12%|   0:00:00.0| 3490.1M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.498|   -1.498| -62.762|  -62.762|    72.14%|   0:00:00.0| 3490.1M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.488|   -1.488| -62.226|  -62.226|    72.16%|   0:00:00.0| 3490.1M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.473|   -1.473| -61.407|  -61.407|    72.16%|   0:00:01.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.447|   -1.447| -57.670|  -57.670|    72.13%|   0:00:00.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.408|   -1.408| -56.709|  -56.709|    72.13%|   0:00:00.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.372|   -1.372| -55.588|  -55.588|    72.15%|   0:00:00.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.349|   -1.349| -55.414|  -55.414|    72.21%|   0:00:00.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.329|   -1.329| -55.898|  -55.898|    72.25%|   0:00:00.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.321|   -1.321| -55.574|  -55.574|    72.31%|   0:00:01.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.302|   -1.302| -54.789|  -54.789|    72.33%|   0:00:00.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.286|   -1.286| -53.432|  -53.432|    72.37%|   0:00:00.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.265|   -1.265| -52.739|  -52.739|    72.40%|   0:00:01.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+Set minLayer = 5 on net FE_RN_8 and NDR default
+Set minLayer = 5 on net FE_RN_9 and NDR default
+|  -1.236|   -1.236| -50.738|  -50.738|    72.41%|   0:00:00.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.194|   -1.194| -47.411|  -47.411|    72.42%|   0:00:00.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.191|   -1.191| -47.372|  -47.372|    72.44%|   0:00:00.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.172|   -1.172| -46.790|  -46.790|    72.44%|   0:00:00.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.154|   -1.154| -45.560|  -45.560|    72.45%|   0:00:01.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.142|   -1.142| -45.375|  -45.375|    72.48%|   0:00:00.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.121|   -1.121| -44.399|  -44.399|    72.50%|   0:00:00.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.113|   -1.113| -43.987|  -43.987|    72.53%|   0:00:01.0| 3509.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.101|   -1.101| -43.550|  -43.550|    72.55%|   0:00:00.0| 3502.1M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.092|   -1.092| -43.573|  -43.573|    72.58%|   0:00:01.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.057|   -1.057| -43.519|  -43.519|    72.60%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -1.036|   -1.036| -42.920|  -42.920|    72.63%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[13]                          |
+|  -1.025|   -1.025| -42.030|  -42.030|    72.68%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[31]                          |
+|  -1.000|   -1.000| -41.245|  -41.245|    72.69%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.978|   -0.978| -40.682|  -40.682|    72.70%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.957|   -0.957| -40.180|  -40.180|    72.71%|   0:00:01.0| 3521.2M|constraint_rule|  default| dmem_haddr[23]                          |
+|  -0.940|   -0.940| -38.857|  -38.857|    72.73%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.927|   -0.927| -38.391|  -38.391|    72.74%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.909|   -0.909| -37.438|  -37.438|    72.76%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.903|   -0.903| -37.371|  -37.371|    72.78%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.893|   -0.893| -36.913|  -36.913|    72.81%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.887|   -0.887| -36.772|  -36.772|    72.82%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.884|   -0.884| -36.700|  -36.700|    72.82%|   0:00:01.0| 3521.2M|constraint_rule|  default| imem_haddr[13]                          |
+Set minLayer = 5 on net FE_RN_18 and NDR default
+|  -0.878|   -0.878| -36.076|  -36.076|    72.82%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+Set minLayer = 5 on net FE_RN_19 and NDR default
+|  -0.868|   -0.868| -35.879|  -35.879|    72.84%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.858|   -0.858| -35.645|  -35.645|    72.85%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.852|   -0.852| -33.929|  -33.929|    72.89%|   0:00:01.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.840|   -0.840| -33.679|  -33.679|    72.90%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.835|   -0.835| -33.592|  -33.592|    72.94%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.820|   -0.820| -33.218|  -33.218|    72.95%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.812|   -0.812| -32.670|  -32.670|    72.99%|   0:00:01.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.801|   -0.801| -32.604|  -32.604|    73.00%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[27]                          |
+|  -0.791|   -0.791| -31.864|  -31.864|    73.03%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.785|   -0.785| -31.708|  -31.708|    73.05%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.783|   -0.783| -31.573|  -31.573|    73.07%|   0:00:01.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.772|   -0.772| -31.087|  -31.087|    73.09%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.769|   -0.769| -30.835|  -30.835|    73.09%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.762|   -0.762| -30.717|  -30.717|    73.09%|   0:00:00.0| 3521.2M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.754|   -0.754| -30.375|  -30.375|    73.11%|   0:00:01.0| 3502.0M|constraint_rule|  default| imem_haddr[30]                          |
+|  -0.754|   -0.754| -30.424|  -30.424|    73.11%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[30]                          |
+|  -0.748|   -0.748| -30.242|  -30.242|    73.12%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[23]                          |
+Set minLayer = 5 on net FE_RN_23 and NDR default
+|  -0.738|   -0.738| -30.253|  -30.253|    73.13%|   0:00:01.0| 3502.0M|constraint_rule|  default| imem_haddr[30]                          |
+|  -0.732|   -0.732| -30.086|  -30.086|    73.15%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.722|   -0.722| -30.113|  -30.113|    73.16%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+Set minLayer = 5 on net FE_RN_26 and NDR default
+|  -0.727|   -0.727| -26.203|  -26.203|    73.23%|   0:00:01.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.725|   -0.725| -25.561|  -25.561|    73.25%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.721|   -0.721| -25.441|  -25.441|    73.26%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.707|   -0.707| -25.191|  -25.191|    73.26%|   0:00:01.0| 3502.0M|constraint_rule|  default| imem_haddr[27]                          |
+|  -0.699|   -0.699| -24.948|  -24.948|    73.27%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.689|   -0.689| -24.666|  -24.666|    73.29%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.683|   -0.683| -25.147|  -25.147|    73.30%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[23]                          |
+Set minLayer = 5 on net FE_RN_43 and NDR default
+|  -0.683|   -0.683| -25.274|  -25.274|    73.34%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.679|   -0.679| -25.263|  -25.263|    73.35%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.678|   -0.678| -25.194|  -25.194|    73.37%|   0:00:01.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.676|   -0.676| -25.037|  -25.037|    73.38%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.670|   -0.670| -24.668|  -24.668|    73.39%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.659|   -0.659| -24.340|  -24.340|    73.41%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.659|   -0.659| -24.433|  -24.433|    73.41%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.655|   -0.655| -24.309|  -24.309|    73.43%|   0:00:01.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.654|   -0.654| -24.371|  -24.371|    73.45%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.653|   -0.653| -24.333|  -24.333|    73.46%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+Set minLayer = 5 on net FE_RN_77 and NDR default
+|  -0.656|   -0.656| -24.194|  -24.194|    73.46%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.655|   -0.655| -24.209|  -24.209|    73.46%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.649|   -0.649| -24.060|  -24.060|    73.47%|   0:00:01.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.644|   -0.644| -24.062|  -24.062|    73.50%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+Set minLayer = 5 on net FE_RN_95 and NDR default
+|  -0.647|   -0.647| -23.393|  -23.393|    73.58%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.643|   -0.643| -23.420|  -23.420|    73.65%|   0:00:01.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.634|   -0.634| -23.101|  -23.101|    73.66%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.630|   -0.630| -22.889|  -22.889|    73.68%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.626|   -0.626| -22.844|  -22.844|    73.69%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.631|   -0.631| -22.770|  -22.770|    73.70%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.623|   -0.623| -22.543|  -22.543|    73.70%|   0:00:00.0| 3502.0M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.623|   -0.623| -22.320|  -22.320|    73.73%|   0:00:01.0| 3521.1M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.631|   -0.631| -22.622|  -22.622|    73.77%|   0:00:01.0| 3559.2M|constraint_rule|  default| imem_haddr[29]                          |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:03:03 real=0:00:30.0 mem=3559.2M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:03:03 real=0:00:30.0 mem=3559.2M) ***
+** GigaOpt Optimizer WNS Slack -0.631 TNS Slack -22.622 Density 73.77
+Begin: Area Reclaim Optimization
+Reclaim Optimization WNS Slack -0.631  TNS Slack -22.622 Density 73.77
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    73.77%|        -|  -0.631| -22.622|   0:00:00.0| 3559.2M|
+|    73.67%|       26|  -0.628| -22.476|   0:00:00.0| 3559.2M|
+|    73.61%|       97|  -0.630| -22.059|   0:00:01.0| 3559.2M|
+|    73.61%|        0|  -0.630| -22.059|   0:00:00.0| 3559.2M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack -0.630  TNS Slack -22.059 Density 73.61
+** Finished Core Area Reclaim Optimization (cpu = 0:00:03.8) (real = 0:00:01.0) **
+*** Finished Area Reclaim Optimization (cpu=0:00:04, real=0:00:01, mem=3508.19M, totSessionCpu=0:07:00).
+*** Starting refinePlace (0:07:00 mem=3524.2M) ***
+Total net length = 1.213e+06 (5.913e+05 6.215e+05) (ext = 7.589e+04)
+Density distribution unevenness ratio = 3.392%
+Density distribution unevenness ratio = 3.392%
+Move report: Detail placement moves 2418 insts, mean move: 3.67 um, max move: 25.11 um
+	Max move on inst (FE_OCPC1036_FE_RN_12): (615.60, 498.15) --> (629.37, 509.49)
+	Runtime: CPU: 0:00:00.6 REAL: 0:00:00.0 MEM: 3599.4MB
+Summary Report:
+Instances move: 2418 (out of 17599 movable)
+Mean displacement: 3.67 um
+Max displacement: 25.11 um (Instance: FE_OCPC1036_FE_RN_12) (615.6, 498.15) -> (629.37, 509.49)
+	Length: 3 sites, height: 1 rows, site name: CoreSite, cell type: inv_2
+Total net length = 1.213e+06 (5.913e+05 6.215e+05) (ext = 7.589e+04)
+Runtime: CPU: 0:00:00.6 REAL: 0:00:00.0 MEM: 3599.4MB
+*** Finished refinePlace (0:07:00 mem=3599.4M) ***
+*** maximum move = 25.11 um ***
+*** Finished re-routing un-routed nets (3599.4M) ***
+
+*** Finish Physical Update (cpu=0:00:00.8 real=0:00:00.0 mem=3599.4M) ***
+** GigaOpt Optimizer WNS Slack -0.630 TNS Slack -22.059 Density 73.61
+Active Path Group: default 
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |  Worst View   |Pathgroup|                End Point                |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  -0.630|   -0.630| -22.059|  -22.059|    73.61%|   0:00:00.0| 3599.4M|constraint_rule|  default| imem_haddr[29]                          |
+Set minLayer = 5 on net FE_RN_112 and NDR default
+|  -0.624|   -0.624| -21.639|  -21.639|    73.66%|   0:00:01.0| 3618.5M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.601|   -0.601| -21.376|  -21.376|    73.67%|   0:00:00.0| 3618.5M|constraint_rule|  default| imem_haddr[29]                          |
+Set minLayer = 5 on net FE_RN_114 and NDR default
+|  -0.606|   -0.606| -21.299|  -21.299|    73.69%|   0:00:01.0| 3618.5M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.600|   -0.600| -20.794|  -20.794|    73.78%|   0:00:00.0| 3618.5M|constraint_rule|  default| imem_haddr[23]                          |
+Set minLayer = 5 on net FE_RN_118 and NDR default
+|  -0.580|   -0.580| -20.254|  -20.254|    73.83%|   0:00:01.0| 3618.5M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.576|   -0.576| -20.359|  -20.359|    73.84%|   0:00:00.0| 3618.5M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.567|   -0.567| -20.145|  -20.145|    73.86%|   0:00:00.0| 3618.5M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.558|   -0.558| -19.770|  -19.770|    73.87%|   0:00:00.0| 3618.5M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.549|   -0.549| -19.462|  -19.462|    73.91%|   0:00:00.0| 3618.5M|constraint_rule|  default| imem_haddr[29]                          |
+Set minLayer = 5 on net FE_RN_124 and NDR default
+|  -0.544|   -0.544| -19.298|  -19.298|    73.92%|   0:00:01.0| 3618.5M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.537|   -0.537| -19.111|  -19.111|    73.93%|   0:00:00.0| 3618.5M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.533|   -0.533| -19.007|  -19.007|    73.91%|   0:00:01.0| 3656.6M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.529|   -0.529| -19.144|  -19.144|    73.95%|   0:00:00.0| 3656.6M|constraint_rule|  default| dmem_haddr[29]                          |
+|  -0.523|   -0.523| -17.496|  -17.496|    73.97%|   0:00:00.0| 3656.6M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.519|   -0.519| -17.359|  -17.359|    74.02%|   0:00:00.0| 3656.6M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.513|   -0.513| -17.131|  -17.131|    74.04%|   0:00:00.0| 3656.6M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.509|   -0.509| -16.966|  -16.966|    74.06%|   0:00:01.0| 3656.6M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.509|   -0.509| -15.992|  -15.992|    74.26%|   0:00:01.0| 3656.6M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.509|   -0.509| -15.984|  -15.984|    74.26%|   0:00:00.0| 3656.6M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.508|   -0.508| -16.170|  -16.170|    74.35%|   0:00:00.0| 3656.6M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.507|   -0.507| -17.098|  -17.098|    74.43%|   0:00:00.0| 3656.6M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.503|   -0.503| -16.961|  -16.961|    74.43%|   0:00:00.0| 3656.6M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.503|   -0.503| -16.562|  -16.562|    74.59%|   0:00:01.0| 3656.6M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.503|   -0.503| -16.648|  -16.648|    74.70%|   0:00:00.0| 3656.6M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.503|   -0.503| -16.649|  -16.649|    74.70%|   0:00:01.0| 3656.6M|constraint_rule|  default| imem_haddr[23]                          |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:01:13 real=0:00:09.0 mem=3656.6M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:01:14 real=0:00:09.0 mem=3656.6M) ***
+** GigaOpt Optimizer WNS Slack -0.503 TNS Slack -16.649 Density 74.70
+Begin: Area Reclaim Optimization
+Reclaim Optimization WNS Slack -0.503  TNS Slack -16.649 Density 74.70
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    74.70%|        -|  -0.503| -16.649|   0:00:00.0| 3656.6M|
+|    74.65%|       19|  -0.503| -16.481|   0:00:00.0| 3656.6M|
+|    74.60%|       89|  -0.503| -16.402|   0:00:01.0| 3656.6M|
+|    74.60%|        0|  -0.503| -16.402|   0:00:00.0| 3656.6M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack -0.503  TNS Slack -16.402 Density 74.60
+** Finished Core Area Reclaim Optimization (cpu = 0:00:04.3) (real = 0:00:01.0) **
+*** Finished Area Reclaim Optimization (cpu=0:00:04, real=0:00:01, mem=3625.49M, totSessionCpu=0:08:18).
+*** Starting refinePlace (0:08:18 mem=3625.5M) ***
+Total net length = 1.245e+06 (6.102e+05 6.349e+05) (ext = 7.559e+04)
+Density distribution unevenness ratio = 3.554%
+Density distribution unevenness ratio = 3.366%
+Move report: Timing Driven Placement moves 1208 insts, mean move: 24.49 um, max move: 169.29 um
+	Max move on inst (U14795_dup): (1163.97, 214.65) --> (1074.06, 294.03)
+	Runtime: CPU: 0:00:01.8 REAL: 0:00:00.0 MEM: 3625.5MB
+Density distribution unevenness ratio = 3.366%
+Move report: Detail placement moves 2679 insts, mean move: 3.03 um, max move: 22.68 um
+	Max move on inst (U23966): (957.42, 373.41) --> (968.76, 384.75)
+	Runtime: CPU: 0:00:00.6 REAL: 0:00:01.0 MEM: 3661.5MB
+Summary Report:
+Instances move: 3168 (out of 17876 movable)
+Mean displacement: 11.53 um
+Max displacement: 170.10 um (Instance: U14795_dup) (1163.97, 214.65) -> (1073.25, 294.03)
+	Length: 6 sites, height: 1 rows, site name: CoreSite, cell type: nand2_4
+Total net length = 1.270e+06 (6.200e+05 6.495e+05) (ext = 7.598e+04)
+Runtime: CPU: 0:00:02.4 REAL: 0:00:01.0 MEM: 3661.5MB
+*** Finished refinePlace (0:08:21 mem=3661.5M) ***
+*** maximum move = 170.10 um ***
+*** Finished re-routing un-routed nets (3661.5M) ***
+
+*** Finish Physical Update (cpu=0:00:02.8 real=0:00:01.0 mem=3661.5M) ***
+** GigaOpt Optimizer WNS Slack -0.503 TNS Slack -16.429 Density 74.60
+Active Path Group: default 
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |  Worst View   |Pathgroup|                End Point                |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  -0.503|   -0.503| -16.429|  -16.429|    74.60%|   0:00:00.0| 3661.5M|constraint_rule|  default| imem_haddr[29]                          |
+Set minLayer = 5 on net FE_RN_174 and NDR default
+|  -0.460|   -0.460| -15.097|  -15.097|    74.65%|   0:00:01.0| 3680.6M|constraint_rule|  default| imem_haddr[23]                          |
+Set minLayer = 5 on net FE_RN_176 and NDR default
+|  -0.452|   -0.452| -14.785|  -14.785|    74.68%|   0:00:00.0| 3680.6M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.449|   -0.449| -14.767|  -14.767|    74.70%|   0:00:00.0| 3680.6M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.433|   -0.433| -14.587|  -14.587|    74.72%|   0:00:01.0| 3680.6M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.430|   -0.430| -14.104|  -14.104|    74.76%|   0:00:00.0| 3737.8M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.422|   -0.422| -14.062|  -14.062|    74.77%|   0:00:00.0| 3737.8M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.413|   -0.413| -13.514|  -13.514|    74.76%|   0:00:01.0| 3756.9M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.408|   -0.408| -13.393|  -13.393|    74.79%|   0:00:00.0| 3756.9M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.404|   -0.404| -13.198|  -13.198|    74.81%|   0:00:01.0| 3756.9M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.401|   -0.401| -12.008|  -12.008|    74.86%|   0:00:00.0| 3756.9M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.400|   -0.400| -12.243|  -12.243|    74.87%|   0:00:00.0| 3756.9M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.398|   -0.398| -12.626|  -12.626|    75.01%|   0:00:01.0| 3756.9M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.398|   -0.398| -12.620|  -12.620|    75.02%|   0:00:00.0| 3756.9M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.398|   -0.398| -12.604|  -12.604|    75.02%|   0:00:00.0| 3756.9M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.398|   -0.398| -12.600|  -12.600|    75.08%|   0:00:00.0| 3756.9M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.398|   -0.398| -12.594|  -12.594|    75.12%|   0:00:01.0| 3756.9M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.398|   -0.398| -12.576|  -12.576|    75.13%|   0:00:00.0| 3756.9M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.398|   -0.398| -12.575|  -12.575|    75.13%|   0:00:00.0| 3756.9M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.398|   -0.398| -12.552|  -12.552|    75.14%|   0:00:00.0| 3756.9M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.398|   -0.398| -12.552|  -12.552|    75.14%|   0:00:00.0| 3756.9M|constraint_rule|  default| imem_haddr[23]                          |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:01:01 real=0:00:06.0 mem=3756.9M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:01:01 real=0:00:06.0 mem=3756.9M) ***
+** GigaOpt Optimizer WNS Slack -0.398 TNS Slack -12.552 Density 75.14
+Begin: Area Reclaim Optimization
+Reclaim Optimization WNS Slack -0.398  TNS Slack -12.552 Density 75.14
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    75.14%|        -|  -0.398| -12.552|   0:00:00.0| 3756.9M|
+|    75.10%|       11|  -0.398| -12.552|   0:00:00.0| 3756.9M|
+|    75.07%|       63|  -0.398| -12.520|   0:00:00.0| 3756.9M|
+|    75.07%|        0|  -0.398| -12.520|   0:00:00.0| 3756.9M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack -0.398  TNS Slack -12.520 Density 75.07
+** Finished Core Area Reclaim Optimization (cpu = 0:00:03.7) (real = 0:00:01.0) **
+*** Finished Area Reclaim Optimization (cpu=0:00:04, real=0:00:01, mem=3696.46M, totSessionCpu=0:09:26).
+*** Starting refinePlace (0:09:26 mem=3696.5M) ***
+Total net length = 1.281e+06 (6.276e+05 6.532e+05) (ext = 7.634e+04)
+Density distribution unevenness ratio = 3.581%
+Density distribution unevenness ratio = 3.581%
+Move report: Detail placement moves 2025 insts, mean move: 2.72 um, max move: 27.54 um
+	Max move on inst (U12701): (659.34, 498.15) --> (675.54, 486.81)
+	Runtime: CPU: 0:00:00.6 REAL: 0:00:01.0 MEM: 3727.5MB
+Summary Report:
+Instances move: 2025 (out of 17991 movable)
+Mean displacement: 2.72 um
+Max displacement: 27.54 um (Instance: U12701) (659.34, 498.15) -> (675.54, 486.81)
+	Length: 5 sites, height: 1 rows, site name: CoreSite, cell type: nand3_1
+Total net length = 1.281e+06 (6.276e+05 6.532e+05) (ext = 7.634e+04)
+Runtime: CPU: 0:00:00.6 REAL: 0:00:01.0 MEM: 3727.5MB
+*** Finished refinePlace (0:09:27 mem=3727.5M) ***
+*** maximum move = 27.54 um ***
+*** Finished re-routing un-routed nets (3727.5M) ***
+
+*** Finish Physical Update (cpu=0:00:00.8 real=0:00:01.0 mem=3727.5M) ***
+** GigaOpt Optimizer WNS Slack -0.398 TNS Slack -12.531 Density 75.07
+Active Path Group: default 
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |  Worst View   |Pathgroup|                End Point                |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  -0.398|   -0.398| -12.531|  -12.531|    75.07%|   0:00:00.0| 3727.5M|constraint_rule|  default| imem_haddr[23]                          |
+|  -0.380|   -0.380| -11.826|  -11.826|    75.10%|   0:00:01.0| 3765.6M|constraint_rule|  default| imem_haddr[27]                          |
+|  -0.372|   -0.372| -11.517|  -11.517|    75.11%|   0:00:01.0| 3784.7M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.364|   -0.364| -11.156|  -11.156|    75.13%|   0:00:00.0| 3784.7M|constraint_rule|  default| imem_haddr[27]                          |
+|  -0.360|   -0.360| -11.048|  -11.048|    75.14%|   0:00:01.0| 3784.7M|constraint_rule|  default| imem_haddr[27]                          |
+|  -0.357|   -0.357| -11.024|  -11.024|    75.14%|   0:00:01.0| 3784.7M|constraint_rule|  default| imem_haddr[27]                          |
+|  -0.356|   -0.356| -10.939|  -10.939|    75.16%|   0:00:00.0| 3784.7M|constraint_rule|  default| imem_haddr[27]                          |
+|  -0.349|   -0.349|  -9.607|   -9.607|    75.23%|   0:00:02.0| 3822.9M|constraint_rule|  default| imem_haddr[27]                          |
+|  -0.349|   -0.349|  -9.717|   -9.717|    75.29%|   0:00:01.0| 3822.9M|constraint_rule|  default| imem_haddr[27]                          |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:01:20 real=0:00:07.0 mem=3822.9M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:01:20 real=0:00:07.0 mem=3822.9M) ***
+** GigaOpt Optimizer WNS Slack -0.349 TNS Slack -9.717 Density 75.29
+*** Starting refinePlace (0:10:47 mem=3822.9M) ***
+Total net length = 1.296e+06 (6.366e+05 6.593e+05) (ext = 7.632e+04)
+Density distribution unevenness ratio = 3.636%
+Density distribution unevenness ratio = 3.636%
+Move report: Detail placement moves 1803 insts, mean move: 2.23 um, max move: 18.63 um
+	Max move on inst (U11579): (562.14, 520.83) --> (554.85, 532.17)
+	Runtime: CPU: 0:00:00.5 REAL: 0:00:00.0 MEM: 3784.7MB
+Summary Report:
+Instances move: 1803 (out of 18046 movable)
+Mean displacement: 2.23 um
+Max displacement: 18.63 um (Instance: U11579) (562.14, 520.83) -> (554.85, 532.17)
+	Length: 8 sites, height: 1 rows, site name: CoreSite, cell type: mux2_2
+Total net length = 1.296e+06 (6.366e+05 6.593e+05) (ext = 7.632e+04)
+Runtime: CPU: 0:00:00.5 REAL: 0:00:00.0 MEM: 3784.7MB
+*** Finished refinePlace (0:10:47 mem=3784.7M) ***
+*** maximum move = 18.63 um ***
+*** Finished re-routing un-routed nets (3784.7M) ***
+
+*** Finish Physical Update (cpu=0:00:00.7 real=0:00:00.0 mem=3784.7M) ***
+** GigaOpt Optimizer WNS Slack -0.349 TNS Slack -9.717 Density 75.29
+Active Path Group: default 
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |  Worst View   |Pathgroup|                End Point                |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  -0.349|   -0.349|  -9.717|   -9.717|    75.29%|   0:00:00.0| 3784.7M|constraint_rule|  default| imem_haddr[27]                          |
+Set minLayer = 5 on net FE_RN_218 and NDR default
+Set minLayer = 5 on net FE_RN_220 and NDR default
+Set minLayer = 5 on net FE_RN_225 and NDR default
+|  -0.343|   -0.343|  -9.330|   -9.330|    75.40%|   0:00:05.0| 3841.9M|constraint_rule|  default| imem_haddr[27]                          |
+|  -0.343|   -0.343|  -9.330|   -9.330|    75.41%|   0:00:00.0| 3841.9M|constraint_rule|  default| imem_haddr[27]                          |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:00:55.7 real=0:00:05.0 mem=3841.9M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:00:55.7 real=0:00:05.0 mem=3841.9M) ***
+** GigaOpt Optimizer WNS Slack -0.343 TNS Slack -9.330 Density 75.41
+*** Starting refinePlace (0:11:43 mem=3841.9M) ***
+Total net length = 1.304e+06 (6.417e+05 6.620e+05) (ext = 7.639e+04)
+Density distribution unevenness ratio = 3.652%
+Density distribution unevenness ratio = 3.652%
+Move report: Detail placement moves 1147 insts, mean move: 1.71 um, max move: 14.58 um
+	Max move on inst (U12056): (564.57, 407.43) --> (561.33, 418.77)
+	Runtime: CPU: 0:00:00.5 REAL: 0:00:00.0 MEM: 3841.9MB
+Summary Report:
+Instances move: 1147 (out of 18073 movable)
+Mean displacement: 1.71 um
+Max displacement: 14.58 um (Instance: U12056) (564.57, 407.43) -> (561.33, 418.77)
+	Length: 3 sites, height: 1 rows, site name: CoreSite, cell type: inv_1
+Total net length = 1.304e+06 (6.417e+05 6.620e+05) (ext = 7.639e+04)
+Runtime: CPU: 0:00:00.5 REAL: 0:00:00.0 MEM: 3841.9MB
+*** Finished refinePlace (0:11:44 mem=3841.9M) ***
+*** maximum move = 14.58 um ***
+*** Finished re-routing un-routed nets (3841.9M) ***
+
+*** Finish Physical Update (cpu=0:00:00.8 real=0:00:00.0 mem=3841.9M) ***
+** GigaOpt Optimizer WNS Slack -0.343 TNS Slack -9.330 Density 75.41
+
+*** Finish post-CTS Setup Fixing (cpu=0:07:51 real=0:01:02 mem=3841.9M) ***
+
+End: GigaOpt Optimization in WNS mode
+
+------------------------------------------------------------
+     Summary (cpu=7.86min real=1.05min mem=2346.9M)                             
+------------------------------------------------------------
+
+Setup views included:
+ constraint_rule 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -0.343  |   N/A   | -0.343  |
+|           TNS (ns):| -9.330  |   N/A   | -9.330  |
+|    Violating Paths:|   48    |   N/A   |   48    |
+|          All Paths:|   64    |   N/A   |   64    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      4 (4)       |   -0.357   |      5 (5)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      4 (4)       |    -62     |      4 (4)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 75.405%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+**optDesign ... cpu = 0:08:12, real = 0:01:11, mem = 2340.9M, totSessionCpu=0:11:44 **
+Begin: GigaOpt Optimization in TNS mode
+Info: 1 ideal net excluded from IPO operation.
+*info: 2 special nets excluded.
+*info: 1 ideal net excluded from IPO operation.
+*info: 170 no-driver nets excluded.
+** GigaOpt Optimizer WNS Slack -0.343 TNS Slack -9.330 Density 75.41
+
+*** Finished Optimize Step Cumulative (cpu=0:00:00.0 real=0:00:00.0 mem=3722.2M) ***
+
+*** Finish post-CTS Setup Fixing (cpu=0:00:00.2 real=0:00:00.0 mem=3722.2M) ***
+
+End: GigaOpt Optimization in TNS mode
+
+------------------------------------------------------------
+     Summary (cpu=0.01min real=0.02min mem=2340.9M)                             
+------------------------------------------------------------
+
+Setup views included:
+ constraint_rule 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -0.343  |   N/A   | -0.343  |
+|           TNS (ns):| -9.330  |   N/A   | -9.330  |
+|    Violating Paths:|   48    |   N/A   |   48    |
+|          All Paths:|   64    |   N/A   |   64    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      4 (4)       |   -0.357   |      5 (5)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      4 (4)       |    -62     |      4 (4)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 75.405%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+**optDesign ... cpu = 0:08:13, real = 0:01:12, mem = 2340.9M, totSessionCpu=0:11:45 **
+Info: 1 ideal net excluded from IPO operation.
+Begin: Area Reclaim Optimization
+Reclaim Optimization WNS Slack -0.343  TNS Slack -9.330 Density 75.41
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    75.41%|        -|  -0.343|  -9.330|   0:00:00.0| 3756.8M|
+|    75.40%|        9|  -0.343|  -9.330|   0:00:00.0| 3758.6M|
+|    75.39%|        3|  -0.343|  -9.330|   0:00:00.0| 3758.6M|
+|    75.39%|        3|  -0.343|  -9.330|   0:00:01.0| 3758.6M|
+|    75.37%|        6|  -0.343|  -9.291|   0:00:00.0| 3758.6M|
+|    75.37%|       36|  -0.343|  -9.296|   0:00:00.0| 3758.6M|
+|    75.37%|        0|  -0.343|  -9.296|   0:00:00.0| 3758.6M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack -0.343  TNS Slack -9.296 Density 75.37
+** Finished Core Area Reclaim Optimization (cpu = 0:00:04.7) (real = 0:00:01.0) **
+*** Starting refinePlace (0:11:50 mem=3758.6M) ***
+Total net length = 1.305e+06 (6.428e+05 6.622e+05) (ext = 7.643e+04)
+Move report: Detail placement moves 10 insts, mean move: 6.24 um, max move: 22.68 um
+	Max move on inst (U17135): (1205.28, 781.65) --> (1205.28, 758.97)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 3758.6MB
+Summary Report:
+Instances move: 10 (out of 18051 movable)
+Mean displacement: 6.24 um
+Max displacement: 22.68 um (Instance: U17135) (1205.28, 781.65) -> (1205.28, 758.97)
+	Length: 4 sites, height: 1 rows, site name: CoreSite, cell type: nand2_1
+Total net length = 1.305e+06 (6.428e+05 6.622e+05) (ext = 7.643e+04)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 3758.6MB
+*** Finished refinePlace (0:11:50 mem=3758.6M) ***
+*** maximum move = 22.68 um ***
+*** Finished re-routing un-routed nets (3758.6M) ***
+
+*** Finish Physical Update (cpu=0:00:00.3 real=0:00:00.0 mem=3758.6M) ***
+*** Finished Area Reclaim Optimization (cpu=0:00:05, real=0:00:01, mem=2379.25M, totSessionCpu=0:11:51).
+[NR-eagl] buildTerm2TermWires    : 1
+[NR-eagl] doTrackAssignment      : 1
+[NR-eagl] numThreads             : 1
+[NR-eagl] honorMsvRouteConstraint: false
+[NR-eagl] honorClockSpecNDR      : 0
+[NR-eagl] minRouteLayer          : 2
+[NR-eagl] maxRouteLayer          : 2147483647
+[NR-eagl] numTracksPerClockWire  : 0
+[NR-eagl] Layer1 has no routable track
+[NR-eagl] Layer2 has single uniform track structure
+[NR-eagl] Layer3 has single uniform track structure
+[NR-eagl] Layer4 has single uniform track structure
+[NR-eagl] Layer5 has single uniform track structure
+[NR-eagl] Layer6 has single uniform track structure
+[NR-eagl] numViaLayers=5
+[NR-eagl] numRoutingBlks=0 numInstBlks=6859 numPGBlocks=220 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eagl] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eagl] Read numTotalNets=18215  numIgnoredNets=0
+[NR-eagl] EstWL : 118507
+
+[NR-eagl] Usage: 3032 = (1915 H, 1117 V) = (1.21% H, 0.71% V) = (2.172e+04um H, 1.267e+04um V)
+[NR-eagl] 
+[NR-eagl] Usage: 3032 = (1915 H, 1117 V) = (1.21% H, 0.71% V) = (2.172e+04um H, 1.267e+04um V)
+[NR-eagl] 
+[NR-eagl] earlyGlobalRoute overflow: 0.00% H + 0.00% V
+
+[NR-eagl] Usage: 3032 = (1915 H, 1117 V) = (1.21% H, 0.71% V) = (2.172e+04um H, 1.267e+04um V)
+[NR-eagl] 
+[NR-eagl] Usage: 3032 = (1915 H, 1117 V) = (1.21% H, 0.71% V) = (2.172e+04um H, 1.267e+04um V)
+[NR-eagl] 
+[NR-eagl] Usage: 3032 = (1915 H, 1117 V) = (1.21% H, 0.71% V) = (2.172e+04um H, 1.267e+04um V)
+[NR-eagl] 
+[NR-eagl] earlyGlobalRoute overflow: 0.00% H + 0.00% V
+
+[NR-eagl] Usage: 118507 = (57963 H, 60544 V) = (18.29% H, 19.11% V) = (6.573e+05um H, 6.866e+05um V)
+[NR-eagl] 
+[NR-eagl] Usage: 118507 = (57963 H, 60544 V) = (18.29% H, 19.11% V) = (6.573e+05um H, 6.866e+05um V)
+[NR-eagl] 
+[NR-eagl] earlyGlobalRoute overflow: 0.00% H + 0.00% V
+
+[NR-eagl] Usage: 118507 = (57963 H, 60544 V) = (18.29% H, 19.11% V) = (6.573e+05um H, 6.866e+05um V)
+[NR-eagl] 
+[NR-eagl] Usage: 118507 = (57963 H, 60544 V) = (18.29% H, 19.11% V) = (6.573e+05um H, 6.866e+05um V)
+[NR-eagl] 
+[NR-eagl] Usage: 118507 = (57963 H, 60544 V) = (18.29% H, 19.11% V) = (6.573e+05um H, 6.866e+05um V)
+[NR-eagl] 
+[NR-eagl] earlyGlobalRoute overflow: 0.00% H + 0.00% V
+
+[NR-eagl] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eagl] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+
+[NR-eagl] Layer1(metal1)(F) length: 0.000000e+00um, number of vias: 56576
+[NR-eagl] Layer2(metal2)(V) length: 2.951016e+05um, number of vias: 77683
+[NR-eagl] Layer3(metal3)(H) length: 5.886971e+05um, number of vias: 13481
+[NR-eagl] Layer4(metal4)(V) length: 4.193953e+05um, number of vias: 1391
+[NR-eagl] Layer5(metal5)(H) length: 1.062566e+05um, number of vias: 456
+[NR-eagl] Layer6(metal6)(V) length: 1.628343e+04um, number of vias: 0
+[NR-eagl] Total length: 1.425734e+06um, number of vias: 149587
+[NR-eagl] End Peak syMemory usage = 2388.8 MB
+[NR-eagl] Early Global Router Kernel+IO runtime : 0.52 seconds
+Extraction called for design 'vscale_core' of instances=18051 and nets=18421 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design vscale_core.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 2388.750M)
+Compute RC Scale Done ...
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: vscale_core
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+Calculate delays in Single mode...
+End delay calculation. (MEM=3244.38 CPU=0:00:03.3 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:04.3  real=0:00:00.0  mem= 3244.4M) ***
+Begin: GigaOpt postEco DRV Optimization
+Info: 1 ideal net excluded from IPO operation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      max-tran     |      max-cap      |     max-fanout    |     max-length    |       |           |           |           |         |            |           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  WNS  |  #Buffer  | #Inverter |  #Resize  | Density |    Real    |    Mem    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|     0   |     0   |    21   |     21  |     4   |     4   |     0   |     0   | -0.97 |          0|          0|          0|  75.37  |            |           |
+|     0   |     0   |     5   |      5  |     0   |     0   |     0   |     0   | -0.97 |          7|          0|          9|  75.42  |   0:00:00.0|    3744.7M|
+|     0   |     0   |     5   |      5  |     0   |     0   |     0   |     0   | -0.97 |          0|          0|          0|  75.42  |   0:00:00.0|    3744.7M|
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+*** Finish DRV Fixing (cpu=0:00:02.1 real=0:00:00.0 mem=3744.7M) ***
+
+*** Starting refinePlace (0:12:00 mem=3742.7M) ***
+Total net length = 1.279e+06 (6.262e+05 6.524e+05) (ext = 7.624e+04)
+Move report: Detail placement moves 71 insts, mean move: 8.98 um, max move: 46.17 um
+	Max move on inst (FE_RC_131_0): (1024.65, 350.73) --> (1036.80, 316.71)
+	Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 3742.7MB
+Summary Report:
+Instances move: 71 (out of 18058 movable)
+Mean displacement: 8.98 um
+Max displacement: 46.17 um (Instance: FE_RC_131_0) (1024.65, 350.73) -> (1036.8, 316.71)
+	Length: 3 sites, height: 1 rows, site name: CoreSite, cell type: inv_2
+Total net length = 1.279e+06 (6.262e+05 6.524e+05) (ext = 7.624e+04)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 3742.7MB
+*** Finished refinePlace (0:12:00 mem=3742.7M) ***
+*** maximum move = 46.17 um ***
+*** Finished re-routing un-routed nets (3742.7M) ***
+
+*** Finish Physical Update (cpu=0:00:00.3 real=0:00:00.0 mem=3742.7M) ***
+End: GigaOpt postEco DRV Optimization
+GigaOpt: WNS changes after routing: -0.343 -> -0.973 (bump = 0.63)
+Begin: GigaOpt postEco optimization
+Info: 1 ideal net excluded from IPO operation.
+*info: 2 special nets excluded.
+*info: 1 ideal net excluded from IPO operation.
+*info: 170 no-driver nets excluded.
+** GigaOpt Optimizer WNS Slack -0.973 TNS Slack -26.784 Density 75.42
+Active Path Group: default 
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |  Worst View   |Pathgroup|                End Point                |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  -0.973|   -0.973| -26.784|  -26.784|    75.42%|   0:00:00.0| 3761.8M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.833|   -0.833| -22.470|  -22.470|    75.42%|   0:00:00.0| 3761.8M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.760|   -0.760| -19.833|  -19.833|    75.42%|   0:00:00.0| 3761.8M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.703|   -0.703| -18.287|  -18.287|    75.42%|   0:00:00.0| 3761.8M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.592|   -0.592| -16.791|  -16.791|    75.42%|   0:00:01.0| 3761.8M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.555|   -0.555| -15.050|  -15.050|    75.43%|   0:00:00.0| 3761.8M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.543|   -0.543| -14.656|  -14.656|    75.44%|   0:00:00.0| 3761.8M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.539|   -0.539| -14.474|  -14.474|    75.44%|   0:00:01.0| 3761.8M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.523|   -0.523| -14.226|  -14.226|    75.45%|   0:00:00.0| 3761.8M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.520|   -0.520| -14.559|  -14.559|    75.46%|   0:00:00.0| 3761.8M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.519|   -0.519| -14.516|  -14.516|    75.46%|   0:00:00.0| 3761.8M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.519|   -0.519| -14.518|  -14.518|    75.46%|   0:00:01.0| 3761.8M|constraint_rule|  default| imem_haddr[29]                          |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:00:17.7 real=0:00:03.0 mem=3761.8M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:00:17.7 real=0:00:03.0 mem=3761.8M) ***
+** GigaOpt Optimizer WNS Slack -0.519 TNS Slack -14.518 Density 75.46
+*** Starting refinePlace (0:12:19 mem=3761.8M) ***
+Total net length = 1.280e+06 (6.267e+05 6.537e+05) (ext = 7.619e+04)
+Move report: Detail placement moves 4 insts, mean move: 13.37 um, max move: 28.35 um
+	Max move on inst (U15339): (966.33, 430.11) --> (972.00, 452.79)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 3761.8MB
+Summary Report:
+Instances move: 4 (out of 18064 movable)
+Mean displacement: 13.37 um
+Max displacement: 28.35 um (Instance: U15339) (966.33, 430.11) -> (972, 452.79)
+	Length: 3 sites, height: 1 rows, site name: CoreSite, cell type: inv_1
+Total net length = 1.280e+06 (6.267e+05 6.537e+05) (ext = 7.619e+04)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 3761.8MB
+*** Finished refinePlace (0:12:19 mem=3761.8M) ***
+*** maximum move = 28.35 um ***
+*** Finished re-routing un-routed nets (3761.8M) ***
+
+*** Finish Physical Update (cpu=0:00:00.3 real=0:00:00.0 mem=3761.8M) ***
+** GigaOpt Optimizer WNS Slack -0.519 TNS Slack -14.518 Density 75.46
+
+*** Finish post-CTS Setup Fixing (cpu=0:00:18.3 real=0:00:03.0 mem=3761.8M) ***
+
+End: GigaOpt postEco optimization
+GigaOpt: WNS changes after postEco optimization: -0.343 -> -0.518 (bump = 0.175)
+Begin: GigaOpt nonLegal postEco optimization
+Info: 1 ideal net excluded from IPO operation.
+*info: 2 special nets excluded.
+*info: 1 ideal net excluded from IPO operation.
+*info: 170 no-driver nets excluded.
+** GigaOpt Optimizer WNS Slack -0.519 TNS Slack -14.518 Density 75.46
+Active Path Group: default 
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |  Worst View   |Pathgroup|                End Point                |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  -0.519|   -0.519| -14.518|  -14.518|    75.46%|   0:00:00.0| 3744.7M|constraint_rule|  default| imem_haddr[29]                          |
+|  -0.491|   -0.491| -14.610|  -14.610|    75.59%|   0:00:01.0| 3744.7M|constraint_rule|  default| imem_haddr[31]                          |
+|  -0.491|   -0.491| -14.610|  -14.610|    75.61%|   0:00:01.0| 3744.7M|constraint_rule|  default| imem_haddr[31]                          |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:00:21.5 real=0:00:02.0 mem=3744.7M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:00:21.5 real=0:00:02.0 mem=3744.7M) ***
+** GigaOpt Optimizer WNS Slack -0.491 TNS Slack -14.610 Density 75.61
+*** Starting refinePlace (0:12:42 mem=3744.7M) ***
+Total net length = 1.286e+06 (6.303e+05 6.560e+05) (ext = 7.620e+04)
+Density distribution unevenness ratio = 3.761%
+Move report: Detail placement moves 1484 insts, mean move: 2.12 um, max move: 17.82 um
+	Max move on inst (FE_RC_1083_0): (871.56, 396.09) --> (865.08, 384.75)
+	Runtime: CPU: 0:00:00.7 REAL: 0:00:00.0 MEM: 3751.7MB
+Summary Report:
+Instances move: 1484 (out of 18100 movable)
+Mean displacement: 2.12 um
+Max displacement: 17.82 um (Instance: FE_RC_1083_0) (871.56, 396.09) -> (865.08, 384.75)
+	Length: 6 sites, height: 1 rows, site name: CoreSite, cell type: nand2_4
+Total net length = 1.286e+06 (6.303e+05 6.560e+05) (ext = 7.620e+04)
+Runtime: CPU: 0:00:00.7 REAL: 0:00:00.0 MEM: 3751.7MB
+*** Finished refinePlace (0:12:42 mem=3751.7M) ***
+*** maximum move = 17.82 um ***
+*** Finished re-routing un-routed nets (3751.7M) ***
+
+*** Finish Physical Update (cpu=0:00:01.0 real=0:00:00.0 mem=3751.7M) ***
+** GigaOpt Optimizer WNS Slack -0.491 TNS Slack -14.610 Density 75.61
+
+*** Finish post-CTS Setup Fixing (cpu=0:00:22.7 real=0:00:03.0 mem=3751.7M) ***
+
+End: GigaOpt nonLegal postEco optimization
+Design TNS changes after trial route: -9.196 -> -14.510
+Begin: GigaOpt TNS recovery
+Info: 1 ideal net excluded from IPO operation.
+*info: 2 special nets excluded.
+*info: 1 ideal net excluded from IPO operation.
+*info: 170 no-driver nets excluded.
+** GigaOpt Optimizer WNS Slack -0.491 TNS Slack -14.610 Density 75.61
+Active Path Group: default 
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |  Worst View   |Pathgroup|                End Point                |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  -0.491|   -0.491| -14.610|  -14.610|    75.61%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[31]                          |
+|  -0.479|   -0.479| -12.856|  -12.856|    75.61%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[15]                          |
+|  -0.479|   -0.479| -11.870|  -11.870|    75.61%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[12]                          |
+|  -0.479|   -0.479| -10.894|  -10.894|    75.61%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[12]                          |
+|  -0.479|   -0.479| -10.673|  -10.673|    75.61%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[12]                          |
+|  -0.479|   -0.479| -10.019|  -10.019|    75.62%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[10]                          |
+|  -0.479|   -0.479|  -9.730|   -9.730|    75.63%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[10]                          |
+|  -0.479|   -0.479|  -9.499|   -9.499|    75.63%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[14]                          |
+|  -0.479|   -0.479|  -9.269|   -9.269|    75.63%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[7]                           |
+|  -0.479|   -0.479|  -9.112|   -9.112|    75.63%|   0:00:01.0| 3751.5M|constraint_rule|  default| imem_haddr[6]                           |
+|  -0.479|   -0.479|  -9.087|   -9.087|    75.63%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[6]                           |
+|  -0.479|   -0.479|  -9.087|   -9.087|    75.63%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[31]                          |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:00:04.0 real=0:00:01.0 mem=3751.5M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:00:04.0 real=0:00:01.0 mem=3751.5M) ***
+** GigaOpt Optimizer WNS Slack -0.479 TNS Slack -9.087 Density 75.63
+*** Starting refinePlace (0:12:47 mem=3751.5M) ***
+Total net length = 1.290e+06 (6.331e+05 6.567e+05) (ext = 7.614e+04)
+Move report: Detail placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+	Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 3751.5MB
+Summary Report:
+Instances move: 0 (out of 18105 movable)
+Mean displacement: 0.00 um
+Max displacement: 0.00 um 
+Total net length = 1.290e+06 (6.331e+05 6.567e+05) (ext = 7.614e+04)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 3751.5MB
+*** Finished refinePlace (0:12:47 mem=3751.5M) ***
+*** maximum move = 0.00 um ***
+*** Finished re-routing un-routed nets (3751.5M) ***
+
+*** Finish Physical Update (cpu=0:00:00.3 real=0:00:00.0 mem=3751.5M) ***
+** GigaOpt Optimizer WNS Slack -0.479 TNS Slack -9.087 Density 75.63
+
+*** Finish post-CTS Setup Fixing (cpu=0:00:04.5 real=0:00:01.0 mem=3751.5M) ***
+
+End: GigaOpt TNS recovery
+GigaOpt: WNS changes after routing: -0.343 -> -0.479 (bump = 0.136)
+Begin: GigaOpt postEco optimization
+Info: 1 ideal net excluded from IPO operation.
+*info: 2 special nets excluded.
+*info: 1 ideal net excluded from IPO operation.
+*info: 170 no-driver nets excluded.
+** GigaOpt Optimizer WNS Slack -0.479 TNS Slack -9.087 Density 75.63
+Active Path Group: default 
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |  Worst View   |Pathgroup|                End Point                |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+|  -0.479|   -0.479|  -9.087|   -9.087|    75.63%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[31]                          |
+|  -0.473|   -0.473|  -8.981|   -8.981|    75.65%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[31]                          |
+|  -0.468|   -0.468|  -8.877|   -8.877|    75.65%|   0:00:01.0| 3751.5M|constraint_rule|  default| imem_haddr[31]                          |
+|  -0.452|   -0.452|  -8.521|   -8.521|    75.66%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[31]                          |
+|  -0.452|   -0.452|  -8.506|   -8.506|    75.66%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[31]                          |
+|  -0.452|   -0.452|  -8.506|   -8.506|    75.65%|   0:00:00.0| 3751.5M|constraint_rule|  default| imem_haddr[31]                          |
++--------+---------+--------+---------+----------+------------+--------+---------------+---------+-----------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:00:13.2 real=0:00:01.0 mem=3751.5M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:00:13.2 real=0:00:01.0 mem=3751.5M) ***
+** GigaOpt Optimizer WNS Slack -0.452 TNS Slack -8.506 Density 75.65
+*** Starting refinePlace (0:13:02 mem=3751.5M) ***
+Total net length = 1.291e+06 (6.334e+05 6.575e+05) (ext = 7.619e+04)
+Move report: Detail placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 3751.5MB
+Summary Report:
+Instances move: 0 (out of 18107 movable)
+Mean displacement: 0.00 um
+Max displacement: 0.00 um 
+Total net length = 1.291e+06 (6.334e+05 6.575e+05) (ext = 7.619e+04)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 3751.5MB
+*** Finished refinePlace (0:13:02 mem=3751.5M) ***
+*** maximum move = 0.00 um ***
+*** Finished re-routing un-routed nets (3751.5M) ***
+
+*** Finish Physical Update (cpu=0:00:00.3 real=0:00:01.0 mem=3751.5M) ***
+** GigaOpt Optimizer WNS Slack -0.452 TNS Slack -8.506 Density 75.65
+
+*** Finish post-CTS Setup Fixing (cpu=0:00:13.7 real=0:00:03.0 mem=3751.5M) ***
+
+End: GigaOpt postEco optimization
+*** Steiner Routed Nets: 2.622%; Threshold: 100; Threshold for Hold: 100
+Re-routed 0 nets
+Extraction called for design 'vscale_core' of instances=18107 and nets=18477 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design vscale_core.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 2421.328M)
+doiPBLastSyncSlave
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: vscale_core
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+Message <TA-112> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+Message <TA-114> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+Message <TA-113> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+Calculate delays in Single mode...
+End delay calculation. (MEM=3257.88 CPU=0:00:03.2 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:04.2  real=0:00:00.0  mem= 3257.9M) ***
+Reported timing to dir Clock_reports/PostCTS
+**optDesign ... cpu = 0:09:35, real = 0:01:30, mem = 2342.1M, totSessionCpu=0:13:07 **
+
+------------------------------------------------------------
+     optDesign Final Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ constraint_rule 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -0.453  |   N/A   | -0.453  |
+|           TNS (ns):| -8.539  |   N/A   | -8.539  |
+|    Violating Paths:|   25    |   N/A   |   25    |
+|          All Paths:|   64    |   N/A   |   64    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      1 (1)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 75.653%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+**optDesign ... cpu = 0:09:36, real = 0:01:30, mem = 2350.1M, totSessionCpu=0:13:08 **
+*** Finished optDesign ***
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+<CMD> setNanoRouteMode -quiet -timingEngine {}
+<CMD> setNanoRouteMode -quiet -routeWithSiPostRouteFix 0
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+<CMD> setNanoRouteMode -quiet -drouteStartIteration default
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+<CMD> setNanoRouteMode -quiet -routeTopRoutingLayer default
+<CMD> setNanoRouteMode -quiet -routeBottomRoutingLayer default
+<CMD> setNanoRouteMode -quiet -drouteEndIteration default
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven false
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven false
+Running Native NanoRoute ...
+<CMD> routeDesign -globalDetail
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1589.07 (MB), peak = 2103.78 (MB)
+#WARNING (NRIG-96) Selected single pass global detail route "-globalDetail". Clock eco and post optimizations will not be run. See "man NRIG-96" for more details.
+#**INFO: setDesignMode -flowEffort standard
+#**INFO: mulit-cut via swapping is disabled by user.
+#**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+#**INFO: auto set of routeReserveSpaceForMultiCut to true
+#**INFO: auto set of routeConcurrentMinimizeViaCountEffort to high
+Begin checking placement ... (start mem=2350.1M, init mem=2350.1M)
+*info: Placed = 18107         
+*info: Unplaced = 0           
+Placement Density:75.65%(1072193/1417252)
+Finished checkPlace (cpu: total=0:00:00.1, vio checks=0:00:00.0; mem=2350.1M)
+#**INFO: honoring user setting for routeWithTimingDriven set to false
+#**INFO: honoring user setting for routeWithSiDriven set to false
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=2350.1M) ***
+
+globalDetailRoute
+
+#setNanoRouteMode -routeConcurrentMinimizeViaCountEffort "high"
+#setNanoRouteMode -routeReserveSpaceForMultiCut true
+#setNanoRouteMode -routeWithSiDriven false
+#setNanoRouteMode -routeWithTimingDriven false
+#Start globalDetailRoute on Wed Mar 22 17:08:14 2017
+#
+#WARNING (NRDB-976) The TRACK STEP 1.2150 for preferred direction tracks is smaller than the PITCH 1.6200 for LAYER metal6. This will cause routability problems for NanoRoute.
+#WARNING (NRIG-100) Ignoring auto generated timing constraints when routeWithTimingDriven set to false.
+#NanoRoute Version 15.20-p005_1 NR151028-1715/15_20-UB
+#Using multithreading with 16 threads.
+#Start routing data preparation.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal1 is not specified for width 0.270.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal2 is not specified for width 0.270.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal1 is not specified for width 0.270.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal2 is not specified for width 0.270.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal2 is not specified for width 0.270.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal3 is not specified for width 0.270.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal2 is not specified for width 0.270.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal3 is not specified for width 0.270.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal3 is not specified for width 0.270.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal4 is not specified for width 0.270.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal3 is not specified for width 0.270.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal4 is not specified for width 0.270.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal4 is not specified for width 0.270.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal5 is not specified for width 0.360.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal4 is not specified for width 0.270.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal5 is not specified for width 0.360.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal5 is not specified for width 0.360.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal6 is not specified for width 0.450.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal5 is not specified for width 0.360.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal6 is not specified for width 0.450.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.800.
+#Voltage range [0.000 - 0.000] has 90 nets.
+#Voltage range [1.800 - 1.800] has 4 nets.
+#Voltage range [0.000 - 1.800] has 18383 nets.
+# metal1       H   Track-Pitch = 0.810    Line-2-Via Pitch = 0.630
+# metal2       V   Track-Pitch = 0.810    Line-2-Via Pitch = 0.720
+# metal3       H   Track-Pitch = 0.810    Line-2-Via Pitch = 0.720
+# metal4       V   Track-Pitch = 0.810    Line-2-Via Pitch = 0.720
+# metal5       H   Track-Pitch = 0.810    Line-2-Via Pitch = 0.765
+# metal6       V   Track-Pitch = 1.215    Line-2-Via Pitch = 1.080
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer metal2's pitch = 0.810.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1540.23 (MB), peak = 2103.78 (MB)
+#Merging special wires using 16 threads...
+#Number of eco nets is 0
+#
+#Start data preparation...
+#
+#Data preparation is done on Wed Mar 22 17:08:15 2017
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Wed Mar 22 17:08:15 2017
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H        1467           0        9996    87.49%
+#  Metal 2        V        1523           0        9996     1.20%
+#  Metal 3        H        1467           0        9996     0.00%
+#  Metal 4        V        1523           0        9996     0.00%
+#  Metal 5        H        1467           0        9996     0.00%
+#  Metal 6        V        1016           0        9996     0.00%
+#  --------------------------------------------------------------
+#  Total                   8463       0.00%  59976    14.78%
+#
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1541.12 (MB), peak = 2103.78 (MB)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1542.72 (MB), peak = 2103.78 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:03, elapsed time = 00:00:03, memory = 1594.69 (MB), peak = 2103.78 (MB)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1595.70 (MB), peak = 2103.78 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 206 (skipped).
+#Total number of routable nets = 18271.
+#Total number of nets in the design = 18477.
+#
+#18271 routable nets have only global wires.
+#
+#Routed nets constraints summary:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default           18271  
+#-----------------------------
+#        Total           18271  
+#-----------------------------
+#
+#Routing constraints summary of the whole design:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default           18271  
+#-----------------------------
+#        Total           18271  
+#-----------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#   Metal 1      0(0.00%)   (0.00%)
+#   Metal 2      0(0.00%)   (0.00%)
+#   Metal 3      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      0(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#  Overflow after GR: 0.00% H + 0.00% V
+#
+#Complete Global Routing.
+#Total wire length = 1360389 um.
+#Total half perimeter of net bounding box = 1343587 um.
+#Total wire length on LAYER metal1 = 49 um.
+#Total wire length on LAYER metal2 = 218971 um.
+#Total wire length on LAYER metal3 = 471171 um.
+#Total wire length on LAYER metal4 = 454573 um.
+#Total wire length on LAYER metal5 = 196723 um.
+#Total wire length on LAYER metal6 = 18903 um.
+#Total number of vias = 102085
+#Up-Via Summary (total 102085):
+#           
+#-----------------------
+#  Metal 1        50136
+#  Metal 2        36356
+#  Metal 3        12859
+#  Metal 4         2511
+#  Metal 5          223
+#-----------------------
+#                102085 
+#
+#Max overcon = 0 track.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#cpu time = 00:00:05, elapsed time = 00:00:05, memory = 1595.89 (MB), peak = 2103.78 (MB)
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1556.66 (MB), peak = 2103.78 (MB)
+#Start Track Assignment.
+#Done with 25493 horizontal wires in 1 hboxes and 25098 vertical wires in 1 hboxes.
+#Done with 7013 horizontal wires in 1 hboxes and 4942 vertical wires in 1 hboxes.
+#Complete Track Assignment.
+#Total wire length = 1433652 um.
+#Total half perimeter of net bounding box = 1343587 um.
+#Total wire length on LAYER metal1 = 47558 um.
+#Total wire length on LAYER metal2 = 219293 um.
+#Total wire length on LAYER metal3 = 491627 um.
+#Total wire length on LAYER metal4 = 457491 um.
+#Total wire length on LAYER metal5 = 198680 um.
+#Total wire length on LAYER metal6 = 19004 um.
+#Total number of vias = 102085
+#Up-Via Summary (total 102085):
+#           
+#-----------------------
+#  Metal 1        50136
+#  Metal 2        36356
+#  Metal 3        12859
+#  Metal 4         2511
+#  Metal 5          223
+#-----------------------
+#                102085 
+#
+#cpu time = 00:00:03, elapsed time = 00:00:03, memory = 1569.32 (MB), peak = 2103.78 (MB)
+#
+#Cpu time = 00:00:10
+#Elapsed time = 00:00:09
+#Increased memory = 34.94 (MB)
+#Total memory = 1569.32 (MB)
+#Peak memory = 2103.78 (MB)
+#Using multithreading with 16 threads.
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#    number of violations = 3
+#
+#    By Layer and Type :
+#	         MetSpc    Short   Totals
+#	metal1        0        0        0
+#	metal2        2        1        3
+#	Totals        2        1        3
+#cpu time = 00:00:54, elapsed time = 00:00:07, memory = 1948.09 (MB), peak = 2103.78 (MB)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1957.24 (MB), peak = 2103.78 (MB)
+#Complete Detail Routing.
+#Total wire length = 1397476 um.
+#Total half perimeter of net bounding box = 1343587 um.
+#Total wire length on LAYER metal1 = 79188 um.
+#Total wire length on LAYER metal2 = 312762 um.
+#Total wire length on LAYER metal3 = 412144 um.
+#Total wire length on LAYER metal4 = 387300 um.
+#Total wire length on LAYER metal5 = 187476 um.
+#Total wire length on LAYER metal6 = 18605 um.
+#Total number of vias = 94309
+#Up-Via Summary (total 94309):
+#           
+#-----------------------
+#  Metal 1        49296
+#  Metal 2        32381
+#  Metal 3        10014
+#  Metal 4         2390
+#  Metal 5          228
+#-----------------------
+#                 94309 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:55
+#Elapsed time = 00:00:07
+#Increased memory = -4.17 (MB)
+#Total memory = 1565.16 (MB)
+#Peak memory = 2103.78 (MB)
+#
+#Start Post Route wire spreading..
+#
+#Start data preparation for wire spreading...
+#
+#Data preparation is done on Wed Mar 22 17:08:31 2017
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1566.52 (MB), peak = 2103.78 (MB)
+#
+#Start Post Route Wire Spread.
+#Done with 10807 horizontal wires in 2 hboxes and 10166 vertical wires in 2 hboxes.
+#Complete Post Route Wire Spread.
+#
+#Total wire length = 1428307 um.
+#Total half perimeter of net bounding box = 1343587 um.
+#Total wire length on LAYER metal1 = 79287 um.
+#Total wire length on LAYER metal2 = 319863 um.
+#Total wire length on LAYER metal3 = 427777 um.
+#Total wire length on LAYER metal4 = 393978 um.
+#Total wire length on LAYER metal5 = 188739 um.
+#Total wire length on LAYER metal6 = 18664 um.
+#Total number of vias = 94309
+#Up-Via Summary (total 94309):
+#           
+#-----------------------
+#  Metal 1        49296
+#  Metal 2        32381
+#  Metal 3        10014
+#  Metal 4         2390
+#  Metal 5          228
+#-----------------------
+#                 94309 
+#
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 1607.32 (MB), peak = 2103.78 (MB)
+#
+#Post Route wire spread is done.
+#Total wire length = 1428307 um.
+#Total half perimeter of net bounding box = 1343587 um.
+#Total wire length on LAYER metal1 = 79287 um.
+#Total wire length on LAYER metal2 = 319863 um.
+#Total wire length on LAYER metal3 = 427777 um.
+#Total wire length on LAYER metal4 = 393978 um.
+#Total wire length on LAYER metal5 = 188739 um.
+#Total wire length on LAYER metal6 = 18664 um.
+#Total number of vias = 94309
+#Up-Via Summary (total 94309):
+#           
+#-----------------------
+#  Metal 1        49296
+#  Metal 2        32381
+#  Metal 3        10014
+#  Metal 4         2390
+#  Metal 5          228
+#-----------------------
+#                 94309 
+#
+#
+#Start DRC checking..
+#    number of violations = 0
+#cpu time = 00:00:12, elapsed time = 00:00:01, memory = 2063.35 (MB), peak = 2103.78 (MB)
+#CELL_VIEW vscale_core,init has no DRC violation.
+#Total number of DRC violations = 0
+#
+#Start Post Route via swapping..
+#    number of violations = 0
+#cpu time = 00:00:09, elapsed time = 00:00:01, memory = 1628.28 (MB), peak = 2103.78 (MB)
+#    number of violations = 0
+#cpu time = 00:00:09, elapsed time = 00:00:01, memory = 1628.28 (MB), peak = 2103.78 (MB)
+#CELL_VIEW vscale_core,init has no DRC violation.
+#Total number of DRC violations = 0
+#No via is swapped.
+#Post Route via swapping is done.
+#Total wire length = 1428307 um.
+#Total half perimeter of net bounding box = 1343587 um.
+#Total wire length on LAYER metal1 = 79287 um.
+#Total wire length on LAYER metal2 = 319863 um.
+#Total wire length on LAYER metal3 = 427777 um.
+#Total wire length on LAYER metal4 = 393978 um.
+#Total wire length on LAYER metal5 = 188739 um.
+#Total wire length on LAYER metal6 = 18664 um.
+#Total number of vias = 94309
+#Up-Via Summary (total 94309):
+#           
+#-----------------------
+#  Metal 1        49296
+#  Metal 2        32381
+#  Metal 3        10014
+#  Metal 4         2390
+#  Metal 5          228
+#-----------------------
+#                 94309 
+#
+#detailRoute Statistics:
+#Cpu time = 00:01:19
+#Elapsed time = 00:00:11
+#Increased memory = 9.36 (MB)
+#Total memory = 1578.68 (MB)
+#Peak memory = 2103.78 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:01:30
+#Elapsed time = 00:00:21
+#Increased memory = -35.05 (MB)
+#Total memory = 1554.14 (MB)
+#Peak memory = 2103.78 (MB)
+#Number of warnings = 22
+#Total number of warnings = 23
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Wed Mar 22 17:08:35 2017
+#
+#routeDesign: cpu time = 00:01:30, elapsed time = 00:00:21, memory = 1413.00 (MB), peak = 2103.78 (MB)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 2240.8) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 3600
+**WARN: (IMPVFG-198):	Area to be verified is small to see any runtime gain from multi-cpus. Use setMultiCpuUsage command to adjust the number of CPUs. 
+Multi-CPU acceleration using 16 CPU(s).
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+VG: elapsed time: 2.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:01.1  MEM: 346.3M)
+
+<CMD> setVerifyGeometryMode -area { 0 0 0 0 }
+<CMD> get_verify_drc_mode -disable_rules -quiet
+<CMD> get_verify_drc_mode -quiet -area
+<CMD> get_verify_drc_mode -quiet -layer_range
+<CMD> get_verify_drc_mode -check_implant -quiet
+<CMD> get_verify_drc_mode -check_implant_across_rows -quiet
+<CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+<CMD> get_verify_drc_mode -check_only -quiet
+<CMD> get_verify_drc_mode -check_same_via_cell -quiet
+<CMD> get_verify_drc_mode -exclude_pg_net -quiet
+<CMD> get_verify_drc_mode -ignore_trial_route -quiet
+<CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+<CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+<CMD> get_verify_drc_mode -limit -quiet
+<CMD> set_verify_drc_mode -disable_rules {} -check_implant true -check_implant_across_rows false -check_ndr_spacing false -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -report vscale_core.drc.rpt -limit 1000
+<CMD> verify_drc
+ *** Starting Verify DRC (MEM: 2240.8) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+**WARN: (IMPVFG-1198):	The number of CPUs requested 16 is larger than that verify_drc used 4. In Multithreading mode, the number of CPUs verify_drc used is not larger than the number of subareas.
+ Use 'setMultiCpuUsage -localCpu' to specify the less cup number if the verify area is not large.
+  VERIFY DRC ...... Using new threading
+ VERIFY DRC ...... Sub-Area : 1 of 4  Thread : 1
+ VERIFY DRC ...... Sub-Area : 2 of 4  Thread : 1
+ VERIFY DRC ...... Sub-Area : 3 of 4  Thread : 1
+ VERIFY DRC ...... Sub-Area : 4 of 4  Thread : 1
+
+  Verification Complete : 0 Viols.
+
+ *** End Verify DRC (CPU: 0:00:04.7  ELAPSED TIME: 5.00  MEM: 95.4M) ***
+
+<CMD> set_verify_drc_mode -area {0 0 0 0}
+<CMD> verifyConnectivity -type all -error 1000 -warning 50
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Wed Mar 22 17:09:23 2017
+
+Design Name: vscale_core
+Database Units: 1000
+Design Boundary: (0.0000, 0.0000) (1234.4400, 1189.0800)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Multi-CPU acceleration using 16 CPU(s).
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Wed Mar 22 17:09:25 2017
+Time Elapsed: 0:00:02.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:01.3  MEM: 3.562M)
+
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix vscale_core_postCTS -outDir timingReports
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+Start to check current routing status for nets...
+All nets will be re-routed.
+End to check current routing status for nets (mem=2251.5M)
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+[NR-eagl] buildTerm2TermWires    : 1
+[NR-eagl] doTrackAssignment      : 1
+[NR-eagl] numThreads             : 1
+[NR-eagl] honorMsvRouteConstraint: false
+[NR-eagl] honorClockSpecNDR      : 0
+[NR-eagl] minRouteLayer          : 2
+[NR-eagl] maxRouteLayer          : 2147483647
+[NR-eagl] numTracksPerClockWire  : 0
+[NR-eagl] Layer1 has no routable track
+[NR-eagl] Layer2 has single uniform track structure
+[NR-eagl] Layer3 has single uniform track structure
+[NR-eagl] Layer4 has single uniform track structure
+[NR-eagl] Layer5 has single uniform track structure
+[NR-eagl] Layer6 has single uniform track structure
+[NR-eagl] numViaLayers=5
+[NR-eagl] numRoutingBlks=0 numInstBlks=6912 numPGBlocks=220 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eagl] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eagl] Read numTotalNets=18271  numIgnoredNets=0
+[NR-eagl] EstWL : 119426
+
+[NR-eagl] Usage: 2749 = (1715 H, 1034 V) = (1.08% H, 0.65% V) = (1.945e+04um H, 1.173e+04um V)
+[NR-eagl] 
+[NR-eagl] Usage: 2749 = (1715 H, 1034 V) = (1.08% H, 0.65% V) = (1.945e+04um H, 1.173e+04um V)
+[NR-eagl] 
+[NR-eagl] earlyGlobalRoute overflow: 0.00% H + 0.00% V
+
+[NR-eagl] Usage: 2749 = (1715 H, 1034 V) = (1.08% H, 0.65% V) = (1.945e+04um H, 1.173e+04um V)
+[NR-eagl] 
+[NR-eagl] Usage: 2749 = (1715 H, 1034 V) = (1.08% H, 0.65% V) = (1.945e+04um H, 1.173e+04um V)
+[NR-eagl] 
+[NR-eagl] Usage: 2749 = (1715 H, 1034 V) = (1.08% H, 0.65% V) = (1.945e+04um H, 1.173e+04um V)
+[NR-eagl] 
+[NR-eagl] earlyGlobalRoute overflow: 0.00% H + 0.00% V
+
+[NR-eagl] Usage: 119426 = (58501 H, 60925 V) = (18.46% H, 19.23% V) = (6.634e+05um H, 6.909e+05um V)
+[NR-eagl] 
+[NR-eagl] Usage: 119426 = (58501 H, 60925 V) = (18.46% H, 19.23% V) = (6.634e+05um H, 6.909e+05um V)
+[NR-eagl] 
+[NR-eagl] earlyGlobalRoute overflow: 0.00% H + 0.00% V
+
+[NR-eagl] Usage: 119426 = (58501 H, 60925 V) = (18.46% H, 19.23% V) = (6.634e+05um H, 6.909e+05um V)
+[NR-eagl] 
+[NR-eagl] Usage: 119426 = (58501 H, 60925 V) = (18.46% H, 19.23% V) = (6.634e+05um H, 6.909e+05um V)
+[NR-eagl] 
+[NR-eagl] Usage: 119426 = (58501 H, 60925 V) = (18.46% H, 19.23% V) = (6.634e+05um H, 6.909e+05um V)
+[NR-eagl] 
+[NR-eagl] earlyGlobalRoute overflow: 0.00% H + 0.00% V
+
+[NR-eagl] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eagl] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+
+[NR-eagl] Layer1(metal1)(F) length: 0.000000e+00um, number of vias: 53512
+[NR-eagl] Layer2(metal2)(V) length: 3.016505e+05um, number of vias: 78192
+[NR-eagl] Layer3(metal3)(H) length: 5.956647e+05um, number of vias: 13112
+[NR-eagl] Layer4(metal4)(V) length: 4.180977e+05um, number of vias: 1313
+[NR-eagl] Layer5(metal5)(H) length: 1.058330e+05um, number of vias: 420
+[NR-eagl] Layer6(metal6)(V) length: 1.605663e+04um, number of vias: 0
+[NR-eagl] Total length: 1.437302e+06um, number of vias: 146549
+[NR-eagl] End Peak syMemory usage = 2261.4 MB
+[NR-eagl] Early Global Router Kernel+IO runtime : 0.40 seconds
+Extraction called for design 'vscale_core' of instances=18107 and nets=18477 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design vscale_core.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 2243.469M)
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: vscale_core
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+End delay calculation. (MEM=3132.48 CPU=0:00:03.1 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:03.2  real=0:00:00.0  mem= 3132.5M) ***
+*** Done Building Timing Graph (cpu=0:00:03.5 real=0:00:00.0 totSessionCpu=0:14:56 mem=3132.5M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ constraint_rule 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -0.543  |   N/A   | -0.543  |
+|           TNS (ns):| -10.175 |   N/A   | -10.175 |
+|    Violating Paths:|   25    |   N/A   |   25    |
+|          All Paths:|   64    |   N/A   |   64    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      1 (1)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 75.653%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 5.15 sec
+Total Real time: 2.0 sec
+Total Memory Usage: 2212.734375 Mbytes
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix vscale_core_preCTS -outDir timingReports
+**WARN: (IMPEXT-3493):	The design extraction status has been reset by the 'setExtractRCMode' command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s). To prevent resetting of the extraction status, avoid changing extraction modes.
+Type 'man IMPEXT-3493' for more detail.
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=2224.7M)
+Extraction called for design 'vscale_core' of instances=18107 and nets=18477 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design vscale_core.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 2224.680M)
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: vscale_core
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+End delay calculation. (MEM=3099.41 CPU=0:00:03.1 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:03.3  real=0:00:01.0  mem= 3099.4M) ***
+*** Done Building Timing Graph (cpu=0:00:03.6 real=0:00:01.0 totSessionCpu=0:15:02 mem=3099.4M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ constraint_rule 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -0.543  |   N/A   | -0.543  |
+|           TNS (ns):| -10.175 |   N/A   | -10.175 |
+|    Violating Paths:|   25    |   N/A   |   25    |
+|          All Paths:|   64    |   N/A   |   64    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      1 (1)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 75.653%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 5.07 sec
+Total Real time: 2.0 sec
+Total Memory Usage: 2214.734375 Mbytes
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -signoff -pathReports -drvReports -slackReports -numPaths 50 -prefix vscale_core_signOff -outDir timingReports
+Switching SI Aware to true by default in postroute mode   
+The 'setDelayCalMode -SIAware false' command is set. Running Signoff Base AAE Analysis. If Signoff SI AAE Analysis is required set 'setDelayCalMode -SIAware true'.
+**WARN: (IMPEXT-3493):	The design extraction status has been reset by the 'setExtractRCMode' command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s). To prevent resetting of the extraction status, avoid changing extraction modes.
+Type 'man IMPEXT-3493' for more detail.
+Extraction called for design 'vscale_core' of instances=18107 and nets=18477 using extraction engine 'postRoute' at effort level 'signoff' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+Total CPU time: 0.0700000000001 sec
+Total Real time: 0.0 sec
+Total Memory Usage: 2204.675781 Mbytes

@@ -1,0 +1,1546 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 3
+        -greater_path 0.00
+        -max_paths 20
+Design : vscale_core
+Version: J-2014.09-SP3
+Date   : Wed Mar 22 10:13:45 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: vtvt_tsmc180
+Wire Load Model Mode: top
+
+  Startpoint: ext_interrupts[0]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[28]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[0] (in)                  47.81      53.81 f
+  U11890/op (nor4_2)                     174.28     228.09 r
+  U11891/op (nand4_1)                    187.76     415.85 f
+  U11892/op (nor2_2)                     133.05     548.90 r
+  U10776/op (nand2_2)                    147.42     696.31 f
+  U12140/op (nand2_2)                    107.26     803.57 r
+  U12141/op (buf_2)                      134.15     937.72 r
+  U10770/op (buf_4)                      151.25    1088.97 r
+  U13205/op (mux2_1)                     237.57    1326.54 r
+  U13206/op (nand2_1)                     82.18    1408.73 f
+  U10684/op (and2_1)                     190.90    1599.62 f
+  U11308/op (inv_1)                      168.61    1768.24 r
+  U11091/op (nand2_1)                    171.02    1939.26 f
+  U15071/op (nand2_1)                     83.92    2023.17 r
+  U11015/op (nor4_1)                     174.46    2197.64 f
+  U11014/op (nand2_1)                     69.82    2267.46 r
+  U15082/op (nor2_2)                      79.38    2346.84 f
+  U15105/op (nand2_2)                     60.78    2407.62 r
+  U15109/op (nor2_2)                      73.49    2481.10 f
+  U15110/op (nor2_2)                      87.27    2568.37 r
+  U15155/op (nand4_2)                    252.43    2820.80 f
+  U15156/op (nand2_4)                     94.17    2914.98 r
+  U15157/op (nand2_4)                     86.86    3001.84 f
+  U15214/op (inv_1)                       74.08    3075.92 r
+  U10816/op (inv_1)                       55.40    3131.32 f
+  U10789/op (nand2_1)                    163.55    3294.86 r
+  U10721/op (nand2_1)                    155.34    3450.20 f
+  U15471/op (inv_1)                       58.55    3508.75 r
+  U10833/op (nand3_1)                    106.67    3615.42 f
+  U10709/op (nand2_1)                     73.73    3689.15 r
+  U10705/op (nand2_1)                    112.49    3801.64 f
+  U10940/op (nand2_1)                     79.03    3880.67 r
+  U15482/op (nand2_2)                    100.85    3981.52 f
+  U11036/op (nand2_1)                     58.89    4040.41 r
+  U11035/op (nand2_1)                     65.08    4105.49 f
+  U15577/op (nand2_1)                     52.34    4157.83 r
+  U10695/op (nand2_1)                     85.07    4242.90 f
+  U10780/op (nor2_2)                      92.55    4335.44 r
+  U15580/op (nand2_2)                    157.35    4492.79 f
+  U15626/op (nand2_2)                     75.95    4568.74 r
+  U11540/op (inv_1)                       67.55    4636.28 f
+  U11539/op (nand2_1)                     56.70    4692.98 r
+  U10690/op (and2_1)                     131.14    4824.13 r
+  U10688/op (nand2_2)                    167.34    4991.47 f
+  imem_haddr[28] (out)                     0.00    4991.47 f
+  data arrival time                                4991.47
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4991.47
+  -----------------------------------------------------------
+  slack (MET)                                         2.53
+
+
+  Startpoint: ext_interrupts[3]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[28]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[3] (in)                  46.96      52.96 f
+  U11890/op (nor4_2)                     174.46     227.42 r
+  U11891/op (nand4_1)                    187.76     415.18 f
+  U11892/op (nor2_2)                     133.05     548.23 r
+  U10776/op (nand2_2)                    147.42     695.64 f
+  U12140/op (nand2_2)                    107.26     802.90 r
+  U12141/op (buf_2)                      134.15     937.05 r
+  U10770/op (buf_4)                      151.25    1088.31 r
+  U13205/op (mux2_1)                     237.57    1325.88 r
+  U13206/op (nand2_1)                     82.18    1408.06 f
+  U10684/op (and2_1)                     190.90    1598.96 f
+  U11308/op (inv_1)                      168.61    1767.57 r
+  U11091/op (nand2_1)                    171.02    1938.59 f
+  U15071/op (nand2_1)                     83.92    2022.51 r
+  U11015/op (nor4_1)                     174.46    2196.97 f
+  U11014/op (nand2_1)                     69.82    2266.79 r
+  U15082/op (nor2_2)                      79.38    2346.17 f
+  U15105/op (nand2_2)                     60.78    2406.95 r
+  U15109/op (nor2_2)                      73.49    2480.43 f
+  U15110/op (nor2_2)                      87.27    2567.71 r
+  U15155/op (nand4_2)                    252.43    2820.13 f
+  U15156/op (nand2_4)                     94.17    2914.31 r
+  U15157/op (nand2_4)                     86.86    3001.17 f
+  U15214/op (inv_1)                       74.08    3075.25 r
+  U10816/op (inv_1)                       55.40    3130.65 f
+  U10789/op (nand2_1)                    163.55    3294.19 r
+  U10721/op (nand2_1)                    155.34    3449.53 f
+  U15471/op (inv_1)                       58.55    3508.08 r
+  U10833/op (nand3_1)                    106.67    3614.75 f
+  U10709/op (nand2_1)                     73.73    3688.48 r
+  U10705/op (nand2_1)                    112.49    3800.97 f
+  U10940/op (nand2_1)                     79.03    3880.00 r
+  U15482/op (nand2_2)                    100.85    3980.85 f
+  U11036/op (nand2_1)                     58.89    4039.74 r
+  U11035/op (nand2_1)                     65.08    4104.82 f
+  U15577/op (nand2_1)                     52.34    4157.16 r
+  U10695/op (nand2_1)                     85.07    4242.23 f
+  U10780/op (nor2_2)                      92.55    4334.77 r
+  U15580/op (nand2_2)                    157.35    4492.12 f
+  U15626/op (nand2_2)                     75.95    4568.07 r
+  U11540/op (inv_1)                       67.55    4635.61 f
+  U11539/op (nand2_1)                     56.70    4692.31 r
+  U10690/op (and2_1)                     131.14    4823.46 r
+  U10688/op (nand2_2)                    167.34    4990.80 f
+  imem_haddr[28] (out)                     0.00    4990.80 f
+  data arrival time                                4990.80
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4990.80
+  -----------------------------------------------------------
+  slack (MET)                                         3.20
+
+
+  Startpoint: ext_interrupts[8]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[28]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[8] (in)                  48.06      54.06 f
+  U11889/op (nor4_2)                     173.71     227.77 r
+  U11891/op (nand4_1)                    187.35     415.12 f
+  U11892/op (nor2_2)                     133.05     548.17 r
+  U10776/op (nand2_2)                    147.42     695.59 f
+  U12140/op (nand2_2)                    107.26     802.84 r
+  U12141/op (buf_2)                      134.15     937.00 r
+  U10770/op (buf_4)                      151.25    1088.25 r
+  U13205/op (mux2_1)                     237.57    1325.82 r
+  U13206/op (nand2_1)                     82.18    1408.00 f
+  U10684/op (and2_1)                     190.90    1598.90 f
+  U11308/op (inv_1)                      168.61    1767.51 r
+  U11091/op (nand2_1)                    171.02    1938.53 f
+  U15071/op (nand2_1)                     83.92    2022.45 r
+  U11015/op (nor4_1)                     174.46    2196.91 f
+  U11014/op (nand2_1)                     69.82    2266.73 r
+  U15082/op (nor2_2)                      79.38    2346.11 f
+  U15105/op (nand2_2)                     60.78    2406.89 r
+  U15109/op (nor2_2)                      73.49    2480.38 f
+  U15110/op (nor2_2)                      87.27    2567.65 r
+  U15155/op (nand4_2)                    252.43    2820.08 f
+  U15156/op (nand2_4)                     94.17    2914.25 r
+  U15157/op (nand2_4)                     86.86    3001.11 f
+  U15214/op (inv_1)                       74.08    3075.19 r
+  U10816/op (inv_1)                       55.40    3130.59 f
+  U10789/op (nand2_1)                    163.55    3294.14 r
+  U10721/op (nand2_1)                    155.34    3449.47 f
+  U15471/op (inv_1)                       58.55    3508.02 r
+  U10833/op (nand3_1)                    106.67    3614.70 f
+  U10709/op (nand2_1)                     73.73    3688.42 r
+  U10705/op (nand2_1)                    112.49    3800.91 f
+  U10940/op (nand2_1)                     79.03    3879.94 r
+  U15482/op (nand2_2)                    100.85    3980.79 f
+  U11036/op (nand2_1)                     58.89    4039.68 r
+  U11035/op (nand2_1)                     65.08    4104.76 f
+  U15577/op (nand2_1)                     52.34    4157.11 r
+  U10695/op (nand2_1)                     85.07    4242.17 f
+  U10780/op (nor2_2)                      92.55    4334.72 r
+  U15580/op (nand2_2)                    157.35    4492.06 f
+  U15626/op (nand2_2)                     75.95    4568.01 r
+  U11540/op (inv_1)                       67.55    4635.56 f
+  U11539/op (nand2_1)                     56.70    4692.26 r
+  U10690/op (and2_1)                     131.14    4823.40 r
+  U10688/op (nand2_2)                    167.34    4990.74 f
+  imem_haddr[28] (out)                     0.00    4990.74 f
+  data arrival time                                4990.74
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4990.74
+  -----------------------------------------------------------
+  slack (MET)                                         3.26
+
+
+  Startpoint: ext_interrupts[0]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[23]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[0] (in)                  47.81      53.81 f
+  U11890/op (nor4_2)                     174.28     228.09 r
+  U11891/op (nand4_1)                    187.76     415.85 f
+  U11892/op (nor2_2)                     133.05     548.90 r
+  U10776/op (nand2_2)                    147.42     696.31 f
+  U11683/op (nand2_4)                     94.10     790.41 r
+  U13157/op (buf_4)                      189.35     979.76 r
+  U13158/op (buf_4)                      151.11    1130.88 r
+  U12399/op (mux2_1)                     246.92    1377.80 f
+  U10654/op (nand2_1)                     64.88    1442.67 r
+  U10678/op (nand2_1)                    145.72    1588.40 f
+  U10677/op (inv_1)                      134.46    1722.85 r
+  U11033/op (nor2_1)                     117.37    1840.22 f
+  U14878/op (inv_1)                       71.76    1911.98 r
+  U15101/op (nand2_1)                     89.43    2001.41 f
+  U11009/op (nor4_1)                     229.77    2231.18 r
+  U10866/op (nand3_1)                    136.17    2367.36 f
+  U10865/op (inv_1)                       71.54    2438.89 r
+  U15105/op (nand2_2)                     85.96    2524.85 f
+  U15109/op (nor2_2)                      90.06    2614.91 r
+  U15110/op (nor2_2)                      77.17    2692.08 f
+  U15155/op (nand4_2)                    126.88    2818.96 r
+  U15156/op (nand2_4)                    108.45    2927.40 f
+  U15157/op (nand2_4)                     61.38    2988.78 r
+  U10785/op (nand2_4)                    106.73    3095.51 f
+  U11654/op (nand2_4)                     70.20    3165.71 r
+  U11681/op (inv_2)                       71.68    3237.40 f
+  U11690/op (inv_2)                       81.92    3319.32 r
+  U15316/op (nand2_1)                     70.11    3389.43 f
+  U10717/op (nand2_1)                     86.45    3475.88 r
+  U10783/op (nand2_2)                     89.92    3565.80 f
+  U15332/op (nand2_1)                     57.87    3623.67 r
+  U15333/op (nand2_1)                     86.20    3709.86 f
+  U15335/op (nand2_2)                     80.35    3790.21 r
+  U15360/op (nand2_2)                     74.71    3864.93 f
+  U10699/op (nand2_1)                     54.81    3919.73 r
+  U10673/op (nand2_1)                    108.88    4028.61 f
+  U10934/op (nand2_1)                     75.08    4103.69 r
+  U15438/op (nand2_2)                    100.63    4204.31 f
+  U11666/op (nand2_4)                     74.33    4278.64 r
+  U15446/op (nand2_2)                     88.29    4366.93 f
+  U10670/op (inv_1)                       61.63    4428.56 r
+  U15487/op (nand2_2)                     84.02    4512.57 f
+  U15510/op (nand2_2)                     77.41    4589.99 r
+  U10967/op (nand2_1)                     68.85    4658.84 f
+  U10691/op (nand2_1)                     90.69    4749.53 r
+  U15615/op (xor2_2)                     240.30    4989.83 r
+  imem_haddr[23] (out)                     0.00    4989.83 r
+  data arrival time                                4989.83
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4989.83
+  -----------------------------------------------------------
+  slack (MET)                                         4.17
+
+
+  Startpoint: ext_interrupts[3]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[23]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[3] (in)                  46.96      52.96 f
+  U11890/op (nor4_2)                     174.46     227.42 r
+  U11891/op (nand4_1)                    187.76     415.18 f
+  U11892/op (nor2_2)                     133.05     548.23 r
+  U10776/op (nand2_2)                    147.42     695.64 f
+  U11683/op (nand2_4)                     94.10     789.74 r
+  U13157/op (buf_4)                      189.35     979.09 r
+  U13158/op (buf_4)                      151.11    1130.21 r
+  U12399/op (mux2_1)                     246.92    1377.13 f
+  U10654/op (nand2_1)                     64.88    1442.00 r
+  U10678/op (nand2_1)                    145.72    1587.73 f
+  U10677/op (inv_1)                      134.46    1722.18 r
+  U11033/op (nor2_1)                     117.37    1839.56 f
+  U14878/op (inv_1)                       71.76    1911.31 r
+  U15101/op (nand2_1)                     89.43    2000.74 f
+  U11009/op (nor4_1)                     229.77    2230.51 r
+  U10866/op (nand3_1)                    136.17    2366.69 f
+  U10865/op (inv_1)                       71.54    2438.22 r
+  U15105/op (nand2_2)                     85.96    2524.18 f
+  U15109/op (nor2_2)                      90.06    2614.24 r
+  U15110/op (nor2_2)                      77.17    2691.41 f
+  U15155/op (nand4_2)                    126.88    2818.29 r
+  U15156/op (nand2_4)                    108.45    2926.73 f
+  U15157/op (nand2_4)                     61.38    2988.11 r
+  U10785/op (nand2_4)                    106.73    3094.84 f
+  U11654/op (nand2_4)                     70.20    3165.04 r
+  U11681/op (inv_2)                       71.68    3236.73 f
+  U11690/op (inv_2)                       81.92    3318.65 r
+  U15316/op (nand2_1)                     70.11    3388.77 f
+  U10717/op (nand2_1)                     86.45    3475.21 r
+  U10783/op (nand2_2)                     89.92    3565.13 f
+  U15332/op (nand2_1)                     57.87    3623.00 r
+  U15333/op (nand2_1)                     86.20    3709.20 f
+  U15335/op (nand2_2)                     80.35    3789.55 r
+  U15360/op (nand2_2)                     74.71    3864.26 f
+  U10699/op (nand2_1)                     54.81    3919.06 r
+  U10673/op (nand2_1)                    108.88    4027.94 f
+  U10934/op (nand2_1)                     75.08    4103.02 r
+  U15438/op (nand2_2)                    100.63    4203.64 f
+  U11666/op (nand2_4)                     74.33    4277.97 r
+  U15446/op (nand2_2)                     88.29    4366.26 f
+  U10670/op (inv_1)                       61.63    4427.89 r
+  U15487/op (nand2_2)                     84.02    4511.90 f
+  U15510/op (nand2_2)                     77.41    4589.32 r
+  U10967/op (nand2_1)                     68.85    4658.17 f
+  U10691/op (nand2_1)                     90.69    4748.86 r
+  U15615/op (xor2_2)                     240.30    4989.16 r
+  imem_haddr[23] (out)                     0.00    4989.16 r
+  data arrival time                                4989.16
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4989.16
+  -----------------------------------------------------------
+  slack (MET)                                         4.84
+
+
+  Startpoint: ext_interrupts[8]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[23]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[8] (in)                  48.06      54.06 f
+  U11889/op (nor4_2)                     173.71     227.77 r
+  U11891/op (nand4_1)                    187.35     415.12 f
+  U11892/op (nor2_2)                     133.05     548.17 r
+  U10776/op (nand2_2)                    147.42     695.59 f
+  U11683/op (nand2_4)                     94.10     789.68 r
+  U13157/op (buf_4)                      189.35     979.04 r
+  U13158/op (buf_4)                      151.11    1130.15 r
+  U12399/op (mux2_1)                     246.92    1377.07 f
+  U10654/op (nand2_1)                     64.88    1441.95 r
+  U10678/op (nand2_1)                    145.72    1587.67 f
+  U10677/op (inv_1)                      134.46    1722.13 r
+  U11033/op (nor2_1)                     117.37    1839.50 f
+  U14878/op (inv_1)                       71.76    1911.25 r
+  U15101/op (nand2_1)                     89.43    2000.68 f
+  U11009/op (nor4_1)                     229.77    2230.46 r
+  U10866/op (nand3_1)                    136.17    2366.63 f
+  U10865/op (inv_1)                       71.54    2438.17 r
+  U15105/op (nand2_2)                     85.96    2524.12 f
+  U15109/op (nor2_2)                      90.06    2614.18 r
+  U15110/op (nor2_2)                      77.17    2691.35 f
+  U15155/op (nand4_2)                    126.88    2818.23 r
+  U15156/op (nand2_4)                    108.45    2926.68 f
+  U15157/op (nand2_4)                     61.38    2988.05 r
+  U10785/op (nand2_4)                    106.73    3094.79 f
+  U11654/op (nand2_4)                     70.20    3164.99 r
+  U11681/op (inv_2)                       71.68    3236.67 f
+  U11690/op (inv_2)                       81.92    3318.59 r
+  U15316/op (nand2_1)                     70.11    3388.71 f
+  U10717/op (nand2_1)                     86.45    3475.15 r
+  U10783/op (nand2_2)                     89.92    3565.07 f
+  U15332/op (nand2_1)                     57.87    3622.94 r
+  U15333/op (nand2_1)                     86.20    3709.14 f
+  U15335/op (nand2_2)                     80.35    3789.49 r
+  U15360/op (nand2_2)                     74.71    3864.20 f
+  U10699/op (nand2_1)                     54.81    3919.01 r
+  U10673/op (nand2_1)                    108.88    4027.88 f
+  U10934/op (nand2_1)                     75.08    4102.96 r
+  U15438/op (nand2_2)                    100.63    4203.59 f
+  U11666/op (nand2_4)                     74.33    4277.91 r
+  U15446/op (nand2_2)                     88.29    4366.20 f
+  U10670/op (inv_1)                       61.63    4427.83 r
+  U15487/op (nand2_2)                     84.02    4511.85 f
+  U15510/op (nand2_2)                     77.41    4589.26 r
+  U10967/op (nand2_1)                     68.85    4658.11 f
+  U10691/op (nand2_1)                     90.69    4748.80 r
+  U15615/op (xor2_2)                     240.30    4989.10 r
+  imem_haddr[23] (out)                     0.00    4989.10 r
+  data arrival time                                4989.10
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4989.10
+  -----------------------------------------------------------
+  slack (MET)                                         4.90
+
+
+  Startpoint: ext_interrupts[0]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[13]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[0] (in)                  47.81      53.81 f
+  U11890/op (nor4_2)                     174.28     228.09 r
+  U11891/op (nand4_1)                    187.76     415.85 f
+  U11892/op (nor2_2)                     133.05     548.90 r
+  U10776/op (nand2_2)                    147.42     696.31 f
+  U11683/op (nand2_4)                     94.10     790.41 r
+  U13157/op (buf_4)                      189.35     979.76 r
+  U13158/op (buf_4)                      151.11    1130.88 r
+  U12399/op (mux2_1)                     246.92    1377.80 f
+  U10654/op (nand2_1)                     64.88    1442.67 r
+  U10678/op (nand2_1)                    145.72    1588.40 f
+  U10677/op (inv_1)                      134.46    1722.85 r
+  U11033/op (nor2_1)                     117.37    1840.22 f
+  U14878/op (inv_1)                       71.76    1911.98 r
+  U15101/op (nand2_1)                     89.43    2001.41 f
+  U11009/op (nor4_1)                     229.77    2231.18 r
+  U10866/op (nand3_1)                    136.17    2367.36 f
+  U10865/op (inv_1)                       71.54    2438.89 r
+  U15105/op (nand2_2)                     85.96    2524.85 f
+  U15109/op (nor2_2)                      90.06    2614.91 r
+  U15110/op (nor2_2)                      77.17    2692.08 f
+  U15155/op (nand4_2)                    126.88    2818.96 r
+  U15156/op (nand2_4)                    108.45    2927.40 f
+  U15157/op (nand2_4)                     61.38    2988.78 r
+  U10785/op (nand2_4)                    106.73    3095.51 f
+  U11654/op (nand2_4)                     70.20    3165.71 r
+  U11681/op (inv_2)                       71.68    3237.40 f
+  U11690/op (inv_2)                       81.92    3319.32 r
+  U15316/op (nand2_1)                     70.11    3389.43 f
+  U10717/op (nand2_1)                     86.45    3475.88 r
+  U10783/op (nand2_2)                     89.92    3565.80 f
+  U15332/op (nand2_1)                     57.87    3623.67 r
+  U15333/op (nand2_1)                     86.20    3709.86 f
+  U15335/op (nand2_2)                     80.35    3790.22 r
+  U15360/op (nand2_2)                     74.71    3864.93 f
+  U10699/op (nand2_1)                     54.81    3919.73 r
+  U10673/op (nand2_1)                    108.88    4028.61 f
+  U11657/op (nand2_2)                     81.24    4109.85 r
+  U15646/op (nand2_2)                     76.98    4186.82 f
+  U15647/op (nand2_2)                     64.18    4251.00 r
+  U15649/op (nand2_2)                     92.68    4343.68 f
+  U15650/op (nor2_2)                      95.18    4438.86 r
+  U15651/op (nand2_1)                     69.14    4508.00 f
+  U10694/op (nand2_1)                     79.73    4587.72 r
+  U10693/op (nand2_1)                     70.23    4657.95 f
+  U10692/op (nand2_1)                     87.75    4745.71 r
+  U15653/op (xor2_2)                     239.30    4985.00 r
+  imem_haddr[13] (out)                     0.00    4985.00 r
+  data arrival time                                4985.00
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4985.00
+  -----------------------------------------------------------
+  slack (MET)                                         9.00
+
+
+  Startpoint: ext_interrupts[0]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[24]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[0] (in)                  47.81      53.81 f
+  U11890/op (nor4_2)                     174.28     228.09 r
+  U11891/op (nand4_1)                    187.76     415.85 f
+  U11892/op (nor2_2)                     133.05     548.90 r
+  U10776/op (nand2_2)                    147.42     696.31 f
+  U11683/op (nand2_4)                     94.10     790.41 r
+  U13157/op (buf_4)                      189.35     979.76 r
+  U13158/op (buf_4)                      151.11    1130.88 r
+  U12399/op (mux2_1)                     246.92    1377.80 f
+  U10654/op (nand2_1)                     64.88    1442.67 r
+  U10678/op (nand2_1)                    145.72    1588.40 f
+  U10677/op (inv_1)                      134.46    1722.85 r
+  U11033/op (nor2_1)                     117.37    1840.22 f
+  U14878/op (inv_1)                       71.76    1911.98 r
+  U15101/op (nand2_1)                     89.43    2001.41 f
+  U11009/op (nor4_1)                     229.77    2231.18 r
+  U10866/op (nand3_1)                    136.17    2367.36 f
+  U10865/op (inv_1)                       71.54    2438.89 r
+  U15105/op (nand2_2)                     85.96    2524.85 f
+  U15109/op (nor2_2)                      90.06    2614.91 r
+  U15110/op (nor2_2)                      77.17    2692.08 f
+  U15155/op (nand4_2)                    126.88    2818.96 r
+  U15156/op (nand2_4)                    108.45    2927.40 f
+  U15157/op (nand2_4)                     61.38    2988.78 r
+  U10785/op (nand2_4)                    106.73    3095.51 f
+  U11654/op (nand2_4)                     70.20    3165.71 r
+  U11681/op (inv_2)                       71.68    3237.40 f
+  U11690/op (inv_2)                       81.92    3319.32 r
+  U15316/op (nand2_1)                     70.11    3389.43 f
+  U10717/op (nand2_1)                     86.45    3475.88 r
+  U10783/op (nand2_2)                     89.92    3565.80 f
+  U15332/op (nand2_1)                     57.87    3623.67 r
+  U15333/op (nand2_1)                     86.20    3709.86 f
+  U15335/op (nand2_2)                     80.35    3790.22 r
+  U15360/op (nand2_2)                     74.71    3864.93 f
+  U10699/op (nand2_1)                     54.81    3919.73 r
+  U10673/op (nand2_1)                    108.88    4028.61 f
+  U10934/op (nand2_1)                     75.08    4103.69 r
+  U15438/op (nand2_2)                    100.63    4204.31 f
+  U11666/op (nand2_4)                     74.33    4278.64 r
+  U15446/op (nand2_2)                     88.29    4366.93 f
+  U10670/op (inv_1)                       61.63    4428.56 r
+  U15487/op (nand2_2)                     84.02    4512.57 f
+  U15510/op (nand2_2)                     77.41    4589.99 r
+  U15511/op (nand2_1)                     68.85    4658.84 f
+  U15515/op (nand2_1)                     87.36    4746.20 r
+  U11694/op (xor2_2)                     238.49    4984.69 r
+  imem_haddr[24] (out)                     0.00    4984.69 r
+  data arrival time                                4984.69
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4984.69
+  -----------------------------------------------------------
+  slack (MET)                                         9.31
+
+
+  Startpoint: ext_interrupts[3]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[13]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[3] (in)                  46.96      52.96 f
+  U11890/op (nor4_2)                     174.46     227.42 r
+  U11891/op (nand4_1)                    187.76     415.18 f
+  U11892/op (nor2_2)                     133.05     548.23 r
+  U10776/op (nand2_2)                    147.42     695.64 f
+  U11683/op (nand2_4)                     94.10     789.74 r
+  U13157/op (buf_4)                      189.35     979.09 r
+  U13158/op (buf_4)                      151.11    1130.21 r
+  U12399/op (mux2_1)                     246.92    1377.13 f
+  U10654/op (nand2_1)                     64.88    1442.00 r
+  U10678/op (nand2_1)                    145.72    1587.73 f
+  U10677/op (inv_1)                      134.46    1722.18 r
+  U11033/op (nor2_1)                     117.37    1839.56 f
+  U14878/op (inv_1)                       71.76    1911.31 r
+  U15101/op (nand2_1)                     89.43    2000.74 f
+  U11009/op (nor4_1)                     229.77    2230.51 r
+  U10866/op (nand3_1)                    136.17    2366.69 f
+  U10865/op (inv_1)                       71.54    2438.22 r
+  U15105/op (nand2_2)                     85.96    2524.18 f
+  U15109/op (nor2_2)                      90.06    2614.24 r
+  U15110/op (nor2_2)                      77.17    2691.41 f
+  U15155/op (nand4_2)                    126.88    2818.29 r
+  U15156/op (nand2_4)                    108.45    2926.74 f
+  U15157/op (nand2_4)                     61.38    2988.11 r
+  U10785/op (nand2_4)                    106.73    3094.84 f
+  U11654/op (nand2_4)                     70.20    3165.04 r
+  U11681/op (inv_2)                       71.68    3236.73 f
+  U11690/op (inv_2)                       81.92    3318.65 r
+  U15316/op (nand2_1)                     70.11    3388.77 f
+  U10717/op (nand2_1)                     86.45    3475.21 r
+  U10783/op (nand2_2)                     89.92    3565.13 f
+  U15332/op (nand2_1)                     57.87    3623.00 r
+  U15333/op (nand2_1)                     86.20    3709.20 f
+  U15335/op (nand2_2)                     80.35    3789.55 r
+  U15360/op (nand2_2)                     74.71    3864.26 f
+  U10699/op (nand2_1)                     54.81    3919.06 r
+  U10673/op (nand2_1)                    108.88    4027.94 f
+  U11657/op (nand2_2)                     81.24    4109.18 r
+  U15646/op (nand2_2)                     76.98    4186.16 f
+  U15647/op (nand2_2)                     64.18    4250.33 r
+  U15649/op (nand2_2)                     92.68    4343.01 f
+  U15650/op (nor2_2)                      95.18    4438.19 r
+  U15651/op (nand2_1)                     69.14    4507.33 f
+  U10694/op (nand2_1)                     79.73    4587.06 r
+  U10693/op (nand2_1)                     70.23    4657.28 f
+  U10692/op (nand2_1)                     87.75    4745.04 r
+  U15653/op (xor2_2)                     239.30    4984.33 r
+  imem_haddr[13] (out)                     0.00    4984.33 r
+  data arrival time                                4984.33
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4984.33
+  -----------------------------------------------------------
+  slack (MET)                                         9.67
+
+
+  Startpoint: ext_interrupts[8]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[13]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[8] (in)                  48.06      54.06 f
+  U11889/op (nor4_2)                     173.71     227.77 r
+  U11891/op (nand4_1)                    187.35     415.12 f
+  U11892/op (nor2_2)                     133.05     548.17 r
+  U10776/op (nand2_2)                    147.42     695.59 f
+  U11683/op (nand2_4)                     94.10     789.68 r
+  U13157/op (buf_4)                      189.35     979.04 r
+  U13158/op (buf_4)                      151.11    1130.15 r
+  U12399/op (mux2_1)                     246.92    1377.07 f
+  U10654/op (nand2_1)                     64.88    1441.95 r
+  U10678/op (nand2_1)                    145.72    1587.67 f
+  U10677/op (inv_1)                      134.46    1722.13 r
+  U11033/op (nor2_1)                     117.37    1839.50 f
+  U14878/op (inv_1)                       71.76    1911.25 r
+  U15101/op (nand2_1)                     89.43    2000.68 f
+  U11009/op (nor4_1)                     229.77    2230.46 r
+  U10866/op (nand3_1)                    136.17    2366.63 f
+  U10865/op (inv_1)                       71.54    2438.17 r
+  U15105/op (nand2_2)                     85.96    2524.12 f
+  U15109/op (nor2_2)                      90.06    2614.18 r
+  U15110/op (nor2_2)                      77.17    2691.35 f
+  U15155/op (nand4_2)                    126.88    2818.23 r
+  U15156/op (nand2_4)                    108.45    2926.68 f
+  U15157/op (nand2_4)                     61.38    2988.05 r
+  U10785/op (nand2_4)                    106.73    3094.79 f
+  U11654/op (nand2_4)                     70.20    3164.99 r
+  U11681/op (inv_2)                       71.68    3236.67 f
+  U11690/op (inv_2)                       81.92    3318.59 r
+  U15316/op (nand2_1)                     70.11    3388.71 f
+  U10717/op (nand2_1)                     86.45    3475.15 r
+  U10783/op (nand2_2)                     89.92    3565.07 f
+  U15332/op (nand2_1)                     57.87    3622.94 r
+  U15333/op (nand2_1)                     86.20    3709.14 f
+  U15335/op (nand2_2)                     80.35    3789.49 r
+  U15360/op (nand2_2)                     74.71    3864.20 f
+  U10699/op (nand2_1)                     54.81    3919.01 r
+  U10673/op (nand2_1)                    108.88    4027.88 f
+  U11657/op (nand2_2)                     81.24    4109.12 r
+  U15646/op (nand2_2)                     76.98    4186.10 f
+  U15647/op (nand2_2)                     64.18    4250.28 r
+  U15649/op (nand2_2)                     92.68    4342.96 f
+  U15650/op (nor2_2)                      95.18    4438.13 r
+  U15651/op (nand2_1)                     69.14    4507.27 f
+  U10694/op (nand2_1)                     79.73    4587.00 r
+  U10693/op (nand2_1)                     70.23    4657.23 f
+  U10692/op (nand2_1)                     87.75    4744.98 r
+  U15653/op (xor2_2)                     239.30    4984.28 r
+  imem_haddr[13] (out)                     0.00    4984.28 r
+  data arrival time                                4984.28
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4984.28
+  -----------------------------------------------------------
+  slack (MET)                                         9.72
+
+
+  Startpoint: ext_interrupts[3]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[24]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[3] (in)                  46.96      52.96 f
+  U11890/op (nor4_2)                     174.46     227.42 r
+  U11891/op (nand4_1)                    187.76     415.18 f
+  U11892/op (nor2_2)                     133.05     548.23 r
+  U10776/op (nand2_2)                    147.42     695.64 f
+  U11683/op (nand2_4)                     94.10     789.74 r
+  U13157/op (buf_4)                      189.35     979.09 r
+  U13158/op (buf_4)                      151.11    1130.21 r
+  U12399/op (mux2_1)                     246.92    1377.13 f
+  U10654/op (nand2_1)                     64.88    1442.00 r
+  U10678/op (nand2_1)                    145.72    1587.73 f
+  U10677/op (inv_1)                      134.46    1722.18 r
+  U11033/op (nor2_1)                     117.37    1839.56 f
+  U14878/op (inv_1)                       71.76    1911.31 r
+  U15101/op (nand2_1)                     89.43    2000.74 f
+  U11009/op (nor4_1)                     229.77    2230.51 r
+  U10866/op (nand3_1)                    136.17    2366.69 f
+  U10865/op (inv_1)                       71.54    2438.22 r
+  U15105/op (nand2_2)                     85.96    2524.18 f
+  U15109/op (nor2_2)                      90.06    2614.24 r
+  U15110/op (nor2_2)                      77.17    2691.41 f
+  U15155/op (nand4_2)                    126.88    2818.29 r
+  U15156/op (nand2_4)                    108.45    2926.74 f
+  U15157/op (nand2_4)                     61.38    2988.11 r
+  U10785/op (nand2_4)                    106.73    3094.84 f
+  U11654/op (nand2_4)                     70.20    3165.04 r
+  U11681/op (inv_2)                       71.68    3236.73 f
+  U11690/op (inv_2)                       81.92    3318.65 r
+  U15316/op (nand2_1)                     70.11    3388.77 f
+  U10717/op (nand2_1)                     86.45    3475.21 r
+  U10783/op (nand2_2)                     89.92    3565.13 f
+  U15332/op (nand2_1)                     57.87    3623.00 r
+  U15333/op (nand2_1)                     86.20    3709.20 f
+  U15335/op (nand2_2)                     80.35    3789.55 r
+  U15360/op (nand2_2)                     74.71    3864.26 f
+  U10699/op (nand2_1)                     54.81    3919.06 r
+  U10673/op (nand2_1)                    108.88    4027.94 f
+  U10934/op (nand2_1)                     75.08    4103.02 r
+  U15438/op (nand2_2)                    100.63    4203.64 f
+  U11666/op (nand2_4)                     74.33    4277.97 r
+  U15446/op (nand2_2)                     88.29    4366.26 f
+  U10670/op (inv_1)                       61.63    4427.89 r
+  U15487/op (nand2_2)                     84.02    4511.90 f
+  U15510/op (nand2_2)                     77.41    4589.32 r
+  U15511/op (nand2_1)                     68.85    4658.17 f
+  U15515/op (nand2_1)                     87.36    4745.53 r
+  U11694/op (xor2_2)                     238.49    4984.02 r
+  imem_haddr[24] (out)                     0.00    4984.02 r
+  data arrival time                                4984.02
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4984.02
+  -----------------------------------------------------------
+  slack (MET)                                         9.98
+
+
+  Startpoint: ext_interrupts[8]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[24]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[8] (in)                  48.06      54.06 f
+  U11889/op (nor4_2)                     173.71     227.77 r
+  U11891/op (nand4_1)                    187.35     415.12 f
+  U11892/op (nor2_2)                     133.05     548.17 r
+  U10776/op (nand2_2)                    147.42     695.59 f
+  U11683/op (nand2_4)                     94.10     789.68 r
+  U13157/op (buf_4)                      189.35     979.04 r
+  U13158/op (buf_4)                      151.11    1130.15 r
+  U12399/op (mux2_1)                     246.92    1377.07 f
+  U10654/op (nand2_1)                     64.88    1441.95 r
+  U10678/op (nand2_1)                    145.72    1587.67 f
+  U10677/op (inv_1)                      134.46    1722.13 r
+  U11033/op (nor2_1)                     117.37    1839.50 f
+  U14878/op (inv_1)                       71.76    1911.25 r
+  U15101/op (nand2_1)                     89.43    2000.68 f
+  U11009/op (nor4_1)                     229.77    2230.46 r
+  U10866/op (nand3_1)                    136.17    2366.63 f
+  U10865/op (inv_1)                       71.54    2438.17 r
+  U15105/op (nand2_2)                     85.96    2524.12 f
+  U15109/op (nor2_2)                      90.06    2614.18 r
+  U15110/op (nor2_2)                      77.17    2691.35 f
+  U15155/op (nand4_2)                    126.88    2818.23 r
+  U15156/op (nand2_4)                    108.45    2926.68 f
+  U15157/op (nand2_4)                     61.38    2988.05 r
+  U10785/op (nand2_4)                    106.73    3094.79 f
+  U11654/op (nand2_4)                     70.20    3164.99 r
+  U11681/op (inv_2)                       71.68    3236.67 f
+  U11690/op (inv_2)                       81.92    3318.59 r
+  U15316/op (nand2_1)                     70.11    3388.71 f
+  U10717/op (nand2_1)                     86.45    3475.15 r
+  U10783/op (nand2_2)                     89.92    3565.07 f
+  U15332/op (nand2_1)                     57.87    3622.94 r
+  U15333/op (nand2_1)                     86.20    3709.14 f
+  U15335/op (nand2_2)                     80.35    3789.49 r
+  U15360/op (nand2_2)                     74.71    3864.20 f
+  U10699/op (nand2_1)                     54.81    3919.01 r
+  U10673/op (nand2_1)                    108.88    4027.88 f
+  U10934/op (nand2_1)                     75.08    4102.96 r
+  U15438/op (nand2_2)                    100.63    4203.59 f
+  U11666/op (nand2_4)                     74.33    4277.91 r
+  U15446/op (nand2_2)                     88.29    4366.20 f
+  U10670/op (inv_1)                       61.63    4427.83 r
+  U15487/op (nand2_2)                     84.02    4511.85 f
+  U15510/op (nand2_2)                     77.41    4589.26 r
+  U15511/op (nand2_1)                     68.85    4658.11 f
+  U15515/op (nand2_1)                     87.36    4745.47 r
+  U11694/op (xor2_2)                     238.49    4983.96 r
+  imem_haddr[24] (out)                     0.00    4983.96 r
+  data arrival time                                4983.96
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4983.96
+  -----------------------------------------------------------
+  slack (MET)                                        10.04
+
+
+  Startpoint: ext_interrupts[0]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[31]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[0] (in)                  47.81      53.81 f
+  U11890/op (nor4_2)                     174.28     228.09 r
+  U11891/op (nand4_1)                    187.76     415.85 f
+  U11892/op (nor2_2)                     133.05     548.90 r
+  U10776/op (nand2_2)                    147.42     696.31 f
+  U11683/op (nand2_4)                     94.10     790.41 r
+  U13157/op (buf_4)                      189.35     979.76 r
+  U13158/op (buf_4)                      151.11    1130.88 r
+  U12399/op (mux2_1)                     246.92    1377.80 f
+  U10654/op (nand2_1)                     64.88    1442.67 r
+  U10678/op (nand2_1)                    145.72    1588.40 f
+  U10677/op (inv_1)                      134.46    1722.85 r
+  U11033/op (nor2_1)                     117.37    1840.22 f
+  U14878/op (inv_1)                       71.76    1911.98 r
+  U15101/op (nand2_1)                     89.43    2001.41 f
+  U11009/op (nor4_1)                     229.77    2231.18 r
+  U10866/op (nand3_1)                    136.17    2367.36 f
+  U10865/op (inv_1)                       71.54    2438.89 r
+  U15105/op (nand2_2)                     85.96    2524.85 f
+  U15109/op (nor2_2)                      90.06    2614.91 r
+  U15110/op (nor2_2)                      77.17    2692.08 f
+  U15155/op (nand4_2)                    126.88    2818.96 r
+  U15156/op (nand2_4)                    108.45    2927.40 f
+  U15157/op (nand2_4)                     61.38    2988.78 r
+  U10785/op (nand2_4)                    106.73    3095.51 f
+  U11654/op (nand2_4)                     70.20    3165.71 r
+  U11681/op (inv_2)                       71.68    3237.40 f
+  U11690/op (inv_2)                       81.92    3319.32 r
+  U15316/op (nand2_1)                     70.11    3389.43 f
+  U10717/op (nand2_1)                     86.45    3475.88 r
+  U10783/op (nand2_2)                     89.92    3565.80 f
+  U15332/op (nand2_1)                     57.87    3623.67 r
+  U15333/op (nand2_1)                     86.20    3709.86 f
+  U15335/op (nand2_2)                     80.35    3790.22 r
+  U15360/op (nand2_2)                     74.71    3864.93 f
+  U10699/op (nand2_1)                     54.81    3919.73 r
+  U10673/op (nand2_1)                    108.88    4028.61 f
+  U10934/op (nand2_1)                     75.08    4103.69 r
+  U15438/op (nand2_2)                    100.63    4204.31 f
+  U11666/op (nand2_4)                     74.33    4278.64 r
+  U10784/op (nand2_2)                     72.92    4351.56 f
+  U15580/op (nand2_2)                    118.19    4469.75 r
+  U15581/op (nand2_2)                     99.12    4568.87 f
+  U10963/op (inv_1)                       47.18    4616.04 r
+  U11662/op (nand2_1)                     64.57    4680.61 f
+  U10779/op (and2_1)                     121.63    4802.24 f
+  U10652/op (and2_2)                     172.33    4974.57 f
+  imem_haddr[31] (out)                     0.00    4974.57 f
+  data arrival time                                4974.57
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4974.57
+  -----------------------------------------------------------
+  slack (MET)                                        19.43
+
+
+  Startpoint: ext_interrupts[3]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[31]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[3] (in)                  46.96      52.96 f
+  U11890/op (nor4_2)                     174.46     227.42 r
+  U11891/op (nand4_1)                    187.76     415.18 f
+  U11892/op (nor2_2)                     133.05     548.23 r
+  U10776/op (nand2_2)                    147.42     695.64 f
+  U11683/op (nand2_4)                     94.10     789.74 r
+  U13157/op (buf_4)                      189.35     979.09 r
+  U13158/op (buf_4)                      151.11    1130.21 r
+  U12399/op (mux2_1)                     246.92    1377.13 f
+  U10654/op (nand2_1)                     64.88    1442.00 r
+  U10678/op (nand2_1)                    145.72    1587.73 f
+  U10677/op (inv_1)                      134.46    1722.18 r
+  U11033/op (nor2_1)                     117.37    1839.56 f
+  U14878/op (inv_1)                       71.76    1911.31 r
+  U15101/op (nand2_1)                     89.43    2000.74 f
+  U11009/op (nor4_1)                     229.77    2230.51 r
+  U10866/op (nand3_1)                    136.17    2366.69 f
+  U10865/op (inv_1)                       71.54    2438.22 r
+  U15105/op (nand2_2)                     85.96    2524.18 f
+  U15109/op (nor2_2)                      90.06    2614.24 r
+  U15110/op (nor2_2)                      77.17    2691.41 f
+  U15155/op (nand4_2)                    126.88    2818.29 r
+  U15156/op (nand2_4)                    108.45    2926.74 f
+  U15157/op (nand2_4)                     61.38    2988.11 r
+  U10785/op (nand2_4)                    106.73    3094.84 f
+  U11654/op (nand2_4)                     70.20    3165.04 r
+  U11681/op (inv_2)                       71.68    3236.73 f
+  U11690/op (inv_2)                       81.92    3318.65 r
+  U15316/op (nand2_1)                     70.11    3388.77 f
+  U10717/op (nand2_1)                     86.45    3475.21 r
+  U10783/op (nand2_2)                     89.92    3565.13 f
+  U15332/op (nand2_1)                     57.87    3623.00 r
+  U15333/op (nand2_1)                     86.20    3709.20 f
+  U15335/op (nand2_2)                     80.35    3789.55 r
+  U15360/op (nand2_2)                     74.71    3864.26 f
+  U10699/op (nand2_1)                     54.81    3919.06 r
+  U10673/op (nand2_1)                    108.88    4027.94 f
+  U10934/op (nand2_1)                     75.08    4103.02 r
+  U15438/op (nand2_2)                    100.63    4203.64 f
+  U11666/op (nand2_4)                     74.33    4277.97 r
+  U10784/op (nand2_2)                     72.92    4350.89 f
+  U15580/op (nand2_2)                    118.19    4469.08 r
+  U15581/op (nand2_2)                     99.12    4568.20 f
+  U10963/op (inv_1)                       47.18    4615.37 r
+  U11662/op (nand2_1)                     64.57    4679.94 f
+  U10779/op (and2_1)                     121.63    4801.58 f
+  U10652/op (and2_2)                     172.33    4973.90 f
+  imem_haddr[31] (out)                     0.00    4973.90 f
+  data arrival time                                4973.90
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4973.90
+  -----------------------------------------------------------
+  slack (MET)                                        20.10
+
+
+  Startpoint: ext_interrupts[0]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[29]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[0] (in)                  47.81      53.81 f
+  U11890/op (nor4_2)                     174.28     228.09 r
+  U11891/op (nand4_1)                    187.76     415.85 f
+  U11892/op (nor2_2)                     133.05     548.90 r
+  U10776/op (nand2_2)                    147.42     696.31 f
+  U11683/op (nand2_4)                     94.10     790.41 r
+  U13157/op (buf_4)                      189.35     979.76 r
+  U13158/op (buf_4)                      151.11    1130.88 r
+  U12399/op (mux2_1)                     246.92    1377.80 f
+  U10654/op (nand2_1)                     64.88    1442.67 r
+  U10678/op (nand2_1)                    145.72    1588.40 f
+  U10677/op (inv_1)                      134.46    1722.85 r
+  U11033/op (nor2_1)                     117.37    1840.22 f
+  U14878/op (inv_1)                       71.76    1911.98 r
+  U15101/op (nand2_1)                     89.43    2001.41 f
+  U11009/op (nor4_1)                     229.77    2231.18 r
+  U10866/op (nand3_1)                    136.17    2367.36 f
+  U10865/op (inv_1)                       71.54    2438.89 r
+  U15105/op (nand2_2)                     85.96    2524.85 f
+  U15109/op (nor2_2)                      90.06    2614.91 r
+  U15110/op (nor2_2)                      77.17    2692.08 f
+  U15155/op (nand4_2)                    126.88    2818.96 r
+  U15156/op (nand2_4)                    108.45    2927.40 f
+  U15157/op (nand2_4)                     61.38    2988.78 r
+  U10785/op (nand2_4)                    106.73    3095.51 f
+  U11654/op (nand2_4)                     70.20    3165.71 r
+  U11681/op (inv_2)                       71.68    3237.40 f
+  U11690/op (inv_2)                       81.92    3319.32 r
+  U15316/op (nand2_1)                     70.11    3389.43 f
+  U10717/op (nand2_1)                     86.45    3475.88 r
+  U10783/op (nand2_2)                     89.92    3565.80 f
+  U15332/op (nand2_1)                     57.87    3623.67 r
+  U15333/op (nand2_1)                     86.20    3709.86 f
+  U15335/op (nand2_2)                     80.35    3790.21 r
+  U15360/op (nand2_2)                     74.71    3864.93 f
+  U10699/op (nand2_1)                     54.81    3919.73 r
+  U10673/op (nand2_1)                    108.88    4028.61 f
+  U10934/op (nand2_1)                     75.08    4103.69 r
+  U15438/op (nand2_2)                    100.63    4204.31 f
+  U11666/op (nand2_4)                     74.33    4278.64 r
+  U10784/op (nand2_2)                     72.92    4351.56 f
+  U15580/op (nand2_2)                    118.19    4469.75 r
+  U15626/op (nand2_2)                     97.80    4567.54 f
+  U11540/op (inv_1)                       80.46    4648.00 r
+  U11543/op (nand2_1)                     71.90    4719.90 f
+  U10689/op (nand2_1)                     64.93    4784.83 r
+  U15639/op (and2_2)                     189.02    4973.86 r
+  imem_haddr[29] (out)                     0.00    4973.86 r
+  data arrival time                                4973.86
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4973.86
+  -----------------------------------------------------------
+  slack (MET)                                        20.14
+
+
+  Startpoint: ext_interrupts[8]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[31]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[8] (in)                  48.06      54.06 f
+  U11889/op (nor4_2)                     173.71     227.77 r
+  U11891/op (nand4_1)                    187.35     415.12 f
+  U11892/op (nor2_2)                     133.05     548.17 r
+  U10776/op (nand2_2)                    147.42     695.59 f
+  U11683/op (nand2_4)                     94.10     789.68 r
+  U13157/op (buf_4)                      189.35     979.04 r
+  U13158/op (buf_4)                      151.11    1130.15 r
+  U12399/op (mux2_1)                     246.92    1377.07 f
+  U10654/op (nand2_1)                     64.88    1441.95 r
+  U10678/op (nand2_1)                    145.72    1587.67 f
+  U10677/op (inv_1)                      134.46    1722.13 r
+  U11033/op (nor2_1)                     117.37    1839.50 f
+  U14878/op (inv_1)                       71.76    1911.25 r
+  U15101/op (nand2_1)                     89.43    2000.68 f
+  U11009/op (nor4_1)                     229.77    2230.46 r
+  U10866/op (nand3_1)                    136.17    2366.63 f
+  U10865/op (inv_1)                       71.54    2438.17 r
+  U15105/op (nand2_2)                     85.96    2524.12 f
+  U15109/op (nor2_2)                      90.06    2614.18 r
+  U15110/op (nor2_2)                      77.17    2691.35 f
+  U15155/op (nand4_2)                    126.88    2818.23 r
+  U15156/op (nand2_4)                    108.45    2926.68 f
+  U15157/op (nand2_4)                     61.38    2988.05 r
+  U10785/op (nand2_4)                    106.73    3094.79 f
+  U11654/op (nand2_4)                     70.20    3164.99 r
+  U11681/op (inv_2)                       71.68    3236.67 f
+  U11690/op (inv_2)                       81.92    3318.59 r
+  U15316/op (nand2_1)                     70.11    3388.71 f
+  U10717/op (nand2_1)                     86.45    3475.15 r
+  U10783/op (nand2_2)                     89.92    3565.07 f
+  U15332/op (nand2_1)                     57.87    3622.94 r
+  U15333/op (nand2_1)                     86.20    3709.14 f
+  U15335/op (nand2_2)                     80.35    3789.49 r
+  U15360/op (nand2_2)                     74.71    3864.20 f
+  U10699/op (nand2_1)                     54.81    3919.01 r
+  U10673/op (nand2_1)                    108.88    4027.88 f
+  U10934/op (nand2_1)                     75.08    4102.96 r
+  U15438/op (nand2_2)                    100.63    4203.59 f
+  U11666/op (nand2_4)                     74.33    4277.91 r
+  U10784/op (nand2_2)                     72.92    4350.83 f
+  U15580/op (nand2_2)                    118.19    4469.02 r
+  U15581/op (nand2_2)                     99.12    4568.14 f
+  U10963/op (inv_1)                       47.18    4615.32 r
+  U11662/op (nand2_1)                     64.57    4679.89 f
+  U10779/op (and2_1)                     121.63    4801.52 f
+  U10652/op (and2_2)                     172.33    4973.84 f
+  imem_haddr[31] (out)                     0.00    4973.84 f
+  data arrival time                                4973.84
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4973.84
+  -----------------------------------------------------------
+  slack (MET)                                        20.16
+
+
+  Startpoint: ext_interrupts[3]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[29]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[3] (in)                  46.96      52.96 f
+  U11890/op (nor4_2)                     174.46     227.42 r
+  U11891/op (nand4_1)                    187.76     415.18 f
+  U11892/op (nor2_2)                     133.05     548.23 r
+  U10776/op (nand2_2)                    147.42     695.64 f
+  U11683/op (nand2_4)                     94.10     789.74 r
+  U13157/op (buf_4)                      189.35     979.09 r
+  U13158/op (buf_4)                      151.11    1130.21 r
+  U12399/op (mux2_1)                     246.92    1377.13 f
+  U10654/op (nand2_1)                     64.88    1442.00 r
+  U10678/op (nand2_1)                    145.72    1587.73 f
+  U10677/op (inv_1)                      134.46    1722.18 r
+  U11033/op (nor2_1)                     117.37    1839.56 f
+  U14878/op (inv_1)                       71.76    1911.31 r
+  U15101/op (nand2_1)                     89.43    2000.74 f
+  U11009/op (nor4_1)                     229.77    2230.51 r
+  U10866/op (nand3_1)                    136.17    2366.69 f
+  U10865/op (inv_1)                       71.54    2438.22 r
+  U15105/op (nand2_2)                     85.96    2524.18 f
+  U15109/op (nor2_2)                      90.06    2614.24 r
+  U15110/op (nor2_2)                      77.17    2691.41 f
+  U15155/op (nand4_2)                    126.88    2818.29 r
+  U15156/op (nand2_4)                    108.45    2926.74 f
+  U15157/op (nand2_4)                     61.38    2988.11 r
+  U10785/op (nand2_4)                    106.73    3094.84 f
+  U11654/op (nand2_4)                     70.20    3165.04 r
+  U11681/op (inv_2)                       71.68    3236.73 f
+  U11690/op (inv_2)                       81.92    3318.65 r
+  U15316/op (nand2_1)                     70.11    3388.77 f
+  U10717/op (nand2_1)                     86.45    3475.21 r
+  U10783/op (nand2_2)                     89.92    3565.13 f
+  U15332/op (nand2_1)                     57.87    3623.00 r
+  U15333/op (nand2_1)                     86.20    3709.20 f
+  U15335/op (nand2_2)                     80.35    3789.55 r
+  U15360/op (nand2_2)                     74.71    3864.26 f
+  U10699/op (nand2_1)                     54.81    3919.06 r
+  U10673/op (nand2_1)                    108.88    4027.94 f
+  U10934/op (nand2_1)                     75.08    4103.02 r
+  U15438/op (nand2_2)                    100.63    4203.64 f
+  U11666/op (nand2_4)                     74.33    4277.97 r
+  U10784/op (nand2_2)                     72.92    4350.89 f
+  U15580/op (nand2_2)                    118.19    4469.08 r
+  U15626/op (nand2_2)                     97.80    4566.87 f
+  U11540/op (inv_1)                       80.46    4647.33 r
+  U11543/op (nand2_1)                     71.90    4719.23 f
+  U10689/op (nand2_1)                     64.93    4784.17 r
+  U15639/op (and2_2)                     189.02    4973.19 r
+  imem_haddr[29] (out)                     0.00    4973.19 r
+  data arrival time                                4973.19
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4973.19
+  -----------------------------------------------------------
+  slack (MET)                                        20.81
+
+
+  Startpoint: ext_interrupts[8]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[29]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[8] (in)                  48.06      54.06 f
+  U11889/op (nor4_2)                     173.71     227.77 r
+  U11891/op (nand4_1)                    187.35     415.12 f
+  U11892/op (nor2_2)                     133.05     548.17 r
+  U10776/op (nand2_2)                    147.42     695.59 f
+  U11683/op (nand2_4)                     94.10     789.68 r
+  U13157/op (buf_4)                      189.35     979.04 r
+  U13158/op (buf_4)                      151.11    1130.15 r
+  U12399/op (mux2_1)                     246.92    1377.07 f
+  U10654/op (nand2_1)                     64.88    1441.95 r
+  U10678/op (nand2_1)                    145.72    1587.67 f
+  U10677/op (inv_1)                      134.46    1722.13 r
+  U11033/op (nor2_1)                     117.37    1839.50 f
+  U14878/op (inv_1)                       71.76    1911.25 r
+  U15101/op (nand2_1)                     89.43    2000.68 f
+  U11009/op (nor4_1)                     229.77    2230.46 r
+  U10866/op (nand3_1)                    136.17    2366.63 f
+  U10865/op (inv_1)                       71.54    2438.17 r
+  U15105/op (nand2_2)                     85.96    2524.12 f
+  U15109/op (nor2_2)                      90.06    2614.18 r
+  U15110/op (nor2_2)                      77.17    2691.35 f
+  U15155/op (nand4_2)                    126.88    2818.23 r
+  U15156/op (nand2_4)                    108.45    2926.68 f
+  U15157/op (nand2_4)                     61.38    2988.05 r
+  U10785/op (nand2_4)                    106.73    3094.79 f
+  U11654/op (nand2_4)                     70.20    3164.99 r
+  U11681/op (inv_2)                       71.68    3236.67 f
+  U11690/op (inv_2)                       81.92    3318.59 r
+  U15316/op (nand2_1)                     70.11    3388.71 f
+  U10717/op (nand2_1)                     86.45    3475.15 r
+  U10783/op (nand2_2)                     89.92    3565.07 f
+  U15332/op (nand2_1)                     57.87    3622.94 r
+  U15333/op (nand2_1)                     86.20    3709.14 f
+  U15335/op (nand2_2)                     80.35    3789.49 r
+  U15360/op (nand2_2)                     74.71    3864.20 f
+  U10699/op (nand2_1)                     54.81    3919.01 r
+  U10673/op (nand2_1)                    108.88    4027.88 f
+  U10934/op (nand2_1)                     75.08    4102.96 r
+  U15438/op (nand2_2)                    100.63    4203.59 f
+  U11666/op (nand2_4)                     74.33    4277.91 r
+  U10784/op (nand2_2)                     72.92    4350.83 f
+  U15580/op (nand2_2)                    118.19    4469.02 r
+  U15626/op (nand2_2)                     97.80    4566.82 f
+  U11540/op (inv_1)                       80.46    4647.27 r
+  U11543/op (nand2_1)                     71.90    4719.18 f
+  U10689/op (nand2_1)                     64.93    4784.11 r
+  U15639/op (and2_2)                     189.02    4973.13 r
+  imem_haddr[29] (out)                     0.00    4973.13 r
+  data arrival time                                4973.13
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4973.13
+  -----------------------------------------------------------
+  slack (MET)                                        20.87
+
+
+  Startpoint: ext_interrupts[0]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[17]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[0] (in)                  47.81      53.81 f
+  U11890/op (nor4_2)                     174.28     228.09 r
+  U11891/op (nand4_1)                    187.76     415.85 f
+  U11892/op (nor2_2)                     133.05     548.90 r
+  U10776/op (nand2_2)                    147.42     696.31 f
+  U12140/op (nand2_2)                    107.26     803.57 r
+  U12141/op (buf_2)                      134.15     937.72 r
+  U10770/op (buf_4)                      151.25    1088.97 r
+  U13205/op (mux2_1)                     237.57    1326.54 r
+  U13206/op (nand2_1)                     82.18    1408.73 f
+  U10684/op (and2_1)                     190.90    1599.62 f
+  U11308/op (inv_1)                      168.61    1768.24 r
+  U11091/op (nand2_1)                    171.02    1939.26 f
+  U15071/op (nand2_1)                     83.92    2023.17 r
+  U11015/op (nor4_1)                     174.46    2197.64 f
+  U11014/op (nand2_1)                     69.82    2267.46 r
+  U15082/op (nor2_2)                      79.38    2346.84 f
+  U15105/op (nand2_2)                     60.78    2407.62 r
+  U15109/op (nor2_2)                      73.49    2481.10 f
+  U15110/op (nor2_2)                      87.27    2568.37 r
+  U15155/op (nand4_2)                    252.43    2820.80 f
+  U15156/op (nand2_4)                     94.17    2914.98 r
+  U15157/op (nand2_4)                     86.86    3001.84 f
+  U10785/op (nand2_4)                     78.78    3080.62 r
+  U11654/op (nand2_4)                     88.14    3168.75 f
+  U11681/op (inv_2)                       84.92    3253.67 r
+  U11690/op (inv_2)                       76.43    3330.10 f
+  U15316/op (nand2_1)                     56.65    3386.76 r
+  U10717/op (nand2_1)                    108.02    3494.78 f
+  U10783/op (nand2_2)                     72.60    3567.38 r
+  U15332/op (nand2_1)                     70.09    3637.47 f
+  U15333/op (nand2_1)                     62.25    3699.72 r
+  U15335/op (nand2_2)                    106.11    3805.82 f
+  U15360/op (nand2_2)                     60.49    3866.32 r
+  U10699/op (nand2_1)                     65.18    3931.50 f
+  U10673/op (nand2_1)                     84.91    4016.40 r
+  U10934/op (nand2_1)                     93.75    4110.15 f
+  U15438/op (nand2_2)                     77.73    4187.88 r
+  U11666/op (nand2_4)                     91.70    4279.58 f
+  U10685/op (and2_1)                     123.07    4402.65 f
+  U10957/op (nand2_1)                     50.63    4453.27 r
+  U10956/op (nand2_1)                    102.31    4555.59 f
+  U11622/op (nand2_1)                     53.00    4608.59 r
+  U11621/op (nand2_1)                    113.81    4722.40 f
+  U15618/op (xor2_2)                     243.08    4965.49 r
+  imem_haddr[17] (out)                     0.00    4965.49 r
+  data arrival time                                4965.49
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4965.49
+  -----------------------------------------------------------
+  slack (MET)                                        28.51
+
+
+  Startpoint: ext_interrupts[0]
+              (input port clocked by clk)
+  Endpoint: imem_haddr[22]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vscale_core        10x10                 vtvt_tsmc180
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  ext_interrupts[0] (in)                  47.81      53.81 f
+  U11890/op (nor4_2)                     174.28     228.09 r
+  U11891/op (nand4_1)                    187.76     415.85 f
+  U11892/op (nor2_2)                     133.05     548.90 r
+  U10776/op (nand2_2)                    147.42     696.31 f
+  U11683/op (nand2_4)                     94.10     790.41 r
+  U13157/op (buf_4)                      189.35     979.76 r
+  U13158/op (buf_4)                      151.11    1130.88 r
+  U12399/op (mux2_1)                     246.92    1377.80 f
+  U10654/op (nand2_1)                     64.88    1442.67 r
+  U10678/op (nand2_1)                    145.72    1588.40 f
+  U10677/op (inv_1)                      134.46    1722.85 r
+  U11033/op (nor2_1)                     117.37    1840.22 f
+  U14878/op (inv_1)                       71.76    1911.98 r
+  U15101/op (nand2_1)                     89.43    2001.41 f
+  U11009/op (nor4_1)                     229.77    2231.18 r
+  U10866/op (nand3_1)                    136.17    2367.36 f
+  U10865/op (inv_1)                       71.54    2438.89 r
+  U15105/op (nand2_2)                     85.96    2524.85 f
+  U15109/op (nor2_2)                      90.06    2614.91 r
+  U15110/op (nor2_2)                      77.17    2692.08 f
+  U15155/op (nand4_2)                    126.88    2818.96 r
+  U15156/op (nand2_4)                    108.45    2927.40 f
+  U15157/op (nand2_4)                     61.38    2988.78 r
+  U10785/op (nand2_4)                    106.73    3095.51 f
+  U11654/op (nand2_4)                     70.20    3165.71 r
+  U11681/op (inv_2)                       71.68    3237.40 f
+  U11690/op (inv_2)                       81.92    3319.32 r
+  U15316/op (nand2_1)                     70.11    3389.43 f
+  U10717/op (nand2_1)                     86.45    3475.88 r
+  U10783/op (nand2_2)                     89.92    3565.80 f
+  U15332/op (nand2_1)                     57.87    3623.67 r
+  U15333/op (nand2_1)                     86.20    3709.86 f
+  U15335/op (nand2_2)                     80.35    3790.21 r
+  U15360/op (nand2_2)                     74.71    3864.93 f
+  U10699/op (nand2_1)                     54.81    3919.73 r
+  U10673/op (nand2_1)                    108.88    4028.61 f
+  U10934/op (nand2_1)                     75.08    4103.69 r
+  U15438/op (nand2_2)                    100.63    4204.31 f
+  U11666/op (nand2_4)                     74.33    4278.64 r
+  U15446/op (nand2_2)                     88.29    4366.93 f
+  U10670/op (inv_1)                       61.63    4428.56 r
+  U15487/op (nand2_2)                     84.02    4512.57 f
+  U15510/op (nand2_2)                     77.41    4589.99 r
+  U15517/op (xor2_1)                     375.32    4965.30 r
+  imem_haddr[22] (out)                     0.00    4965.30 r
+  data arrival time                                4965.30
+
+  clock clk (rise edge)                 5000.00    5000.00
+  clock network delay (ideal)              0.00    5000.00
+  output external delay                   -6.00    4994.00
+  data required time                               4994.00
+  -----------------------------------------------------------
+  data required time                               4994.00
+  data arrival time                               -4965.30
+  -----------------------------------------------------------
+  slack (MET)                                        28.70
+
+
+1

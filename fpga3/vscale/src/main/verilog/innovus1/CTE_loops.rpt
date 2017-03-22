@@ -1,0 +1,58 @@
+     +-------------------------------------------+ 
+     |          Pin           |       Cell       | 
+     |------------------------+------------------| 
+     |              U10675/op |          nand2_1 | 
+     |             U16733/ip2 |           nor2_1 | 
+     |              U16733/op |           nor2_1 | 
+     |             U24794/ip1 |           and2_1 | 
+     |              U24794/op |           and2_1 | 
+     | pipeline/csr/C4925/ip1 |           and2_1 | 
+     |  pipeline/csr/C4925/op |           and2_1 | 
+     |             U12024/ip2 |           nor2_1 | 
+     |              U12024/op |           nor2_1 | 
+     |             U12025/ip2 |          nand2_1 | 
+     |              U12025/op |          nand2_1 | 
+     |             U12026/ip4 | not_ab_or_c_or_d | 
+     |              U12026/op | not_ab_or_c_or_d | 
+     |             U12028/ip1 |          nand2_1 | 
+     |              U12028/op |          nand2_1 | 
+     |             U12029/ip4 | not_ab_or_c_or_d | 
+     |              U12029/op | not_ab_or_c_or_d | 
+     |             U12032/ip1 |          nand2_1 | 
+     |              U12032/op |          nand2_1 | 
+     |             U10672/ip1 |           nor2_1 | 
+     |              U10672/op |           nor2_1 | 
+     |             U10675/ip2 |          nand2_1 | 
+     |              U10675/op |          nand2_1 | 
+     +-------------------------------------------+ 
+     +-------------------------------------------+ 
+     |          Pin           |       Cell       | 
+     |------------------------+------------------| 
+     |              U10675/op |          nand2_1 | 
+     |             U16733/ip2 |           nor2_1 | 
+     |              U16733/op |           nor2_1 | 
+     |             U24794/ip1 |           and2_1 | 
+     |              U24794/op |           and2_1 | 
+     | pipeline/csr/C4925/ip1 |           and2_1 | 
+     |  pipeline/csr/C4925/op |           and2_1 | 
+     |             U12024/ip2 |           nor2_1 | 
+     |              U12024/op |           nor2_1 | 
+     |             U12025/ip2 |          nand2_1 | 
+     |              U12025/op |          nand2_1 | 
+     |             U12026/ip4 | not_ab_or_c_or_d | 
+     |              U12026/op | not_ab_or_c_or_d | 
+     |             U12028/ip1 |          nand2_1 | 
+     |              U12028/op |          nand2_1 | 
+     |             U12029/ip4 | not_ab_or_c_or_d | 
+     |              U12029/op | not_ab_or_c_or_d | 
+     |             U12032/ip1 |          nand2_1 | 
+     |              U12032/op |          nand2_1 | 
+     |             U10672/ip1 |           nor2_1 | 
+     |              U10672/op |           nor2_1 | 
+     |             U12033/ip2 |          nand2_1 | 
+     |              U12033/op |          nand2_1 | 
+     |             U12038/ip1 |           and2_1 | 
+     |              U12038/op |           and2_1 | 
+     |             U10675/ip1 |          nand2_1 | 
+     |              U10675/op |          nand2_1 | 
+     +-------------------------------------------+ 

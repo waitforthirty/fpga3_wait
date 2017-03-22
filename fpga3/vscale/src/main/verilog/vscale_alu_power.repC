@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : vscale_alu
+Version: J-2014.09-SP3
+Date   : Mon Mar 13 20:49:58 2017
+****************************************
+
+
+Library(s) Used:
+
+    vtvt_tsmc180 (File: /home/lgy/Desktop/lab1/lab1-waitforthirty/vscale/src/main/verilog/libs/vtvt_tsmc180.db)
+
+
+Operating Conditions: nom_pvt   Library: vtvt_tsmc180
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ps
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1mW
+
+
+  Cell Internal Power  =   2.6499  W   (45%)
+  Net Switching Power  =   3.2147  W   (55%)
+                         ---------
+Total Dynamic Power    =   5.8647  W  (100%)
+
+Cell Leakage Power     =  26.5639 nW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  2.6499e+03        3.2147e+03        2.6564e-05        5.8646e+03  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total          2.6499e+03 mW     3.2147e+03 mW     2.6564e-05 mW     5.8646e+03 mW
+1

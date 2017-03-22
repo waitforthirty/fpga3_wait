@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : design
+Design : vscale_core
+Version: J-2014.09-SP3
+Date   : Wed Mar 22 10:13:45 2017
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    vtvt_tsmc180 (File: /home/lgy/Desktop/lab1/lab1-waitforthirty/vscale/src/main/verilog/libs/vtvt_tsmc180.db)
+
+Local Link Library:
+
+    {vtvt_tsmc180.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : nom_pvt
+    Library : vtvt_tsmc180
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   1.80
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected manually by the user.
+
+Name           :   10x10
+Location       :   vtvt_tsmc180
+Resistance     :   0
+Capacitance    :   0.0001
+Area           :   0
+Slope          :   0.311
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     0.53
+
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    DesignWare
+
+Design Parameters:
+
+    None specified.
+1
